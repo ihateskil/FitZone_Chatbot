@@ -1,3 +1,12 @@
+---
+title: FitZone Chatbot API
+emoji: 💪
+colorFrom: green
+colorTo: blue
+sdk: docker
+app_port: 7860
+---
+
 # FitZone Chatbot
 
 Scoped fitness & nutrition AI agent with RAG over training PDFs, live food data, and Groq LLM.
