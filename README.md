@@ -136,6 +136,25 @@ For local API testing:
 uvicorn api:app --host 0.0.0.0 --port 8000
 ```
 
+## Hugging Face Spaces deployment
+
+This repo can also run as a free Docker Space. Create a new Space with:
+
+- SDK: `Docker`
+- Visibility: `Public` or `Private`
+- Port: default `7860`
+
+Add these Space secrets in `Settings` -> `Variables and secrets`:
+
+- `GROQ_API_KEY`
+- `FITZONE_API_KEY`
+
+The Docker start command is:
+
+```bash
+uvicorn api:app --host 0.0.0.0 --port ${PORT:-7860}
+```
+
 ## Disclaimer
 
 FitZone provides general fitness and nutrition education — not medical advice. Always consult a qualified healthcare professional for medical decisions.

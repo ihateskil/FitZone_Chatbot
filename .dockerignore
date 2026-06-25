@@ -1,0 +1,10 @@
+.cache/
+.env
+.git/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+logs/
+venv/
+.venv/
+Knowledge_db/The Ultimate Push Pull Legs System 6X*.pdf
