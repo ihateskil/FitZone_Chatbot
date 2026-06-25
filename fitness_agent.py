@@ -91,12 +91,29 @@ class IntentRouter:
             "lean", "weight", "bodyweight", "supplement", "creatine", "preworkout",
             "recovery", "stretch", "warmup", "cooldown", "hiit", "aerobic",
             "anaerobic", "metabolism", "hydration", "chicken", "apple",
+            # Training methodology
+            "ppl", "deload", "rpe", "rir", "amrap", "emom", "superset",
+            "dropset", "myo", "overload", "periodization", "mesocycle",
+            # Body composition
+            "recomp", "shred", "gains", "physique", "bodybuilding", "powerlifting",
+            # Supplements & recovery
+            "whey", "casein", "bcaa", "eaa", "caffeine", "sleep", "soreness",
+            "doms", "foam", "roller", "mobility",
+        }
+    )
+    GREETING_KEYWORDS = frozenset(
+        {
+            "hey", "hi", "hello", "sup", "yo", "morning", "evening", "afternoon",
+            "thanks", "thank", "bye", "goodbye", "cheers", "appreciate", "coach",
+            "bro", "dude", "man",
         }
     )
     OUT_OF_SCOPE_KEYWORDS = frozenset(
         {
             "python", "javascript", "code", "programming", "weather", "stock",
             "election", "politics", "movie", "sql", "kubernetes", "docker", "react",
+            "homework", "essay", "poem", "story", "recipe", "travel", "flight",
+            "crypto", "bitcoin", "algebra", "calculus", "history",
         }
     )
 
@@ -114,6 +131,9 @@ class IntentRouter:
         if tokens & cls.OUT_OF_SCOPE_KEYWORDS and not (tokens & cls.FITNESS_KEYWORDS):
             return "OUT_OF_SCOPE"
         if tokens & cls.FITNESS_KEYWORDS:
+            return "IN_SCOPE"
+        # Treat greetings/pleasantries as in-scope so the coach can respond naturally
+        if tokens & cls.GREETING_KEYWORDS and not (tokens & cls.OUT_OF_SCOPE_KEYWORDS):
             return "IN_SCOPE"
         return None
 
@@ -188,12 +208,12 @@ class FitnessAgent:
         if knowledge_score >= KNOWLEDGE_MATCH_THRESHOLD or (
             "No directly matching" not in knowledge_context
         ):
-            sections.append(knowledge_context)
+            sections.append(f"[TRAINING & SCIENCE NOTES]\n{knowledge_context}")
 
         if food_future is not None:
             food_context, food_found = food_future.result()
             if food_found:
-                sections.append(food_context)
+                sections.append(f"[NUTRITION DATA]\n{food_context}")
 
         combined = "\n\n---\n\n".join(sections) if sections else ""
         return self._truncate_context(_sanitize_reference_context(combined)), knowledge_score
@@ -204,7 +224,6 @@ class FitnessAgent:
         context: str,
         history: list[ChatTurn],
     ) -> list[BaseMessage]:
-        notes = context if context else "No specific notes — rely on your coaching expertise."
         messages: list[BaseMessage] = [SystemMessage(content=AGENT_SYSTEM_PROMPT.strip())]
 
         for turn in _truncate_history(history):
@@ -213,17 +232,21 @@ class FitnessAgent:
             else:
                 messages.append(AIMessage(content=turn.content))
 
-        messages.append(
-            HumanMessage(
-                content=(
-                    f"Use the background notes below to inform your answer. "
-                    f"These are for you only — never mention them or where information came from.\n\n"
-                    f"BACKGROUND NOTES:\n{notes}\n\n"
-                    f"USER MESSAGE:\n{user_query}\n\n"
-                    f"Reply directly to the user as FitZone. Be specific, practical, and conversational."
-                )
+        # Build the final user message with context injection
+        if context:
+            user_prompt = (
+                f"[INTERNAL CONTEXT — for your eyes only. Never reference these notes, "
+                f"their existence, or where any information came from. Synthesize the data "
+                f"naturally into your expert coaching response. Use specific numbers and "
+                f"details from the notes when relevant.]\n\n"
+                f"{context}\n\n"
+                f"---\n\n"
+                f"{user_query}"
             )
-        )
+        else:
+            user_prompt = user_query
+
+        messages.append(HumanMessage(content=user_prompt))
         return messages
 
     def _preprocess(self, user_query: str) -> tuple[ValidationResult, SafetyCheck]:

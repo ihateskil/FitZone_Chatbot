@@ -6,22 +6,31 @@ import re
 from dataclasses import dataclass
 from enum import Enum
 
-CRISIS_RESPONSE = """I'm really glad you reached out, but this is beyond what I can help with as a fitness coach.
+CRISIS_RESPONSE = """\
+I hear you, and I'm really glad you reached out. What you're describing is beyond what I can support as a fitness coach — but please know that you deserve real help from someone qualified.
 
-**If you or someone else may be in immediate danger, call emergency services now** (e.g. 911 in the US, 999 in the UK, 112 in the EU).
+**If you or someone you know is in immediate danger, please contact emergency services now.**
 
-**Mental health support:**
-- US: 988 Suicide & Crisis Lifeline (call or text 988)
-- UK & ROI: Samaritans at 116 123
-- International: findahelpline.com
+**Crisis support lines (free & confidential):**
+- 🇺🇸 **US:** 988 Suicide & Crisis Lifeline — call or text **988**
+- 🇬🇧 **UK & Ireland:** Samaritans — call **116 123**
+- 🇪🇺 **EU:** Emergency — call **112**
+- 🌍 **International:** [findahelpline.com](https://findahelpline.com)
 
-Please speak with a licensed healthcare professional or crisis counselor right away. You deserve real support from someone qualified to help."""
+Please reach out to one of these resources. A trained counselor can give you the support you need right now. You're not alone in this."""
 
-MEDICAL_BOUNDARY_RESPONSE = """I can share general fitness and nutrition education, but I can't diagnose conditions, interpret symptoms, or advise on medications or medical treatment.
+MEDICAL_BOUNDARY_RESPONSE = """\
+I really appreciate you trusting me with this — but this falls into medical territory, and I want to be honest about my limits.
 
-For anything involving symptoms, injuries, chronic conditions, pregnancy, or prescriptions, please check with a doctor or licensed clinician who knows your full health picture.
+I can't diagnose conditions, interpret symptoms, or give advice on medications or medical treatments. That kind of guidance needs to come from a doctor or licensed clinician who knows your full health picture.
 
-I'm happy to help with training, macros, workouts, or general wellness questions within that scope."""
+**What I *can* help with:**
+- General training programming and exercise selection
+- Nutrition planning — macros, meal timing, calorie targets
+- Workout modifications for common limitations
+- General wellness and recovery strategies
+
+If you've got a fitness or nutrition question, I'm right here for you."""
 
 CRISIS_PATTERNS = [
     re.compile(p, re.IGNORECASE)

@@ -46,7 +46,8 @@ def validate_user_input(text: str) -> ValidationResult:
         if pattern.search(cleaned):
             return ValidationResult(
                 False,
-                "That message can't be processed. Please ask a fitness or nutrition question.",
+                "Hmm, I wasn't able to process that one. "
+                "Try rephrasing your fitness or nutrition question and I'll do my best!",
             )
 
     return ValidationResult(True, cleaned=cleaned)

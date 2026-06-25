@@ -31,6 +31,10 @@ FOOD_QUERY_SIGNALS = frozenset(
         "apple", "banana", "chicken", "rice", "salmon", "yogurt", "egg", "eggs",
         "oatmeal", "pasta", "bread", "milk", "cheese", "beef", "pork", "fish",
         "vegetable", "fruit", "smoothie", "shake", "supplement", "whey",
+        # Additional common foods
+        "tuna", "turkey", "steak", "avocado", "potato", "sweet", "broccoli",
+        "spinach", "almond", "peanut", "butter", "greek", "cottage", "tofu",
+        "quinoa", "lentil", "lentils", "beans", "chickpea", "chickpeas",
     }
 )
 
@@ -58,14 +62,16 @@ class FoodProduct:
 
     def to_context_line(self) -> str:
         def fmt(value: float | None, unit: str) -> str:
-            return f"{value}{unit}" if value is not None else "N/A"
+            return f"{value}{unit}" if value is not None else "—"
 
-        brand_part = f" ({self.brand})" if self.brand else ""
+        brand_part = f" by {self.brand}" if self.brand else ""
         return (
-            f"{self.name}{brand_part} | Serving: {self.serving_size or 'N/A'} | "
-            f"Per 100g — Calories: {fmt(self.kcal_100g, ' kcal')}, "
-            f"Protein: {fmt(self.protein_100g, 'g')}, "
-            f"Carbs: {fmt(self.carbs_100g, 'g')}, Fat: {fmt(self.fat_100g, 'g')}"
+            f"• {self.name}{brand_part} "
+            f"(serving: {self.serving_size or '100g'}) — "
+            f"{fmt(self.kcal_100g, ' kcal')}, "
+            f"{fmt(self.protein_100g, 'g protein')}, "
+            f"{fmt(self.carbs_100g, 'g carbs')}, "
+            f"{fmt(self.fat_100g, 'g fat')} per 100g"
         )
 
 
