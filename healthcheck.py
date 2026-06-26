@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Verify FitZone Chatbot environment and dependencies."""
+"""Verify FitZone Chatbot environment and dependencies.
+
+Provides two levels of checks:
+  - Cheap: env vars + filesystem only (used by /health on Render)
+  - Expensive: full agent warmup with Groq call (used by /ready)
+"""
 
 from __future__ import annotations
 
@@ -12,7 +17,8 @@ sys.path.insert(0, str(BASE_DIR))
 from config import CACHE_DIR, GROQ_API_KEY, KNOWLEDGE_DB_DIR  # noqa: E402
 
 
-def main() -> int:
+def cheap_check() -> tuple[list[str], list[str]]:
+    """Fast checks: env vars + filesystem. No network calls."""
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -35,6 +41,14 @@ def main() -> int:
     else:
         warnings.append("Knowledge cache not built — first request will be slow. Run: python scripts/rebuild_knowledge.py")
 
+    return errors, warnings
+
+
+def expensive_check() -> tuple[list[str], list[str]]:
+    """Slow checks: full agent warmup including Groq LLM call."""
+    errors: list[str] = []
+    warnings: list[str] = []
+
     try:
         from fitness_agent import warmup_agent
 
@@ -42,6 +56,17 @@ def main() -> int:
         print(f"Agent loaded: {len(agent._knowledge._chunks)} knowledge chunks")
     except Exception as exc:
         errors.append(f"Agent failed to load: {exc}")
+
+    return errors, warnings
+
+
+def main() -> int:
+    errors, warnings = cheap_check()
+
+    if "--deep" in sys.argv:
+        deep_errors, deep_warnings = expensive_check()
+        errors.extend(deep_errors)
+        warnings.extend(deep_warnings)
 
     for warning in warnings:
         print(f"WARNING: {warning}")

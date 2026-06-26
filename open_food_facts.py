@@ -13,7 +13,7 @@ import urllib.request
 from dataclasses import dataclass
 from typing import Any
 
-from config import API_TIMEOUT_SEC
+from config import API_TIMEOUT_SEC, LLM_RETRY_ATTEMPTS
 from retry_utils import with_retries
 
 SEARCH_URL = "https://search.openfoodfacts.org/search"
@@ -153,7 +153,7 @@ class OpenFoodFactsClient:
                 return json.loads(response.read().decode("utf-8"))
 
         try:
-            return with_retries(_request, label="open_food_facts", attempts=2)
+            return with_retries(_request, label="open_food_facts", attempts=LLM_RETRY_ATTEMPTS)
         except RuntimeError:
             return None
 

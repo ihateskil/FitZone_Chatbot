@@ -7,7 +7,6 @@ import logging
 import time
 from contextlib import contextmanager
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any, Iterator
 
 from config import LOG_DIR
@@ -41,11 +40,9 @@ def setup_logging(level: int = logging.INFO) -> logging.Logger:
     return logger
 
 
-logger = setup_logging()
-
-
 def log_event(event: str, **fields: Any) -> None:
     """Emit a structured JSON log line."""
+    logger = setup_logging()
     payload = {
         "ts": datetime.now(timezone.utc).isoformat(),
         "event": event,
@@ -57,10 +54,17 @@ def log_event(event: str, **fields: Any) -> None:
 @contextmanager
 def timed_operation(operation: str, **fields: Any) -> Iterator[dict[str, float]]:
     """Context manager that logs operation duration."""
+    logger = setup_logging()
     start = time.perf_counter()
     timing: dict[str, float] = {}
     try:
         yield timing
     finally:
         timing["duration_ms"] = round((time.perf_counter() - start) * 1000, 2)
-        log_event(operation, **fields, **timing)
+        payload = {
+            "ts": datetime.now(timezone.utc).isoformat(),
+            "event": operation,
+            **fields,
+            **timing,
+        }
+        logger.info(json.dumps(payload, default=str))

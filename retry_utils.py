@@ -2,14 +2,22 @@
 
 from __future__ import annotations
 
+import logging
 import time
 from collections.abc import Callable
 from typing import TypeVar
 
 from config import LLM_RETRY_ATTEMPTS, LLM_RETRY_DELAY_SEC
-from logging_utils import logger
+from logging_utils import setup_logging
 
 T = TypeVar("T")
+
+# Transient exceptions worth retrying — NOT programming errors like TypeError.
+RETRYABLE_EXCEPTIONS: tuple[type[Exception], ...] = (
+    ConnectionError,
+    TimeoutError,
+    OSError,
+)
 
 
 def with_retries(
@@ -19,14 +27,14 @@ def with_retries(
     delay_sec: float = LLM_RETRY_DELAY_SEC,
     label: str = "operation",
 ) -> T:
-    """Retry a callable with exponential backoff."""
+    """Retry a callable with linear backoff on transient errors only."""
     last_error: Exception | None = None
     for attempt in range(1, attempts + 1):
         try:
             return fn()
-        except Exception as exc:
+        except RETRYABLE_EXCEPTIONS as exc:
             last_error = exc
-            logger.warning("%s failed (attempt %s/%s): %s", label, attempt, attempts, exc)
+            logging.getLogger("fitzone").warning("%s failed (attempt %s/%s): %s", label, attempt, attempts, exc)
             if attempt < attempts:
                 time.sleep(delay_sec * attempt)
     raise RuntimeError(f"{label} failed after {attempts} attempts") from last_error

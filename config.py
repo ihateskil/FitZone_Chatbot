@@ -9,6 +9,27 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
+def _float_env(name: str, default: float) -> float:
+    raw = os.getenv(name, "")
+    if not raw:
+        return default
+    try:
+        return float(raw)
+    except ValueError:
+        raise ValueError(f"Environment variable {name} must be a number, got: {raw!r}")
+
+
+def _int_env(name: str, default: int) -> int:
+    raw = os.getenv(name, "")
+    if not raw:
+        return default
+    try:
+        return int(raw)
+    except ValueError:
+        raise ValueError(f"Environment variable {name} must be an integer, got: {raw!r}")
+
+
 BASE_DIR = Path(__file__).resolve().parent
 KNOWLEDGE_DB_DIR = BASE_DIR / "Knowledge_db"
 CACHE_DIR = BASE_DIR / ".cache"
@@ -18,22 +39,22 @@ LOG_DIR = BASE_DIR / "logs"
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 GROQ_FAST_MODEL = os.getenv("GROQ_FAST_MODEL", "llama-3.1-8b-instant")
-LLM_TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.4"))
+LLM_TEMPERATURE = _float_env("LLM_TEMPERATURE", 0.4)
 
 # Retrieval
-KNOWLEDGE_MATCH_THRESHOLD = float(os.getenv("KNOWLEDGE_MATCH_THRESHOLD", "0.12"))
-RETRIEVAL_TOP_K = int(os.getenv("RETRIEVAL_TOP_K", "5"))
-MAX_CONTEXT_CHARS = int(os.getenv("MAX_CONTEXT_CHARS", "8000"))
+KNOWLEDGE_MATCH_THRESHOLD = _float_env("KNOWLEDGE_MATCH_THRESHOLD", 0.12)
+RETRIEVAL_TOP_K = _int_env("RETRIEVAL_TOP_K", 5)
+MAX_CONTEXT_CHARS = _int_env("MAX_CONTEXT_CHARS", 8000)
 
 # Chat & input
-MAX_MESSAGE_LENGTH = int(os.getenv("MAX_MESSAGE_LENGTH", "2000"))
-MAX_HISTORY_TURNS = int(os.getenv("MAX_HISTORY_TURNS", "10"))
-RATE_LIMIT_PER_SESSION = int(os.getenv("RATE_LIMIT_PER_SESSION", "30"))
+MAX_MESSAGE_LENGTH = _int_env("MAX_MESSAGE_LENGTH", 2000)
+MAX_HISTORY_TURNS = _int_env("MAX_HISTORY_TURNS", 10)
+RATE_LIMIT_PER_SESSION = _int_env("RATE_LIMIT_PER_SESSION", 30)
 
 # Resilience
-LLM_RETRY_ATTEMPTS = int(os.getenv("LLM_RETRY_ATTEMPTS", "3"))
-LLM_RETRY_DELAY_SEC = float(os.getenv("LLM_RETRY_DELAY_SEC", "1.0"))
-API_TIMEOUT_SEC = float(os.getenv("API_TIMEOUT_SEC", "12.0"))
+LLM_RETRY_ATTEMPTS = _int_env("LLM_RETRY_ATTEMPTS", 3)
+LLM_RETRY_DELAY_SEC = _float_env("LLM_RETRY_DELAY_SEC", 1.0)
+API_TIMEOUT_SEC = _float_env("API_TIMEOUT_SEC", 12.0)
 
 # Copy
 APP_NAME = "FitZone"

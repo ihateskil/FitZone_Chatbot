@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from enum import Enum
+from enum import StrEnum
 
 CRISIS_RESPONSE = """\
 I hear you, and I'm really glad you reached out. What you're describing is beyond what I can support as a fitness coach — but please know that you deserve real help from someone qualified.
@@ -38,23 +38,23 @@ CRISIS_PATTERNS = [
         r"\b(suicid|kill myself|end my life|want to die|self[- ]?harm)\b",
         r"\b(chest pain|heart attack|can'?t breathe|stroke|seizure)\b",
         r"\b(overdose|took too many pills)\b",
-        r"\b(eating disorder|anorexi|bulimi|purging)\b.*\b(severe|hospital|dying)\b",
+        r"\b(eating disorder|anorexi[ac]|bulimi[ac]|purging)\b.{0,60}\b(severe|hospital|dying)\b",
     )
 ]
 
-MEDICAL_BLOCK_PATTERNS = [
+MEDICAL_BOUND_PATTERNS = [
     re.compile(p, re.IGNORECASE)
     for p in (
         r"\b(diagnos(e|is|ing)|what (disease|condition|illness) do i have)\b",
-        r"\b(should i (take|stop)|prescrib(e|ed|ing)|dosage of)\b.*\b(medication|medicine|drug|antibiotic|insulin|steroid)\b",
-        r"\b(interact(s|ion)? with)\b.*\b(medication|medicine|drug)\b",
+        r"\b(should i (take|stop)|prescrib(e|ed|ing)|dosage of)\b.{0,60}\b(medication|medicine|drug|antibiotic|insulin|steroid)\b",
+        r"\b(interact(s|ion)? with)\b.{0,60}\b(medication|medicine|drug)\b",
         r"\b(am i (sick|ill)|do i have (cancer|diabetes|covid))\b",
         r"\b(symptom(s)?).{0,40}\b(cancer|tumor|blood pressure|diabetes)\b",
     )
 ]
 
 
-class SafetyLevel(str, Enum):
+class SafetyLevel(StrEnum):
     OK = "ok"
     CRISIS = "crisis"
     MEDICAL_BOUNDARY = "medical_boundary"
@@ -76,7 +76,7 @@ def check_safety(user_message: str) -> SafetyCheck:
         if pattern.search(text):
             return SafetyCheck(SafetyLevel.CRISIS, CRISIS_RESPONSE)
 
-    for pattern in MEDICAL_BLOCK_PATTERNS:
+    for pattern in MEDICAL_BOUND_PATTERNS:
         if pattern.search(text):
             return SafetyCheck(SafetyLevel.MEDICAL_BOUNDARY, MEDICAL_BOUNDARY_RESPONSE)
 

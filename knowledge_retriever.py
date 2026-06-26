@@ -4,9 +4,12 @@ Knowledge base retriever — PDF books and gym_calculations.txt from Knowledge_d
 
 from __future__ import annotations
 
+import hashlib
 import json
 import math
+import os
 import re
+import tempfile
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -33,6 +36,15 @@ class DocumentChunk:
 
 def _tokenize(text: str) -> list[str]:
     return TOKEN_PATTERN.findall(text.lower())
+
+
+def _file_hash(path: Path) -> str:
+    """SHA-256 of file contents for deduplication."""
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 class KnowledgeRetriever:
@@ -113,10 +125,16 @@ class KnowledgeRetriever:
                 for chunk in self._chunks
             ],
         }
-        self._cache_path.write_text(
-            json.dumps(payload, ensure_ascii=False),
-            encoding="utf-8",
+        # Atomic write: write to temp file then rename to avoid corruption
+        data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        fd, tmp_path = tempfile.mkstemp(
+            dir=self._cache_path.parent, suffix=".tmp"
         )
+        try:
+            os.write(fd, data)
+        finally:
+            os.close(fd)
+        os.replace(tmp_path, self._cache_path)
 
     def _ingest_gym_calculations(self) -> None:
         gym_path = self.knowledge_dir / GYM_CALCULATIONS_FILE
@@ -130,7 +148,13 @@ class KnowledgeRetriever:
             )
 
     def _ingest_pdfs(self) -> None:
+        seen_hashes: set[str] = set()
         for pdf_path in sorted(self.knowledge_dir.glob("*.pdf")):
+            file_hash = _file_hash(pdf_path)
+            if file_hash in seen_hashes:
+                continue
+            seen_hashes.add(file_hash)
+
             source_name = pdf_path.name
             for chunk_text in _extract_pdf_chunks(pdf_path):
                 self._chunks.append(
@@ -203,7 +227,7 @@ def _split_gym_blocks(text: str) -> Iterable[str]:
             yield "\n".join(current).strip()
             current = []
         elif line.strip():
-            current.append(line)
+            current.append(line.rstrip())
     if current:
         yield "\n".join(current).strip()
 

@@ -132,7 +132,10 @@ class IntentRouter:
             return "OUT_OF_SCOPE"
         if tokens & cls.FITNESS_KEYWORDS:
             return "IN_SCOPE"
-        # Treat greetings/pleasantries as in-scope so the coach can respond naturally
+        # Short greetings/pleasantries (< 3 tokens, all greeting) — skip LLM
+        if len(tokens) < 3 and tokens & cls.GREETING_KEYWORDS and not (tokens & cls.OUT_OF_SCOPE_KEYWORDS):
+            return "IN_SCOPE"
+        # Longer queries with greeting mixed in — fall through to LLM
         if tokens & cls.GREETING_KEYWORDS and not (tokens & cls.OUT_OF_SCOPE_KEYWORDS):
             return "IN_SCOPE"
         return None
@@ -194,7 +197,8 @@ class FitnessAgent:
     def _truncate_context(context: str) -> str:
         if len(context) <= MAX_CONTEXT_CHARS:
             return context
-        return context[:MAX_CONTEXT_CHARS].rsplit("\n", 1)[0]
+        truncated = context[:MAX_CONTEXT_CHARS].rsplit("\n", 1)[0]
+        return truncated + "\n[…]"
 
     def _build_context(self, user_query: str) -> tuple[str, float]:
         knowledge_future = self._pool.submit(self._knowledge.retrieve, user_query)
@@ -205,9 +209,8 @@ class FitnessAgent:
         sections: list[str] = []
 
         knowledge_context, knowledge_score = knowledge_future.result()
-        if knowledge_score >= KNOWLEDGE_MATCH_THRESHOLD or (
-            "No directly matching" not in knowledge_context
-        ):
+        # Only inject knowledge if it meets the similarity threshold
+        if knowledge_score >= KNOWLEDGE_MATCH_THRESHOLD:
             sections.append(f"[TRAINING & SCIENCE NOTES]\n{knowledge_context}")
 
         if food_future is not None:
@@ -334,14 +337,19 @@ class FitnessAgent:
         context, _ = self._build_context(query)
         messages = self._build_messages(query, context, history)
 
+        stream_completed = False
         try:
             for chunk in self._get_llm().stream(messages):
                 content = chunk.content
                 if content:
                     yield content
+            stream_completed = True
         except Exception as exc:
             log_event("stream_error", error=str(exc))
             yield "I'm having trouble connecting right now. Please try again in a moment."
+        finally:
+            if not stream_completed:
+                log_event("stream_incomplete", query_len=len(query))
 
 
 def _elapsed_ms(start: float) -> float:

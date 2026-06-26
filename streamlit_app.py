@@ -13,7 +13,7 @@ import streamlit as st
 
 from config import APP_NAME, DISCLAIMER, GROQ_API_KEY, RATE_LIMIT_PER_SESSION
 from fitness_agent import ChatTurn, stream_agent, warmup_agent
-from logging_utils import setup_logging
+from logging_utils import log_event, setup_logging
 
 setup_logging()
 
@@ -126,7 +126,8 @@ def main() -> None:
             try:
                 response = st.write_stream(stream_agent(prompt, history=history))
             except Exception as exc:
-                response = f"Something went wrong. Please try again. ({exc})"
+                log_event("stream_error", error=str(exc))
+                response = "Something went wrong. Please try again in a moment."
                 st.markdown(response)
 
             latency_ms = (time.perf_counter() - start) * 1000
