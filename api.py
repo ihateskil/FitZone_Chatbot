@@ -59,21 +59,22 @@ async def lifespan(app: FastAPI):
 
     if not GROQ_API_KEY:
         app.state.startup_error = "GROQ_API_KEY is not configured."
-        # Fail fast — never serve traffic without a working LLM.
-        raise RuntimeError(app.state.startup_error)
+        # Don't crash — let /health report the error and /chat return 503.
+        yield
+        return
 
     fitzone_api_key = os.getenv("FITZONE_API_KEY", "")
     if not fitzone_api_key or len(fitzone_api_key) < 16:
         app.state.startup_error = (
             "FITZONE_API_KEY is not configured or is too short (min 16 chars)."
         )
-        raise RuntimeError(app.state.startup_error)
+        yield
+        return
 
     try:
         warmup_agent()
     except Exception as exc:  # pragma: no cover - startup safety
         app.state.startup_error = str(exc)
-        # Let lifespan yield so /health can fail, but /chat will 503 via _require_ready.
         yield
         return
 
@@ -168,4 +169,3 @@ def chat_stream(
             yield chunk
 
     return StreamingResponse(_generate(), media_type="text/event-stream; charset=utf-8")
-    disclaimer: str = DISCLAIMER
