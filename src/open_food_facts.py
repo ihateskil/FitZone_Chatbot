@@ -13,8 +13,8 @@ import urllib.request
 from dataclasses import dataclass
 from typing import Any
 
-from config import API_TIMEOUT_SEC, LLM_RETRY_ATTEMPTS
-from retry_utils import with_retries
+from src.config import API_TIMEOUT_SEC, LLM_RETRY_ATTEMPTS
+from src.retry_utils import with_retries
 
 SEARCH_URL = "https://search.openfoodfacts.org/search"
 LEGACY_SEARCH_URL = "https://world.openfoodfacts.org/cgi/search.pl"

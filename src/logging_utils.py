@@ -9,7 +9,7 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from typing import Any, Iterator
 
-from config import LOG_DIR
+from src.config import LOG_DIR
 
 _LOG_CONFIGURED = False
 

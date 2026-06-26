@@ -11,9 +11,9 @@ import time
 
 import streamlit as st
 
-from config import APP_NAME, DISCLAIMER, GROQ_API_KEY, RATE_LIMIT_PER_SESSION
-from fitness_agent import ChatTurn, stream_agent, warmup_agent
-from logging_utils import log_event, setup_logging
+from src.config import APP_NAME, DISCLAIMER, GROQ_API_KEY, RATE_LIMIT_PER_SESSION
+from src.fitness_agent import ChatTurn, stream_agent, warmup_agent
+from src.logging_utils import log_event, setup_logging
 
 setup_logging()
 

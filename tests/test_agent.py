@@ -1,6 +1,6 @@
 """Tests for intent router heuristics."""
 
-from fitness_agent import IntentRouter, _sanitize_reference_context
+from src.fitness_agent import IntentRouter, _sanitize_reference_context
 
 
 def test_out_of_scope_heuristic():

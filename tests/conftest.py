@@ -8,7 +8,7 @@ from types import SimpleNamespace
 import pytest
 from fastapi.testclient import TestClient
 
-import api
+import src.api as api
 
 
 @pytest.fixture(autouse=True)

@@ -31,7 +31,7 @@ def _int_env(name: str, default: int) -> int:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-KNOWLEDGE_DB_DIR = BASE_DIR / "Knowledge_db"
+KNOWLEDGE_DB_DIR = BASE_DIR / "knowledge"
 CACHE_DIR = BASE_DIR / ".cache"
 LOG_DIR = BASE_DIR / "logs"
 

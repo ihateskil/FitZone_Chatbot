@@ -11,9 +11,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
-from config import APP_NAME, DISCLAIMER, GROQ_API_KEY
-from fitness_agent import ChatTurn, run_agent_full, stream_agent, warmup_agent
-from logging_utils import setup_logging
+from src.config import APP_NAME, DISCLAIMER, GROQ_API_KEY
+from src.fitness_agent import ChatTurn, run_agent_full, stream_agent, warmup_agent
+from src.logging_utils import setup_logging
 
 setup_logging()
 

@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable
 
-from config import CACHE_DIR
+from src.config import CACHE_DIR
 from pypdf import PdfReader
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9]+")

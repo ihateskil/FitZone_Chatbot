@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-from config import MAX_MESSAGE_LENGTH
+from src.config import MAX_MESSAGE_LENGTH
 
 INJECTION_PATTERNS = [
     re.compile(p, re.IGNORECASE)

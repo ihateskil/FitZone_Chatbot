@@ -9,8 +9,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
-from config import CACHE_DIR, KNOWLEDGE_DB_DIR  # noqa: E402
-from knowledge_retriever import KnowledgeRetriever  # noqa: E402
+from src.config import CACHE_DIR, KNOWLEDGE_DB_DIR  # noqa: E402
+from src.knowledge_retriever import KnowledgeRetriever  # noqa: E402
 
 
 def main() -> int:

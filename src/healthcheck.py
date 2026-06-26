@@ -14,7 +14,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
-from config import CACHE_DIR, GROQ_API_KEY, KNOWLEDGE_DB_DIR  # noqa: E402
+from src.config import CACHE_DIR, GROQ_API_KEY, KNOWLEDGE_DB_DIR  # noqa: E402
 
 
 def cheap_check() -> tuple[list[str], list[str]]:
@@ -50,7 +50,7 @@ def expensive_check() -> tuple[list[str], list[str]]:
     warnings: list[str] = []
 
     try:
-        from fitness_agent import warmup_agent
+        from src.fitness_agent import warmup_agent
 
         agent = warmup_agent()
         print(f"Agent loaded: {len(agent._knowledge._chunks)} knowledge chunks")

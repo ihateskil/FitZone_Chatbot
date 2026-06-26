@@ -14,7 +14,7 @@ from typing import Literal
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_groq import ChatGroq
 
-from config import (
+from src.config import (
     AGENT_SYSTEM_PROMPT,
     GROQ_FAST_MODEL,
     GROQ_MODEL,
@@ -27,12 +27,12 @@ from config import (
     OUT_OF_SCOPE_RESPONSE,
     RETRIEVAL_TOP_K,
 )
-from input_validation import ValidationResult, validate_user_input
-from knowledge_retriever import KnowledgeRetriever
-from logging_utils import log_event, timed_operation
-from open_food_facts import OpenFoodFactsClient
-from retry_utils import with_retries
-from safety import SafetyCheck, SafetyLevel, check_safety
+from src.input_validation import ValidationResult, validate_user_input
+from src.knowledge_retriever import KnowledgeRetriever
+from src.logging_utils import log_event, timed_operation
+from src.open_food_facts import OpenFoodFactsClient
+from src.retry_utils import with_retries
+from src.safety import SafetyCheck, SafetyLevel, check_safety
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9]+")
 SOURCE_TAG_PATTERN = re.compile(r"^\[Source:[^\]]+\]\s*\n?", re.MULTILINE)

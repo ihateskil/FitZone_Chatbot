@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from fastapi.testclient import TestClient
 
-import api
+import src.api as api
 
 
 def test_health_reports_ready(client):

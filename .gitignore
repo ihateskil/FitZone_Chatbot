@@ -1,5 +1,6 @@
 .env
-Knowledge_db/The Ultimate Push Pull Legs System 6X*.pdf
+knowledge/*.pdf
+knowledge/gym_calculations.txt
 .cache/
 logs/
 __pycache__/

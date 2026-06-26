@@ -7,8 +7,8 @@ import time
 from collections.abc import Callable
 from typing import TypeVar
 
-from config import LLM_RETRY_ATTEMPTS, LLM_RETRY_DELAY_SEC
-from logging_utils import setup_logging
+from src.config import LLM_RETRY_ATTEMPTS, LLM_RETRY_DELAY_SEC
+from src.logging_utils import setup_logging
 
 T = TypeVar("T")
 

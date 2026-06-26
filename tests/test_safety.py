@@ -1,6 +1,6 @@
 """Tests for safety guardrails."""
 
-from safety import SafetyLevel, check_safety
+from src.safety import SafetyLevel, check_safety
 
 
 def test_crisis_blocks_self_harm():

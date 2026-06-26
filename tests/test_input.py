@@ -2,7 +2,7 @@
 
 import pytest
 
-from input_validation import validate_user_input
+from src.input_validation import validate_user_input
 
 
 def test_rejects_empty_input():
