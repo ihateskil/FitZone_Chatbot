@@ -7,6 +7,7 @@ from contextlib import asynccontextmanager
 from collections.abc import Iterator
 
 from fastapi import Depends, FastAPI, Header, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
@@ -85,6 +86,15 @@ app = FastAPI(
     version="1.0.0",
     description="FitZone fitness and nutrition assistant API.",
     lifespan=lifespan,
+)
+
+# Allow the React dev server (localhost) and HF Spaces to call the API.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
