@@ -28,15 +28,6 @@ class ChatRequest(BaseModel):
     history: list[ChatMessage] = Field(default_factory=list, max_length=20)
 
 
-def _require_ready(app: FastAPI) -> None:
-    """Raise 503 if the agent failed to warm up."""
-    if not getattr(app.state, "ready", False):
-        raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail=getattr(app.state, "startup_error", "Service is not ready."),
-        )
-
-
 def _verify_api_key(x_api_key: str | None = Header(default=None)) -> None:
     fitzone_api_key = os.getenv("FITZONE_API_KEY", "")
 
@@ -59,26 +50,19 @@ async def lifespan(app: FastAPI):
 
     if not GROQ_API_KEY:
         app.state.startup_error = "GROQ_API_KEY is not configured."
-        # Don't crash — let /health report the error and /chat return 503.
-        yield
-        return
+    else:
+        fitzone_api_key = os.getenv("FITZONE_API_KEY", "")
+        if not fitzone_api_key or len(fitzone_api_key) < 16:
+            app.state.startup_error = (
+                "FITZONE_API_KEY is not configured or is too short (min 16 chars)."
+            )
+        else:
+            try:
+                warmup_agent()
+                app.state.ready = True
+            except Exception as exc:  # pragma: no cover - startup safety
+                app.state.startup_error = str(exc)
 
-    fitzone_api_key = os.getenv("FITZONE_API_KEY", "")
-    if not fitzone_api_key or len(fitzone_api_key) < 16:
-        app.state.startup_error = (
-            "FITZONE_API_KEY is not configured or is too short (min 16 chars)."
-        )
-        yield
-        return
-
-    try:
-        warmup_agent()
-    except Exception as exc:  # pragma: no cover - startup safety
-        app.state.startup_error = str(exc)
-        yield
-        return
-
-    app.state.ready = True
     yield
 
 
@@ -137,13 +121,22 @@ class ChatResponse(BaseModel):
     in_scope: bool = True
 
 
+def _get_ready_app() -> FastAPI:
+    """Dependency that returns the app and verifies readiness."""
+    if not getattr(app.state, "ready", False):
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=getattr(app.state, "startup_error", "Service is not ready."),
+        )
+    return app
+
+
 @app.post("/v1/chat", response_model=ChatResponse)
 def chat(
     payload: ChatRequest,
     _: None = Depends(_verify_api_key),
-    app: FastAPI = Depends(lambda: app),
+    _app: FastAPI = Depends(_get_ready_app),
 ) -> ChatResponse:
-    _require_ready(app)
     history = [ChatTurn(role=turn.role, content=turn.content) for turn in payload.history]
     response = run_agent_full(payload.message, history=history)
     return ChatResponse(
@@ -159,13 +152,15 @@ def chat(
 def chat_stream(
     payload: ChatRequest,
     _: None = Depends(_verify_api_key),
-    app: FastAPI = Depends(lambda: app),
+    _app: FastAPI = Depends(_get_ready_app),
 ) -> StreamingResponse:
-    _require_ready(app)
     history = [ChatTurn(role=turn.role, content=turn.content) for turn in payload.history]
+    return StreamingResponse(
+        _stream_chunks(payload.message, history),
+        media_type="text/event-stream; charset=utf-8",
+    )
 
-    def _generate() -> Iterator[str]:
-        for chunk in stream_agent(payload.message, history=history):
-            yield chunk
 
-    return StreamingResponse(_generate(), media_type="text/event-stream; charset=utf-8")
+def _stream_chunks(message: str, history: list[ChatTurn]) -> Iterator[str]:
+    for chunk in stream_agent(message, history=history):
+        yield chunk
