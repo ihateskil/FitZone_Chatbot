@@ -16,9 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src/
 COPY knowledge/ ./knowledge/
 COPY scripts/ ./scripts/
+COPY .cache/ ./.cache/
 
-# Build the knowledge index at image build time so startup is instant
-RUN python scripts/rebuild_knowledge.py
+# Knowledge index (.cache/knowledge_chunks.json) is shipped directly in the repository
 
 EXPOSE 7860
 

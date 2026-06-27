@@ -105,9 +105,6 @@ class KnowledgeRetriever:
         except (json.JSONDecodeError, OSError):
             return None
 
-        if payload.get("fingerprint") != self._source_fingerprint():
-            return None
-
         return [
             DocumentChunk(source=item["source"], text=item["text"])
             for item in payload.get("chunks", [])

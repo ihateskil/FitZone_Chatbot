@@ -1,8 +1,7 @@
 # Environment
 .env
 
-# Cached knowledge index
-.cache/
+# Removed .cache/ ignore because we ship the pre-built index
 
 # Logs
 logs/
