@@ -2,7 +2,7 @@
 title: FitZone Chatbot
 emoji: 💪
 colorFrom: green
-colorTo: black
+colorTo: gray
 sdk: docker
 app_file: src/api.py
 pinned: false
