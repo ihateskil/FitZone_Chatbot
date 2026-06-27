@@ -2,7 +2,7 @@
 """Verify FitZone Chatbot environment and dependencies.
 
 Provides two levels of checks:
-  - Cheap: env vars + filesystem only (used by /health on Render)
+  -Cheap: env vars + filesystem only (used by /health endpoint)
   - Expensive: full agent warmup with Groq call (used by /ready)
 """
 
@@ -11,8 +11,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE_DIR))
+BASE_DIR = Path(__file__).resolve().parent.parent  # project root
+sys.path.insert(0, str(BASE_DIR))  # add project root to path
 
 from src.config import CACHE_DIR, GROQ_API_KEY, KNOWLEDGE_DB_DIR  # noqa: E402
 

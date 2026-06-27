@@ -30,7 +30,7 @@ def _int_env(name: str, default: int) -> int:
         raise ValueError(f"Environment variable {name} must be an integer, got: {raw!r}")
 
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent  # project root
 KNOWLEDGE_DB_DIR = BASE_DIR / "knowledge"
 CACHE_DIR = BASE_DIR / ".cache"
 LOG_DIR = BASE_DIR / "logs"
