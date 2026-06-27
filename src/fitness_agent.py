@@ -11,6 +11,8 @@ from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from typing import Literal
 
+# Note: re is imported once here; _re alias removed from line ~98
+
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 from langchain_groq import ChatGroq
 
@@ -33,6 +35,16 @@ from src.logging_utils import log_event, timed_operation
 from src.open_food_facts import OpenFoodFactsClient
 from src.retry_utils import with_retries
 from src.safety import SafetyCheck, SafetyLevel, check_safety
+from src.lift_parser import LiftParser, is_lift_log
+from src.session_store import SessionStore
+from src.progressor import recommend_progression, volume_load
+from src.formula_registry import SCIENCE_MODE_PROMPT_ADDITION, COACH_MODE_PROMPT_ADDITION
+from src.recovery import recovery_context_for_agent
+from src.personality import get_personality_prompt
+from src.intent_router import get_intent_router, route_query
+from src.nutrition_retriever import get_nutrition_retriever
+from src.formula_calculator import get_formula_calculator
+from src.exercise_retriever import get_exercise_retriever
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9]+")
 SOURCE_TAG_PATTERN = re.compile(r"^\[Source:[^\]]+\]\s*\n?", re.MULTILINE)
@@ -53,6 +65,10 @@ class AgentResponse:
     block_reason: str | None = None
     latency_ms: float = 0.0
     in_scope: bool = True
+    lift_logged: bool = False
+    progression_hint: str | None = None
+    science_mode: bool = False
+    personality: str = "coach"
 
 
 def _sanitize_reference_context(context: str) -> str:
@@ -74,6 +90,66 @@ def _truncate_history(history: list[ChatTurn]) -> list[ChatTurn]:
         return history
     return history[-(MAX_HISTORY_TURNS * 2) :]
 
+
+
+
+# ---------------------------------------------------------------------------
+# User Profile Extraction from Conversation
+# ---------------------------------------------------------------------------
+
+_WEIGHT_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:kg|kgs|lbs?|pounds?)", re.IGNORECASE)
+_HEIGHT_CM_RE = re.compile(r"(\d{2,3})\s*(?:cm|centimeter)", re.IGNORECASE)
+_HEIGHT_FT_RE = re.compile(r"(\d)'\s*(\d{1,2})", re.IGNORECASE)
+_AGE_RE = re.compile(r"(\d{1,2})\s*(?:years?\s*old|yr|yo)", re.IGNORECASE)
+_GENDER_RE = re.compile(r"\b(male|female|man|woman|guy|girl|boy)\b", re.IGNORECASE)
+_BODYFAT_RE = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*(?:body\s*fat|bf|bodyfat)", re.IGNORECASE)
+_GOAL_RE = re.compile(r"\b(bulking?|cutting?|lean\s*bulk|recomp|maintain|lose\s*weight|build\s*muscle|gain\s*muscle|shred|get\s*stronger|hypertrophy|strength)\b", re.IGNORECASE)
+
+
+def _extract_user_profile(history: list[ChatTurn]) -> dict[str, str]:
+    """Extract key user metrics from conversation history for context injection."""
+    if not history:
+        return {}
+    
+    text = " ".join(t.content for t in history if t.role == "user")
+    profile: dict[str, str] = {}
+    
+    m = _WEIGHT_RE.search(text)
+    if m:
+        val = float(m.group(1))
+        unit = "kg" if "kg" in m.group(0).lower() else "lbs"
+        profile["weight"] = f"{val} {unit}"
+    
+    m = _HEIGHT_CM_RE.search(text)
+    if m:
+        profile["height"] = f"{m.group(1)} cm"
+    
+    m = _HEIGHT_FT_RE.search(text)
+    if m:
+        feet, inches = int(m.group(1)), int(m.group(2))
+        profile["height"] = f"{feet}'{inches}\" ({round(feet*30.48 + inches*2.54)} cm)"
+    
+    m = _AGE_RE.search(text)
+    if m:
+        profile["age"] = f"{m.group(1)} years"
+    
+    m = _GENDER_RE.search(text)
+    if m:
+        g = m.group(1).lower()
+        if g in ("male", "man", "guy", "boy"):
+            profile["gender"] = "male"
+        elif g in ("female", "woman", "girl"):
+            profile["gender"] = "female"
+    
+    m = _BODYFAT_RE.search(text)
+    if m:
+        profile["body_fat"] = f"{m.group(1)}%"
+    
+    m = _GOAL_RE.search(text)
+    if m:
+        profile["goal"] = m.group(1)
+    
+    return profile
 
 # ---------------------------------------------------------------------------
 # Intent router
@@ -186,7 +262,11 @@ class FitnessAgent:
         self._router = IntentRouter(model=fast_model)
         self._knowledge = KnowledgeRetriever(KNOWLEDGE_DB_DIR, top_k=top_k)
         self._food_client = OpenFoodFactsClient()
+        self._session_store = SessionStore()
         self._pool = ThreadPoolExecutor(max_workers=2)
+        self._nutrition = get_nutrition_retriever()
+        self._formula_calc = get_formula_calculator()
+        self._exercises = get_exercise_retriever()
 
     def _get_llm(self) -> ChatGroq:
         if self._llm is None:
@@ -200,10 +280,12 @@ class FitnessAgent:
         truncated = context[:MAX_CONTEXT_CHARS].rsplit("\n", 1)[0]
         return truncated + "\n[…]"
 
-    def _build_context(self, user_query: str) -> tuple[str, float]:
+    def _build_context(self, user_query: str, session_id: str = "default") -> tuple[str, float]:
         knowledge_future = self._pool.submit(self._knowledge.retrieve, user_query)
         food_future = None
-        if self._food_client.is_food_query(user_query):
+        # Use domain routing to decide which retrievers to invoke
+        route_result = route_query(user_query)
+        if route_result.domain in ("nutrition_lookup", "general_fitness"):
             food_future = self._pool.submit(self._food_client.retrieve_context, user_query)
 
         sections: list[str] = []
@@ -218,16 +300,102 @@ class FitnessAgent:
             if food_found:
                 sections.append(f"[NUTRITION DATA]\n{food_context}")
 
+        # Add nutrition knowledge base context
+        nutrition_context = self._nutrition.format_for_llm(
+            self._nutrition.search(user_query, top_k=3)
+        )
+        if nutrition_context:
+            sections.append(nutrition_context)
+
+        # Inject formula context for calculation queries
+        if route_result.domain == "calculation":
+            formula_ctx = self._build_formula_context(user_query)
+            if formula_ctx:
+                sections.append(formula_ctx)
+
+        # Inject exercise context for exercise lookup queries
+        if route_result.domain == "exercise_lookup":
+            exercise_ctx = self._build_exercise_context(user_query)
+            if exercise_ctx:
+                sections.append(exercise_ctx)
+
+        # Inject recovery/fatigue context if session has lifts (must happen BEFORE building combined)
+        try:
+            recovery_ctx = recovery_context_for_agent(self._session_store, session_id)
+            if recovery_ctx:
+                sections.append(f"[RECOVERY]\n{recovery_ctx}")
+        except Exception:
+            pass  # Recovery context is optional
+
         combined = "\n\n---\n\n".join(sections) if sections else ""
         return self._truncate_context(_sanitize_reference_context(combined)), knowledge_score
+
+    def _build_exercise_context(self, user_query: str) -> str | None:
+        """Build exercise context for exercise lookup queries."""
+        results = self._exercises.search(user_query, top_k=5)
+        if not results:
+            return None
+        return self._exercises.format_for_llm(results)
+
+    def _build_formula_context(self, user_query: str) -> str | None:
+        """Build formula context for calculation queries."""
+        import re
+        # Try to extract numbers from the query
+        numbers = [float(m) for m in re.findall(r"\d+\.?\d*", user_query)]
+        if not numbers:
+            return None
+
+        # Determine which formula to use based on keywords
+        q = user_query.lower()
+        context_parts = []
+
+        if any(w in q for w in ["bmr", "metabolic", "metabolism"]):
+            context_parts.append("Available BMR formulas: Mifflin-St Jeor (most accurate), Katch-McArdle (if BF% known), Harris-Benedict (legacy)")
+            context_parts.append("Mifflin-St Jeor Men: BMR = (10 x weight_kg) + (6.25 x height_cm) - (5 x age) + 5")
+            context_parts.append("Mifflin-St Jeor Women: BMR = (10 x weight_kg) + (6.25 x height_cm) - (5 x age) - 161")
+
+        if any(w in q for w in ["tdee", "calorie", "calories", "maintenance"]):
+            context_parts.append("TDEE = BMR x Activity Multiplier")
+            context_parts.append("Multipliers: Sedentary=1.2, Light=1.375, Moderate=1.55, Very=1.725, Extreme=1.9")
+
+        if any(w in q for w in ["1rm", "one rep", "one-rep", "max"]):
+            context_parts.append("1RM formulas: Brzycki (preferred), Epley, Lander")
+            context_parts.append("Brzycki: 1RM = weight / (1.0278 - 0.0278 x reps)")
+            context_parts.append("Epley: 1RM = weight x (1 + reps/30)")
+
+        if any(w in q for w in ["body fat", "bf%", "bodyfat"]):
+            context_parts.append("Navy Body Fat Formula requires: waist_cm, neck_cm, height_cm (+ hip_cm for women)")
+
+        if any(w in q for w in ["protein"]):
+            context_parts.append("Protein targets: General health=0.8g/kg, Endurance=1.2-1.4g/kg, Muscle building=1.6-2.2g/kg, Cutting=2.0-2.4g/kg")
+
+        if context_parts:
+            return "[FORMULA REFERENCE]\n" + "\n".join(context_parts)
+        return None
 
     def _build_messages(
         self,
         user_query: str,
         context: str,
         history: list[ChatTurn],
+        science_mode: bool = False,
+        personality: str = "coach",
     ) -> list[BaseMessage]:
-        messages: list[BaseMessage] = [SystemMessage(content=AGENT_SYSTEM_PROMPT.strip())]
+        system_prompt = AGENT_SYSTEM_PROMPT.strip()
+        # Apply personality mode
+        system_prompt += get_personality_prompt(personality)
+        # Apply science/coach mode
+        if science_mode:
+            system_prompt += SCIENCE_MODE_PROMPT_ADDITION
+        else:
+            system_prompt += COACH_MODE_PROMPT_ADDITION
+        # Inject user profile into system prompt if available
+        user_profile = _extract_user_profile(history)
+        if user_profile:
+            profile_lines = [f"- **{k.replace('_', ' ').title()}**: {v}" for k, v in user_profile.items()]
+            system_prompt += "\n\n## User Profile (extracted from conversation)\n" + "\n".join(profile_lines) + "\n(Use these details in calculations and recommendations.)"
+
+        messages: list[BaseMessage] = [SystemMessage(content=system_prompt)]
 
         for turn in _truncate_history(history):
             if turn.role == "user":
@@ -259,7 +427,47 @@ class FitnessAgent:
         safety = check_safety(validation.cleaned)
         return validation, safety
 
-    def run(self, user_query: str, history: list[ChatTurn] | None = None) -> AgentResponse:
+    def _process_lift_log(
+        self,
+        user_query: str,
+        session_id: str = "default",
+    ) -> tuple[list, str | None]:
+        """Detect lift logs, store them, and build progression context.
+
+        Returns:
+            (parsed_lifts, progression_context) - parsed lifts and optional
+            progression recommendation text for context injection.
+        """
+        if not is_lift_log(user_query):
+            return [], None
+
+        parsed = LiftParser.parse(user_query)
+        if not parsed:
+            return [], None
+
+        # Log the lifts
+        self._session_store.log_lifts(session_id, parsed)
+
+        # Build progression context for each exercise
+        progression_parts: list[str] = []
+        for lift in parsed:
+            history = self._session_store.get_exercise_history(session_id, lift.exercise)
+            if history:
+                last_entry = history[-1]
+                last_sets = last_entry.get("sets", [])
+                rec = recommend_progression(lift.exercise, last_sets)
+                progression_parts.append(
+                    f"[PROGRESSION DATA for {rec.exercise}]\n"
+                    f"Estimated 1RM: {rec.current_1rm}\n"
+                    f"IRV: {rec.irv} ({rec.irv_status})\n"
+                    f"Next session recommendation: {rec.recommended_weight} x {rec.recommended_reps} x {rec.recommended_sets}\n"
+                    f"Reasoning: {rec.reasoning}"
+                )
+
+        progression_ctx = "\n\n".join(progression_parts) if progression_parts else None
+        return parsed, progression_ctx
+
+    def run(self, user_query: str, history: list[ChatTurn] | None = None, science_mode: bool = False, personality: str = "coach") -> AgentResponse:
         start = time.perf_counter()
         history = history or []
 
@@ -288,11 +496,27 @@ class FitnessAgent:
                 latency_ms=_elapsed_ms(start),
             )
 
+        # Detect and process lift logs
+        lift_logged = False
+        progression_hint = None
+        session_id = "default"  # Could be extracted from metadata in future
+        parsed_lifts, progression_ctx = self._process_lift_log(query, session_id)
+        if parsed_lifts:
+            lift_logged = True
+            progression_hint = progression_ctx
+
         with timed_operation("build_context", query_len=len(query)) as timing:
-            context, score = self._build_context(query)
+            context, score = self._build_context(query, session_id=session_id)
             timing["knowledge_score"] = score
 
-        messages = self._build_messages(query, context, history)
+        # Append progression context if available
+        if progression_ctx:
+            if context:
+                context = context + "\n\n---\n\n" + progression_ctx
+            else:
+                context = progression_ctx
+
+        messages = self._build_messages(query, context, history, science_mode=science_mode, personality=personality)
 
         def _generate() -> str:
             response = self._get_llm().invoke(messages)
@@ -312,11 +536,16 @@ class FitnessAgent:
             )
 
         latency = _elapsed_ms(start)
-        log_event("agent_response", query_len=len(query), latency_ms=latency, in_scope=True)
-        return AgentResponse(text=text, latency_ms=latency)
+        log_event("agent_response", query_len=len(query), latency_ms=latency, in_scope=True, lift_logged=lift_logged)
+        return AgentResponse(text=text, latency_ms=latency, lift_logged=lift_logged, progression_hint=progression_hint, science_mode=science_mode)
 
     def stream(
-        self, user_query: str, history: list[ChatTurn] | None = None
+        self,
+        user_query: str,
+        history: list[ChatTurn] | None = None,
+        science_mode: bool = False,
+        personality: str = "coach",
+        session_id: str = "default",
     ) -> Iterator[str]:
         """Stream response tokens. Yields full text on early blocks/errors."""
         history = history or []
@@ -334,8 +563,20 @@ class FitnessAgent:
             yield OUT_OF_SCOPE_RESPONSE
             return
 
-        context, _ = self._build_context(query)
-        messages = self._build_messages(query, context, history)
+        # Detect and process lift logs — mirrors run() so streaming also records workouts
+        parsed_lifts, progression_ctx = self._process_lift_log(query, session_id)
+        context, _ = self._build_context(query, session_id=session_id)
+
+        # Append progression context if a lift was just logged
+        if progression_ctx:
+            context = (context + "\n\n---\n\n" + progression_ctx) if context else progression_ctx
+
+        messages = self._build_messages(
+            query, context, history, science_mode=science_mode, personality=personality
+        )
+
+        if parsed_lifts:
+            log_event("lift_logged_stream", count=len(parsed_lifts), session_id=session_id)
 
         stream_completed = False
         try:
@@ -377,20 +618,33 @@ def warmup_agent() -> FitnessAgent:
 def run_agent(
     user_query: str,
     history: list[ChatTurn] | None = None,
+    science_mode: bool = False,
+    personality: str = "coach",
 ) -> str:
     """Convenience wrapper returning plain text (backward compatible)."""
-    return get_agent().run(user_query, history=history).text
+    return get_agent().run(user_query, history=history, science_mode=science_mode, personality=personality).text
 
 
 def run_agent_full(
     user_query: str,
     history: list[ChatTurn] | None = None,
+    science_mode: bool = False,
+    personality: str = "coach",
 ) -> AgentResponse:
-    return get_agent().run(user_query, history=history)
+    return get_agent().run(user_query, history=history, science_mode=science_mode, personality=personality)
 
 
 def stream_agent(
     user_query: str,
     history: list[ChatTurn] | None = None,
+    science_mode: bool = False,
+    personality: str = "coach",
+    session_id: str = "default",
 ) -> Iterator[str]:
-    return get_agent().stream(user_query, history=history)
+    return get_agent().stream(
+        user_query,
+        history=history,
+        science_mode=science_mode,
+        personality=personality,
+        session_id=session_id,
+    )
