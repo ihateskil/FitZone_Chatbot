@@ -51,7 +51,7 @@ def test_chat_stream_returns_stream(client, monkeypatch):
     monkeypatch.setattr(
         api,
         "stream_agent",
-        lambda message, history=None: iter(["chunk1", "chunk2"]),
+        lambda message, history=None, science_mode=False, personality="coach", session_id="default": iter(["chunk1", "chunk2"]),
     )
 
     response = client.post(

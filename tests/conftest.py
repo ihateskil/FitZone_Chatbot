@@ -26,12 +26,14 @@ def client(monkeypatch):
     monkeypatch.setattr(
         api,
         "run_agent_full",
-        lambda message, history=None: SimpleNamespace(
+        lambda message, history=None, science_mode=False, personality="coach": SimpleNamespace(
             text=f"Answer: {message}",
             latency_ms=12.3,
             blocked=False,
             block_reason=None,
             in_scope=True,
+            lift_logged=False,
+            progression_hint=None,
         ),
     )
     with TestClient(api.app) as c:
