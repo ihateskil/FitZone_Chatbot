@@ -1,0 +1,86 @@
+================================================================================
+FITZONE CHATBOT -- FEATURE IDEAS & COMPETITIVE RESEARCH
+================================================================================
+Generated: 2025-06-27
+Source: Web research on fitness AI competitors + internal analysis
+
+--------------------------------------------------------------------------------
+COMPETITIVE LANDSCAPE
+--------------------------------------------------------------------------------
+
+COMPETITOR FEATURES (What they already do):
+
+JuggernautAI:
+  - Adaptive programming set-to-set/day-to-day/week-to-week/block-to-block
+  - Proprietary algorithms, weak-point targeting, periodization auto-adjustment
+  - 250K+ users, 4.9 App Store rating
+
+Freeletics:
+  - AI Coach adapts to schedule changes, 30-day challenges
+  - Bodyweight/gym/running hybrid, 700+ exercises
+  - 4T+ workout combinations, 60M users
+
+Aaptiv:
+  - AI-designed routines, 10K+ on-demand classes
+  - Gym network access, MSK care solutions, guided meditation
+  - Employer wellness packages
+
+Hevy:
+  - Workout logging + social community, RPE tracking
+  - Warm-up set calculator, weight plate calculator
+  - Muscle distribution charts, HevyGPT, coach/client system
+  - Progress photos, year-in-review
+
+RP Strength (Hypertrophy + Diet Coach):
+  - Auto-adjustment workout-to-workout
+  - Meal timing notifications
+  - Block periodization by Dr. Mike Israetel
+  - Science-backed diet coaching
+
+EvolveAI:
+  - Block check-ins with auto-adjustment
+  - Nutrition + training + peaking in one app
+  - Achievement system, detailed analytics, past training history import
+
+Carbon Diet Coach:
+  - Reverse dieting, flexible dieting
+  - Food tracker with large database
+  - Expert-endorsed (Huberman, Galpin, Lyon)
+
+--------------------------------------------------------------------------------
+TIER 1 -- True Differentiators
+--------------------------------------------------------------------------------
+
+1. PROGRESSIVE OVERLOAD TRACKER + AUTO-PROGRESSOR
+2. FATIGUE & RECOVERY SCORE ENGINE (ACWR + RPE Based)
+3. WORKOUT GENERATOR FROM CONVERSATION CONTEXT
+4. SHOW YOUR WORK -- FORMULA TRANSPARENCY MODE
+
+--------------------------------------------------------------------------------
+TIER 2 -- Strong Differentiators
+--------------------------------------------------------------------------------
+
+5. MEAL PLAN GENERATOR WITH MACRO TARGETS
+6. FORM CHECK VIA IMAGE DESCRIPTION
+7. PERIODIZATION PLANNER (MESOCYCLE BUILDER)
+8. SPLIT COMPARISON ENGINE
+
+--------------------------------------------------------------------------------
+TIER 3 -- Polish Features
+--------------------------------------------------------------------------------
+
+9. STREAK & CONSISTENCY COACHING
+10. SESSION RECAP & WEEKLY REVIEW
+11. SUPPLEMENT STACK EVALUATOR
+12. MOTIVATIONAL PERSONALITY MODES
+
+--------------------------------------------------------------------------------
+SELECTED FOR IMPLEMENTATION (Top 3 + 1)
+--------------------------------------------------------------------------------
+
+FEATURE 1: Progressive Overload Tracker + Auto-Progressor
+FEATURE 2: Show Your Work Formula Transparency Mode
+FEATURE 3: ACWR Fatigue & Recovery Engine
+FEATURE 4: Motivational Personality Modes
+
+================================================================================

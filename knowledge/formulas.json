@@ -1,0 +1,692 @@
+{
+  "bmr_mifflin_st_jeor_men": {
+    "name": "Mifflin-St Jeor (Men)",
+    "category": "Energy Expenditure",
+    "description": "Standard best practice BMR equation for men. Most accurate for normal weight individuals.",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      },
+      {
+        "name": "age",
+        "type": "float",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "BMR = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) + 5",
+    "compute": "lambda weight_kg, height_cm, age: round((10 * weight_kg) + (6.25 * height_cm) - (5 * age) + 5, 1)",
+    "example": {
+      "weight_kg": 85,
+      "height_cm": 180,
+      "age": 30,
+      "result": 1885,
+      "unit": "kcal"
+    },
+    "conditions": "Use when weight, height, and age are known but body fat % is not.",
+    "alternatives": [
+      "katch_mcardle (more accurate if BF% known)",
+      "harris_benedict_men (legacy)"
+    ]
+  },
+  "bmr_mifflin_st_jeor_women": {
+    "name": "Mifflin-St Jeor (Women)",
+    "category": "Energy Expenditure",
+    "description": "Standard best practice BMR equation for women.",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      },
+      {
+        "name": "age",
+        "type": "float",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "BMR = (10 * weight_kg) + (6.25 * height_cm) - (5 * age) - 161",
+    "compute": "lambda weight_kg, height_cm, age: round((10 * weight_kg) + (6.25 * height_cm) - (5 * age) - 161, 1)",
+    "example": {
+      "weight_kg": 65,
+      "height_cm": 165,
+      "age": 28,
+      "result": 1335,
+      "unit": "kcal"
+    },
+    "conditions": "Use when weight, height, and age are known but body fat % is not.",
+    "alternatives": [
+      "katch_mcardle (more accurate if BF% known)",
+      "harris_benedict_women (legacy)"
+    ]
+  },
+  "bmr_katch_mcardle": {
+    "name": "Katch-McArdle",
+    "category": "Energy Expenditure",
+    "description": "Most accurate BMR equation when lean body mass is known. Independent of body fat %.",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "body_fat_pct",
+        "type": "float",
+        "unit": "%",
+        "description": "Body fat percentage (0-100)"
+      }
+    ],
+    "formula": "LBM = weight_kg * (1 - body_fat_pct/100); BMR = 370 + (21.6 * LBM)",
+    "compute": "lambda weight_kg, body_fat_pct: round(370 + (21.6 * weight_kg * (1 - body_fat_pct/100)), 1)",
+    "example": {
+      "weight_kg": 85,
+      "body_fat_pct": 15,
+      "result": 1933,
+      "unit": "kcal"
+    },
+    "conditions": "Use when body fat % is available. More accurate than Mifflin-St Jeor.",
+    "alternatives": [
+      "mifflin_st_jeor_men/women (if BF% unknown)"
+    ]
+  },
+  "bmr_harris_benedict_men": {
+    "name": "Harris-Benedict Revised (Men)",
+    "category": "Energy Expenditure",
+    "description": "Legacy BMR equation for men (Roza & Shizgal, 1984).",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      },
+      {
+        "name": "age",
+        "type": "float",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "BMR = 88.362 + (13.397 * weight_kg) + (4.799 * height_cm) - (5.677 * age)",
+    "compute": "lambda weight_kg, height_cm, age: round(88.362 + (13.397 * weight_kg) + (4.799 * height_cm) - (5.677 * age), 1)",
+    "example": {
+      "weight_kg": 85,
+      "height_cm": 180,
+      "age": 30,
+      "result": 1920.5,
+      "unit": "kcal"
+    },
+    "conditions": "Legacy equation, less accurate than Mifflin-St Jeor for modern populations.",
+    "alternatives": [
+      "mifflin_st_jeor_men (preferred)"
+    ]
+  },
+  "bmr_harris_benedict_women": {
+    "name": "Harris-Benedict Revised (Women)",
+    "category": "Energy Expenditure",
+    "description": "Legacy BMR equation for women (Roza & Shizgal, 1984).",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      },
+      {
+        "name": "age",
+        "type": "float",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "BMR = 447.593 + (9.247 * weight_kg) + (3.098 * height_cm) - (4.330 * age)",
+    "compute": "lambda weight_kg, height_cm, age: round(447.593 + (9.247 * weight_kg) + (3.098 * height_cm) - (4.330 * age), 1)",
+    "example": {
+      "weight_kg": 65,
+      "height_cm": 165,
+      "age": 28,
+      "result": 1389.5,
+      "unit": "kcal"
+    },
+    "conditions": "Legacy equation, less accurate than Mifflin-St Jeor for modern populations.",
+    "alternatives": [
+      "mifflin_st_jeor_women (preferred)"
+    ]
+  },
+  "tdee": {
+    "name": "Total Daily Energy Expenditure (TDEE)",
+    "category": "Energy Expenditure",
+    "description": "TDEE = BMR x Activity Multiplier. Estimates total calories burned per day.",
+    "inputs": [
+      {
+        "name": "bmr",
+        "type": "float",
+        "unit": "kcal",
+        "description": "Basal Metabolic Rate in kcal"
+      },
+      {
+        "name": "activity_multiplier",
+        "type": "float",
+        "unit": "x",
+        "description": "Activity multiplier (1.2 sedentary to 1.9 extreme)"
+      }
+    ],
+    "formula": "TDEE = BMR * activity_multiplier",
+    "compute": "lambda bmr, activity_multiplier: round(bmr * activity_multiplier, 0)",
+    "example": {
+      "bmr": 1885,
+      "activity_multiplier": 1.55,
+      "result": 2922,
+      "unit": "kcal"
+    },
+    "conditions": "Use after calculating BMR to estimate total daily calorie needs.",
+    "alternatives": [],
+    "activity_multipliers": {
+      "sedentary": 1.2,
+      "lightly_active": 1.375,
+      "moderately_active": 1.55,
+      "very_active": 1.725,
+      "extremely_active": 1.9
+    }
+  },
+  "one_rm_epley": {
+    "name": "1RM Estimation (Epley)",
+    "category": "Strength",
+    "description": "Estimates one-rep max from submaximal sets. Best for reps <= 10.",
+    "inputs": [
+      {
+        "name": "weight",
+        "type": "float",
+        "unit": "kg or lbs",
+        "description": "Weight lifted"
+      },
+      {
+        "name": "reps",
+        "type": "int",
+        "unit": "reps",
+        "description": "Number of repetitions completed (1-10)"
+      }
+    ],
+    "formula": "1RM = weight * (1 + reps/30)",
+    "compute": "lambda weight, reps: round(weight * (1 + reps/30), 1)",
+    "example": {
+      "weight": 100,
+      "reps": 5,
+      "result": 116.7,
+      "unit": "same as input"
+    },
+    "conditions": "Best for reps <= 10. Tends to overestimate for higher reps.",
+    "alternatives": [
+      "one_rm_brzycki (more conservative)",
+      "one_rm_lander"
+    ]
+  },
+  "one_rm_brzycki": {
+    "name": "1RM Estimation (Brzycki)",
+    "category": "Strength",
+    "description": "Most accurate 1RM estimation for reps up to 10. Widely used in powerlifting.",
+    "inputs": [
+      {
+        "name": "weight",
+        "type": "float",
+        "unit": "kg or lbs",
+        "description": "Weight lifted"
+      },
+      {
+        "name": "reps",
+        "type": "int",
+        "unit": "reps",
+        "description": "Number of repetitions completed (1-10)"
+      }
+    ],
+    "formula": "1RM = weight / (1.0278 - 0.0278 * reps)",
+    "compute": "lambda weight, reps: round(weight / (1.0278 - 0.0278 * reps), 1)",
+    "example": {
+      "weight": 100,
+      "reps": 5,
+      "result": 114.3,
+      "unit": "same as input"
+    },
+    "conditions": "Highly accurate up to 10 reps. Most coaches prefer this formula.",
+    "alternatives": [
+      "one_rm_epley (simpler)",
+      "one_rm_lander"
+    ]
+  },
+  "one_rm_lander": {
+    "name": "1RM Estimation (Lander)",
+    "category": "Strength",
+    "description": "Alternative 1RM estimation formula, slightly more conservative than Epley.",
+    "inputs": [
+      {
+        "name": "weight",
+        "type": "float",
+        "unit": "kg or lbs",
+        "description": "Weight lifted"
+      },
+      {
+        "name": "reps",
+        "type": "int",
+        "unit": "reps",
+        "description": "Number of repetitions completed (1-10)"
+      }
+    ],
+    "formula": "1RM = (100 * weight) / (101.3 - 2.6712 * reps)",
+    "compute": "lambda weight, reps: round((100 * weight) / (101.3 - 2.6712 * reps), 1)",
+    "example": {
+      "weight": 100,
+      "reps": 5,
+      "result": 113.2,
+      "unit": "same as input"
+    },
+    "conditions": "Good alternative to Brzycki, slightly more conservative.",
+    "alternatives": [
+      "one_rm_brzycki (preferred)",
+      "one_rm_epley"
+    ]
+  },
+  "macro_protein_target": {
+    "name": "Daily Protein Target",
+    "category": "Nutrition",
+    "description": "Calculates daily protein target based on body weight and training goal.",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "goal",
+        "type": "str",
+        "unit": "goal",
+        "description": "Training goal: general_health, endurance, muscle_building, or cutting"
+      }
+    ],
+    "formula": "protein_g = weight_kg * multiplier (0.8 general, 1.2-1.4 endurance, 1.6-2.2 muscle, 2.0-2.4 cut)",
+    "compute": "lambda weight_kg, goal: round(weight_kg * {\"general_health\": 0.8, \"endurance\": 1.3, \"muscle_building\": 2.0, \"cutting\": 2.2}.get(goal, 1.6), 0)",
+    "example": {
+      "weight_kg": 85,
+      "goal": "muscle_building",
+      "result": 170,
+      "unit": "g protein"
+    },
+    "conditions": "Adjust multiplier based on goal and training intensity.",
+    "alternatives": []
+  },
+  "macro_calorie_targets": {
+    "name": "Calorie Targets by Goal",
+    "category": "Nutrition",
+    "description": "Calculates daily calorie targets based on TDEE and fitness goal.",
+    "inputs": [
+      {
+        "name": "tdee",
+        "type": "float",
+        "unit": "kcal",
+        "description": "Total Daily Energy Expenditure"
+      },
+      {
+        "name": "goal",
+        "type": "str",
+        "unit": "goal",
+        "description": "cut, maintain, or bulk"
+      }
+    ],
+    "formula": "cut: TDEE - 300 to 700; bulk: TDEE + 200 to 500; maintain: TDEE +/- 100",
+    "compute": "lambda tdee, goal: {\"fat_loss\": round(tdee - 500, 0), \"maintain\": round(tdee, 0), \"muscle_gain\": round(tdee + 300, 0)}.get(goal, round(tdee, 0))",
+    "example": {
+      "tdee": 2922,
+      "goal": "fat_loss",
+      "result": 2422,
+      "unit": "kcal"
+    },
+    "conditions": "Fat loss: 300-700 cal deficit. Muscle gain: 200-500 cal surplus.",
+    "alternatives": []
+  },
+  "body_fat_navy_men": {
+    "name": "Body Fat % (Navy Formula, Men)",
+    "category": "Body Composition",
+    "description": "Estimates body fat percentage using waist and neck circumferences (US Navy method).",
+    "inputs": [
+      {
+        "name": "waist_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Waist circumference at navel"
+      },
+      {
+        "name": "neck_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Neck circumference at narrowest point"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      }
+    ],
+    "formula": "BF% = 495 / (1.0324 - 0.19077 * log10(waist_cm - neck_cm) + 0.15456 * log10(height_cm)) - 450",
+    "compute": "lambda waist_cm, neck_cm, height_cm: round(495 / (1.0324 - 0.19077 * __import__(\"math\").log10(waist_cm - neck_cm) + 0.15456 * __import__(\"math\").log10(height_cm)) - 450, 1)",
+    "example": {
+      "waist_cm": 85,
+      "neck_cm": 38,
+      "height_cm": 180,
+      "result": 15.2,
+      "unit": "%"
+    },
+    "conditions": "Accuracy +/- 3-4% compared to DEXA. Consistent measurement is key.",
+    "alternatives": [
+      "body_fat_navy_women",
+      "bmi (less accurate)"
+    ]
+  },
+  "body_fat_navy_women": {
+    "name": "Body Fat % (Navy Formula, Women)",
+    "category": "Body Composition",
+    "description": "Estimates body fat percentage using waist, hip, and neck circumferences.",
+    "inputs": [
+      {
+        "name": "waist_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Waist circumference at narrowest point"
+      },
+      {
+        "name": "hip_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Hip circumference at widest point"
+      },
+      {
+        "name": "neck_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Neck circumference at narrowest point"
+      },
+      {
+        "name": "height_cm",
+        "type": "float",
+        "unit": "cm",
+        "description": "Height in centimeters"
+      }
+    ],
+    "formula": "BF% = 495 / (1.29579 - 0.35004 * log10(waist_cm + hip_cm - neck_cm) + 0.22100 * log10(height_cm)) - 450",
+    "compute": "lambda waist_cm, hip_cm, neck_cm, height_cm: round(495 / (1.29579 - 0.35004 * __import__(\"math\").log10(waist_cm + hip_cm - neck_cm) + 0.22100 * __import__(\"math\").log10(height_cm)) - 450, 1)",
+    "example": {
+      "waist_cm": 70,
+      "hip_cm": 95,
+      "neck_cm": 33,
+      "height_cm": 165,
+      "result": 25.3,
+      "unit": "%"
+    },
+    "conditions": "Accuracy +/- 3-4% compared to DEXA. Consistent measurement is key.",
+    "alternatives": [
+      "body_fat_navy_men",
+      "bmi (less accurate)"
+    ]
+  },
+  "bmi": {
+    "name": "Body Mass Index (BMI)",
+    "category": "Body Composition",
+    "description": "Simple weight-to-height ratio. Does not account for muscle mass.",
+    "inputs": [
+      {
+        "name": "weight_kg",
+        "type": "float",
+        "unit": "kg",
+        "description": "Body weight in kilograms"
+      },
+      {
+        "name": "height_m",
+        "type": "float",
+        "unit": "m",
+        "description": "Height in meters"
+      }
+    ],
+    "formula": "BMI = weight_kg / (height_m ^ 2)",
+    "compute": "lambda weight_kg, height_m: round(weight_kg / (height_m ** 2), 1)",
+    "example": {
+      "weight_kg": 85,
+      "height_m": 1.8,
+      "result": 26.2,
+      "unit": "kg/m2"
+    },
+    "conditions": "Screening tool only. Does not differentiate muscle from fat. Not accurate for muscular individuals.",
+    "alternatives": [
+      "body_fat_navy_men/women (more accurate)"
+    ]
+  },
+  "acwr": {
+    "name": "Acute:Chronic Workload Ratio (ACWR)",
+    "category": "Load Management",
+    "description": "Measures training load relative to fitness. Key injury prevention metric from Gabbett et al.",
+    "inputs": [
+      {
+        "name": "acute_volume",
+        "type": "float",
+        "unit": "volume load",
+        "description": "This week's total volume load (sets x reps x weight)"
+      },
+      {
+        "name": "chronic_volume",
+        "type": "float",
+        "unit": "volume load",
+        "description": "Average weekly volume over past 4 weeks"
+      }
+    ],
+    "formula": "ACWR = acute_volume / chronic_volume",
+    "compute": "lambda acute_volume, chronic_volume: round(acute_volume / chronic_volume, 2) if chronic_volume > 0 else None",
+    "example": {
+      "acute_volume": 15000,
+      "chronic_volume": 12000,
+      "result": 1.25,
+      "unit": "ratio"
+    },
+    "conditions": "Sweet spot: 0.8-1.3. Danger zone: >1.5. Undertraining: <0.8.",
+    "alternatives": [],
+    "zones": {
+      "undertraining": "< 0.8",
+      "optimal": "0.8 - 1.3",
+      "elevated": "1.3 - 1.5",
+      "danger": "> 1.5"
+    }
+  },
+  "karvonen_thr": {
+    "name": "Target Heart Rate (Karvonen)",
+    "category": "Cardio",
+    "description": "Heart rate reserve method for target heart rate zones. More accurate than %MHR alone.",
+    "inputs": [
+      {
+        "name": "max_hr",
+        "type": "int",
+        "unit": "bpm",
+        "description": "Maximum heart rate (220-age or tested)"
+      },
+      {
+        "name": "resting_hr",
+        "type": "int",
+        "unit": "bpm",
+        "description": "Resting heart rate"
+      },
+      {
+        "name": "intensity_pct",
+        "type": "float",
+        "unit": "%",
+        "description": "Target intensity (0.50 for 50% to 1.0 for 100%)"
+      }
+    ],
+    "formula": "THR = ((max_hr - resting_hr) * intensity_pct) + resting_hr",
+    "compute": "lambda max_hr, resting_hr, intensity_pct: round(((max_hr - resting_hr) * intensity_pct) + resting_hr, 0)",
+    "example": {
+      "max_hr": 190,
+      "resting_hr": 60,
+      "intensity_pct": 0.7,
+      "result": 151,
+      "unit": "bpm"
+    },
+    "conditions": "More accurate than simple %maxHR because it accounts for fitness level via resting HR.",
+    "alternatives": [
+      "max_hr_fox (simpler)"
+    ]
+  },
+  "max_hr_fox": {
+    "name": "Max Heart Rate (Fox/Haskell)",
+    "category": "Cardio",
+    "description": "Simple age-based maximum heart rate estimation.",
+    "inputs": [
+      {
+        "name": "age",
+        "type": "int",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "MHR = 220 - age",
+    "compute": "lambda age: 220 - age",
+    "example": {
+      "age": 30,
+      "result": 190,
+      "unit": "bpm"
+    },
+    "conditions": "Standard formula. Tanaka (208-0.7xAge) is more accurate for older adults.",
+    "alternatives": [
+      "max_hr_tanaka",
+      "karvonen_thr (for target zones)"
+    ]
+  },
+  "max_hr_tanaka": {
+    "name": "Max Heart Rate (Tanaka)",
+    "category": "Cardio",
+    "description": "More accurate age-based MHR formula, especially for older adults.",
+    "inputs": [
+      {
+        "name": "age",
+        "type": "int",
+        "unit": "years",
+        "description": "Age in years"
+      }
+    ],
+    "formula": "MHR = 208 - (0.7 * age)",
+    "compute": "lambda age: round(208 - (0.7 * age), 0)",
+    "example": {
+      "age": 30,
+      "result": 187,
+      "unit": "bpm"
+    },
+    "conditions": "More accurate than Fox formula, especially for adults over 40.",
+    "alternatives": [
+      "max_hr_fox (simpler)",
+      "karvonen_thr (for target zones)"
+    ]
+  },
+  "volume_load": {
+    "name": "Volume Load (Tonnage)",
+    "category": "Training",
+    "description": "Total training volume: sets x reps x weight. Fundamental metric for tracking progress.",
+    "inputs": [
+      {
+        "name": "sets",
+        "type": "int",
+        "unit": "sets",
+        "description": "Number of sets"
+      },
+      {
+        "name": "reps",
+        "type": "int",
+        "unit": "reps",
+        "description": "Number of reps per set"
+      },
+      {
+        "name": "weight",
+        "type": "float",
+        "unit": "kg or lbs",
+        "description": "Weight lifted"
+      }
+    ],
+    "formula": "Volume Load = sets * reps * weight",
+    "compute": "lambda sets, reps, weight: round(sets * reps * weight, 1)",
+    "example": {
+      "sets": 4,
+      "reps": 8,
+      "weight": 100,
+      "result": 3200,
+      "unit": "kg or lbs"
+    },
+    "conditions": "Use for tracking total workout volume. Compare week-to-week for progressive overload.",
+    "alternatives": [
+      "irv (intensity-relative volume)"
+    ]
+  },
+  "irv": {
+    "name": "Intensity Relative Volume (IRV)",
+    "category": "Training",
+    "description": "Volume adjusted for intensity: sets x reps x %1RM. Optimal range 20-30 per exercise.",
+    "inputs": [
+      {
+        "name": "sets",
+        "type": "int",
+        "unit": "sets",
+        "description": "Number of sets"
+      },
+      {
+        "name": "reps",
+        "type": "int",
+        "unit": "reps",
+        "description": "Number of reps per set"
+      },
+      {
+        "name": "pct_1rm",
+        "type": "float",
+        "unit": "decimal",
+        "description": "Percentage of 1RM as decimal (e.g., 0.75 for 75%)"
+      }
+    ],
+    "formula": "IRV = sets * reps * pct_1rm",
+    "compute": "lambda sets, reps, pct_1rm: round(sets * reps * pct_1rm, 1)",
+    "example": {
+      "sets": 4,
+      "reps": 8,
+      "pct_1rm": 0.75,
+      "result": 24.0,
+      "unit": "IRV units"
+    },
+    "conditions": "Optimal range: 20-30 per exercise for hypertrophy. Below 20 = undertraining, above 30 = overreaching.",
+    "alternatives": [
+      "volume_load (raw tonnage)"
+    ]
+  }
+}
