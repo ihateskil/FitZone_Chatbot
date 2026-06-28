@@ -130,7 +130,7 @@ class SessionStore:
         exercise_lower = exercise.lower()
         return [
             entry for entry in data.get("lifts", [])
-            if entry.get("exercise", "").lower() == exercise_lower
+            if str(entry.get("exercise", "")).lower() == exercise_lower
         ]
 
     def get_all_exercise_history(self, exercise: str) -> list[dict[str, Any]]:
@@ -143,7 +143,7 @@ class SessionStore:
             except (json.JSONDecodeError, OSError):
                 continue
             for entry in data.get("lifts", []):
-                if entry.get("exercise", "").lower() == exercise_lower:
+                if str(entry.get("exercise", "")).lower() == exercise_lower:
                     entry["_session_date"] = data.get("date", "")
                     entry["_session_id"] = data.get("session_id", "")
                     results.append(entry)

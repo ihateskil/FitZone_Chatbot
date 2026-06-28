@@ -44,7 +44,7 @@ EXERCISE_KEYWORDS = frozenset({
     "abs", "core", "cardio", "run", "running", "swim", "cycling", "machine",
     "dumbbell", "barbell", "cable", "kettlebell", "smith", "rack", "spotter",
     "form", "technique", "rep", "reps", "set", "sets", "routine", "split",
-    "program", "programming", "volume", "intensity", "frequency", "muscle",
+    "program", "volume", "intensity", "frequency", "muscle",
     "hypertrophy", "strength", "power", "olympic", "clean", "jerk", "snatch",
     "romanian", "rdl", "ohp", "hip", "thrust", "calf", "raise", "fly", "flies",
     "lat", "pulldown", "shrug", "crunch", "plank", "muscle-up", "dip",
@@ -60,21 +60,18 @@ NUTRITION_KEYWORDS = frozenset({
     "milk", "cheese", "beef", "pork", "fish", "yogurt", "apple", "banana",
     "vegetable", "fruit", "smoothie", "shake", "whey", "supplement",
     "vitamin", "mineral", "nutrient", "fiber", "sugar", "sodium",
-    "chicken breast", "sweet potato", "greek yogurt", "peanut butter",
-    "olive oil", "avocado", "almonds", "oats", "quinoa", "broccoli",
+    "avocado", "almonds", "oats", "quinoa", "broccoli",
 })
 
 CALCULATION_KEYWORDS = frozenset({
-    "bmr", "tdee", "bmi", "1rm", "one rep max", "one-rep", "body fat",
-    "bodyfat", "calculate", "calculation", "formula", "compute", "estimate",
-    "how many calories", "how much protein", "how many reps", "heart rate",
-    "max hr", "karvonen", "acwr", "volume load", "irv", "progression",
-    "recommend", "target", "zone", "percentage", "ratio",
+    "bmr", "tdee", "bmi", "1rm", "bodyfat", "calculate", "calculation",
+    "formula", "compute", "estimate", "karvonen", "acwr", "irv",
+    "progression", "recommend", "target", "zone", "percentage", "ratio",
 })
 
 FITNESS_KEYWORDS = frozenset({
     "gym", "fitness", "training", "workout", "exercise", "health",
-    "wellness", "recovery", "sleep", "warm-up", "cooldown", "stretch",
+    "wellness", "recovery", "sleep", "warmup", "cooldown", "stretch",
     "mobility", "flexibility", "injury", "pain", "rehab", "posture",
     "motivation", "goal", "habit", "consistency", "mindset",
 })
@@ -90,9 +87,11 @@ OUT_OF_SCOPE_KEYWORDS = frozenset({
 GREETING_KEYWORDS = frozenset({
     "hey", "hi", "hello", "sup", "yo", "morning", "evening", "afternoon",
     "thanks", "thank", "bye", "goodbye", "cheers", "appreciate", "coach",
-    "bro", "dude", "man", "help", "can you", "what is", "how do",
+    "bro", "dude", "man", "help",
     "yes", "yeah", "yep", "yup", "sure", "ok", "okay", "alright", "kk",
-    "no", "nope", "nah", "maybe", "idk", "i dont know", "not really",
+    "no", "nope", "nah", "maybe", "idk",
+    "cool", "thx", "ty", "k", "nice", "great", "awesome", "perfect",
+    "gotcha", "understood", "sweet", "deal", "fine",
 })
 
 

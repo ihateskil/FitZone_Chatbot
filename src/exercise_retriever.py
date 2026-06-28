@@ -182,8 +182,8 @@ class ExerciseRetriever:
             if force and entry.force.lower() != force.lower():
                 continue
             if primary_muscle:
-                pm_lower = [m.lower() for m in entry.primary_muscles]
-                sm_lower = [m.lower() for m in entry.secondary_muscles]
+                pm_lower = [str(m).lower() for m in entry.primary_muscles]
+                sm_lower = [str(m).lower() for m in entry.secondary_muscles]
                 all_lower = pm_lower + sm_lower
                 if not any(primary_muscle.lower() in m for m in all_lower):
                     continue
@@ -225,7 +225,7 @@ class ExerciseRetriever:
         muscles: set[str] = set()
         for entry in self._entries:
             for m in entry.all_muscles:
-                muscles.add(m.lower())
+                muscles.add(str(m).lower())
         return sorted(muscles)
 
     def format_for_llm(self, entries: list[ExerciseEntry]) -> str:

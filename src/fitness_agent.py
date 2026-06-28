@@ -175,6 +175,32 @@ class IntentRouter:
             # Supplements & recovery
             "whey", "casein", "bcaa", "eaa", "caffeine", "sleep", "soreness",
             "doms", "foam", "roller", "mobility",
+            # Common movements & body parts
+            "abs", "ab", "pushup", "pushups", "pullup", "pullups", "plank",
+            "dumbbell", "barbell", "kettlebell", "dip", "dips", "lunge", "lunges",
+            "curl", "curls", "row", "rows", "press", "fly", "flies", "raise",
+            "shrug", "crunch", "crunches", "extension", "leg", "legs", "arm",
+            "arms", "back", "chest", "shoulder", "shoulders", "bicep", "tricep",
+            "glute", "glutes", "hamstring", "quad", "quadricep", "calf", "calves",
+            "forearm", "trap", "traps", "lat", "lats", "deltoid",
+            # Cardio & conditioning
+            "run", "running", "jog", "jogging", "walk", "walking", "sprint",
+            "swim", "swimming", "cycle", "cycling", "bike", "rowing", "rower",
+            "elliptical", "stair", "stairmaster", "jump", "jumping", "rope",
+            # Mind-body & modalities
+            "yoga", "pilates", "crossfit", "calisthenics", "plyometric",
+            "plyometrics", "agility", "speed", "endurance", "stamina",
+            # Injury & health
+            "injury", "pain", "rehab", "rehabilitation", "posture",
+            "tight", "tightness", "strain", "sprain", "ache", "aching",
+            # Goals & tracking
+            "lbs", "pound", "pounds", "kg", "kilos", "weigh", "weighing",
+            "scale", "measure", "measurement", "progress", "tracking",
+            "goal", "goals", "transform", "transformation",
+            # Diet & nutrition adjacent
+            "fasting", "intermittent", "fasted", "keto", "ketogenic",
+            "vegan", "vegetarian", "gluten", "organic", "calorie",
+            "deficit", "surplus", "maintenance",
         }
     )
     GREETING_KEYWORDS = frozenset(
@@ -184,6 +210,8 @@ class IntentRouter:
             "bro", "dude", "man",
             "yes", "yeah", "yep", "yup", "sure", "ok", "okay", "alright", "kk",
             "no", "nope", "nah", "maybe", "idk",
+            "cool", "thx", "ty", "k", "nice", "great", "awesome", "perfect",
+            "gotcha", "understood", "sweet", "deal", "fine",
         }
     )
     OUT_OF_SCOPE_KEYWORDS = frozenset(
