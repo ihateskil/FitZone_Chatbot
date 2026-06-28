@@ -20,6 +20,7 @@ from pypdf import PdfReader
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9]+")
 GYM_CALCULATIONS_FILE = "gym_calculations.txt"
+JSON_INDEX_FILES = ("exercises.json", "nutrition.json", "formulas.json")
 CHUNK_MAX_CHARS = 1200
 
 
@@ -78,6 +79,7 @@ class KnowledgeRetriever:
         self._chunks = []
         self._ingest_gym_calculations()
         self._ingest_pdfs()
+        self._ingest_json_files()
         self._save_cache()
 
         if not self._chunks:
@@ -88,10 +90,10 @@ class KnowledgeRetriever:
 
     def _source_fingerprint(self) -> dict[str, float]:
         fingerprint: dict[str, float] = {}
-        gym_path = self.knowledge_dir / GYM_CALCULATIONS_FILE
-        if gym_path.exists():
-            fingerprint[str(gym_path)] = gym_path.stat().st_mtime
-
+        for pattern in [GYM_CALCULATIONS_FILE, *JSON_INDEX_FILES]:
+            fpath = self.knowledge_dir / pattern
+            if fpath.exists():
+                fingerprint[str(fpath)] = fpath.stat().st_mtime
         for pdf_path in sorted(self.knowledge_dir.glob("*.pdf")):
             fingerprint[str(pdf_path)] = pdf_path.stat().st_mtime
         return fingerprint
@@ -157,6 +159,70 @@ class KnowledgeRetriever:
                 self._chunks.append(
                     DocumentChunk(source=source_name, text=chunk_text)
                 )
+
+    def _ingest_json_files(self) -> None:
+        for json_name in JSON_INDEX_FILES:
+            jpath = self.knowledge_dir / json_name
+            if not jpath.exists():
+                continue
+            try:
+                raw = json.loads(jpath.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                continue
+            items: list[dict] = []
+            if isinstance(raw, list):
+                items = raw
+            elif isinstance(raw, dict):
+                items = list(raw.values())
+            if not items:
+                continue
+            if json_name == "exercises.json":
+                for entry in items:
+                    name = entry.get("name", "")
+                    cat = entry.get("category", "")
+                    muscles = ", ".join(entry.get("target_muscles", []) or [])
+                    equip = ", ".join(
+                        e for e in (entry.get("equipment") or []) if isinstance(e, str)
+                    )
+                    instr = (entry.get("instructions") or "")[:200]
+                    text = (
+                        f"Exercise: {name}. Category: {cat}."
+                        + (f" Muscles: {muscles}." if muscles else "")
+                        + (f" Equipment: {equip}." if equip else "")
+                        + (f" Instructions: {instr}." if instr else "")
+                    )
+                    if name:
+                        self._chunks.append(DocumentChunk(source=json_name, text=text))
+            elif json_name == "nutrition.json":
+                for entry in items:
+                    name = entry.get("name", "")
+                    cat = entry.get("category", "")
+                    kcal = entry.get("kcal_100g", 0) or 0
+                    prot = entry.get("protein_100g", 0) or 0
+                    carbs = entry.get("carbs_100g", 0) or 0
+                    fat = entry.get("fat_100g", 0) or 0
+                    fiber = entry.get("fiber_100g", 0) or 0
+                    text = (
+                        f"Food: {name}. Category: {cat}. Per 100g: "
+                        f"{kcal} kcal, Protein: {prot}g, Carbs: {carbs}g, "
+                        f"Fat: {fat}g, Fiber: {fiber}g."
+                    )
+                    if name:
+                        self._chunks.append(DocumentChunk(source=json_name, text=text))
+            elif json_name == "formulas.json":
+                for entry in items:
+                    name = entry.get("name", "") or entry.get("title", "")
+                    cat = entry.get("category", "")
+                    eq = entry.get("formula", "") or entry.get("equation", "")
+                    desc = (entry.get("description", "") or "")[:200]
+                    text = f"Formula: {name}."
+                    if cat:
+                        text += f" Category: {cat}."
+                    text += f" Equation: {eq}."
+                    if desc:
+                        text += f" Description: {desc}."
+                    if name:
+                        self._chunks.append(DocumentChunk(source=json_name, text=text))
 
     def _build_idf(self) -> None:
         doc_count = len(self._chunks)
