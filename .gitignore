@@ -17,3 +17,12 @@ venv/
 
 # OS
 .DS_Store
+
+# Large PDFs excluded for HF 10MB limit
+
+knowledge/AnatomyAndPhysiology-LR.pdf
+knowledge/Fundamentals Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+knowledge/JefF Nippard Powerbuilding 3.0 5x (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+knowledge/Jeff Nippards Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+knowledge/Mens Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+knowledge/Powerbuilding 2.0 5-6xweek (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
