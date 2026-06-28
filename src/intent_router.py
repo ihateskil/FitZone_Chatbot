@@ -74,6 +74,7 @@ FITNESS_KEYWORDS = frozenset({
     "wellness", "recovery", "sleep", "warmup", "cooldown", "stretch",
     "mobility", "flexibility", "injury", "pain", "rehab", "posture",
     "motivation", "goal", "habit", "consistency", "mindset",
+    "heart", "cardiac", "condition",
 })
 
 OUT_OF_SCOPE_KEYWORDS = frozenset({
