@@ -1,0 +1,85 @@
+===== SPORT-SPECIFIC TRAINING & PROGRAMMING GUIDE =====
+
+SECTION 1: POWERLIFTING
+- Three lifts: Squat, Bench Press, Deadlift. Goal: Maximize 1RM in each.
+- Training frequency: Most programs train each lift 2-4x/week (varies by specialization and experience level).
+- RPE scale (rate of perceived exertion): 1-10 scale. RPE 10 = maximal effort. RPE 7 = 3 reps left in tank.
+- Periodization: Linear periodization (volume decreases as intensity increases over weeks), Block periodization (focused blocks), Conjugate/WSBB (rotate exercises and intensities).
+- Popular programs: Starting Strength (novice), StrongLifts 5x5 (novice), 5/3/1 (intermediate), Sheiko (advanced), Smolov (advanced squat).
+- Meet preparation: Peak phase begins 4-6 weeks out. Test openers 3 weeks out. Deload week before meet.
+- The big three totals: Novice (2.5x BW), Intermediate (3.5x BW), Advanced (4.5x BW), Elite (5.5x BW).
+
+SECTION 2: OLYMPIC WEIGHTLIFTING
+- Two lifts: Snatch (bar from floor to overhead in one motion) and Clean & Jerk (bar from floor to shoulders, then overhead).
+- Primary qualities: Power, speed, mobility, and technique under heavy load.
+- Snatch: Wide grip, high pull, aggressive turnover, overhead squat receive.
+- Clean & Jerk: Clean (deadlift to front rack position) + Jerk (dip-drive to split or squat receive).
+- Pull variations: Hang pulls, clean/snatch pulls, from blocks, from deficits.
+- Squat variations: Front squat (more quad focus, upright torso) and overhead squat (mobility-dependent).
+- Assistance work: Good mornings, RDLs, presses, rows, pulls-ups.
+- Programming: Frequency 4-6x/week. Technique work first (lighter loads), then strength work, then accessories.
+- Competition: 3 attempts per lift. Heaviest successful lift counts. Total = Snatch + Clean & Jerk.
+
+SECTION 3: BODYBUILDING
+- Goal: Muscle hypertrophy (size) and aesthetics. Symmetry, proportion, and conditioning.
+- Rep ranges: 8-15 reps for hypertrophy (mechanical tension + metabolic stress). Heavy (1-5) for strength, light (15-30) for pump and blood flow.
+- Training splits: Push/Pull/Legs (PPL), upper/lower, body part split (bro split), full body.
+- Progression: Progressive overload (adding weight, reps, sets, or reducing rest). Double progression: add reps first, then weight.
+- Periodization: Accumulation (high volume), intensification (high intensity), realization (peaking).
+- Competition prep: 12-16 weeks. Calorie deficit, increased cardio, maintained protein intake. Peak week: water and carb manipulation.
+- Posing: Practice mandatory poses (front double biceps, back lat spread, etc.) weekly.
+
+SECTION 4: CROSSFIT
+- Constantly varied, functional movements, performed at high intensity.
+- Key domains: Cardiovascular/respiratory endurance, stamina, strength, flexibility, power, speed, coordination, agility, balance, accuracy.
+- WOD types: For time (complete work as fast as possible), AMRAP (as many rounds as possible in set time), EMOM (every minute on the minute).
+- Benchmark WODs: Fran (21-15-9 thrusters and pull-ups), Cindy (5 pull-ups, 10 push-ups, 15 squats in 20 min AMRAP), Murph (1 mile run, 100 pull-ups, 200 push-ups, 300 squats, 1 mile run).
+- Common movements: Box jumps, wall balls, kettlebell swings, burpees, double-unders, rowing, assault bike.
+- Scaling: RX (prescribed weights/movements), scaled (modified weights/movements), Rx+ (harder version).
+- Risk management: High injury rate from competitive intensity. Scale aggressively on form, not ego.
+
+SECTION 5: STRONGMAN
+- Events: Deadlift (regular, axle, frame, car), overhead press (log, axle, circus dumbbell), carrying (farmer's walk, yoke walk, sandbag), pulling (truck pull, sled), throwing (stone loading, Atlas stones).
+- Grip strength is the primary limiting factor. Dedicated grip work essential (fat bar, pinch, wrist work).
+- Energy systems: Events are typically 30-90 seconds of maximal effort, repeated with rest.
+- Core strength: Anti-rotation, anti-flexion, and isometric holds are crucial.
+- Training approach: Practice events regularly. Supplement with powerlifting and bodybuilding work.
+
+SECTION 6: MARTIAL ARTS & COMBAT SPORTS
+- Strength for combat: Explosive power, grip strength, neck strength, core stability.
+- Endurance: Sport-specific intervals (e.g., 3-min rounds with 1-min rest). High heart rate tolerance.
+- Weight cutting: 1-2 weeks before weigh-in. Water manipulation (increase then cut water, sodium/carb manipulation). Dangerous if done improperly.
+- Boxing: Rotational power, footwork, shoulder endurance. Heavy bag, speed bag, double-end bag.
+- BJJ/Judo: Grip endurance, isometric strength, flexibility. Gi vs no-gi grip demands differ.
+
+SECTION 7: SPORTS-SPECIFIC CONDITIONING
+- Sprint sports (track, soccer, basketball): Repeat sprint ability (RSA). Short bursts of 5-30 seconds with incomplete recovery.
+- Field sports (rugby, football, hockey): Mix of aerobic base and repeated high-intensity efforts. Multidirectional movement and change of direction.
+- Endurance sports (marathon, triathlon): Aerobic base built over months. Periodization of volume and intensity. Sport-specific form work.
+- Racquet sports (tennis, squash): Multi-directional and reactionary. Lateral movement, change of direction, overhead power.
+- Skill vs strength: Early off-season: strength focus. Late off-season: power and speed. In-season: maintenance.
+
+SECTION 8: AGE-GROUP & MASTERS ATHLETES (35+)
+- Recovery is slower. Need more recovery days, lower volume, same or higher intensity.
+- Hormonal changes: Testosterone decreases, impacting muscle protein synthesis and recovery.
+- Periodization becomes more important. Deload every 3-4 weeks instead of 4-6.
+- Joint health: Prioritize mobility work. Avoid high-impact movements in older athletes.
+- Injury prevention: Longer warm-ups (15-20 min). More prehab work for vulnerable areas.
+- Strength maintenance: Lighter loads but maintain intensity relative to 1RM.
+
+SECTION 9: COMPETITION PREP & TAPERING
+- Taper: Systematic reduction of training load before competition to maximize performance.
+- Duration: Typically 7-14 days. Volume reduced by 40-60%. Intensity maintained or slightly reduced.
+- Peaking: 5-10% improvement in performance expected from proper taper.
+- Deload vs taper: Deload is recovery from training stress. Taper is active recovery with performance timing.
+- Nutrition before competition: Carb loading for endurance events (2-3 days). Normal intake for strength events. Hydration 48 hours out.
+- Competition day routine: Wake time, pre-competition meal (2-3 hours before), warm-up protocol, mental preparation.
+
+SECTION 10: PROGRAM DESIGN PRINCIPLES
+- SAID principle: Specific Adaptation to Imposed Demands. Train the specific energy system and movement pattern you want to improve.
+- FITT-VP: Frequency, Intensity, Time, Type, Volume, Progression.
+- Progressive overload: Gradual increase in training stimulus. 2-5% increase in volume or intensity per week.
+- Variation: Change exercises, rep ranges, and loading patterns every 4-8 weeks to avoid stagnation.
+- Individualization: Program must account for training age, injury history, goals, schedule, recovery capacity.
+- Minimum effective dose: The smallest amount of training that produces results. More is NOT always better.
+- Autoregulation: Adjust training based on daily readiness (sleep, stress, nutrition, previous training response).
