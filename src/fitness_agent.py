@@ -182,6 +182,8 @@ class IntentRouter:
             "hey", "hi", "hello", "sup", "yo", "morning", "evening", "afternoon",
             "thanks", "thank", "bye", "goodbye", "cheers", "appreciate", "coach",
             "bro", "dude", "man",
+            "yes", "yeah", "yep", "yup", "sure", "ok", "okay", "alright", "kk",
+            "no", "nope", "nah", "maybe", "idk",
         }
     )
     OUT_OF_SCOPE_KEYWORDS = frozenset(
