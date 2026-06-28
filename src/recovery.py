@@ -40,44 +40,48 @@ def compute_weekly_volumes(
     session_id: str = "default",
     weeks: int = 5,
 ) -> list[WeeklyVolume]:
-    """Compute training volume per week from session history.
+    """Compute training volume per week from ALL session history.
 
     Returns volumes for the last N weeks, oldest first.
+    Aggregates across ALL sessions (ignores session_id parameter) for
+    a complete picture of training load.
     """
-    session = store.get_session(session_id)
-    if session is None:
+    sessions = store.list_sessions()
+    if not sessions:
         return []
 
     today = date.today()
     weekly: dict[str, dict[str, Any]] = {}
 
-    # For simplicity: single session -> single week
-    # In a full implementation, you'd iterate over multiple sessions
-    session_date = session.get("date", today.isoformat())
-    lifts = session.get("lifts", [])
+    for sess in sessions:
+        sess_date = sess.get("date", "")
+        try:
+            d = date.fromisoformat(sess_date)
+        except ValueError:
+            continue
+        # Only look at recent weeks
+        if d < today - timedelta(weeks=weeks):
+            continue
 
-    # Compute total volume and per-exercise volume
-    total_vol = 0.0
-    exercise_vols: dict[str, float] = {}
-    for lift in lifts:
-        sets = lift.get("sets", [])
-        vol = volume_load(sets)
-        total_vol += vol
-        exercise = lift.get("exercise", "Unknown")
-        exercise_vols[exercise] = exercise_vols.get(exercise, 0) + vol
+        week_key = (d - timedelta(days=d.weekday())).isoformat()
+        sess_full = store.get_session(sess.get("session_id", ""))
+        if sess_full is None:
+            continue
 
-    # Determine week start (Monday)
-    try:
-        d = date.fromisoformat(session_date)
-    except ValueError:
-        d = today
-    week_start = (d - timedelta(days=d.weekday())).isoformat()
+        lifts = sess_full.get("lifts", [])
+        wd = weekly.setdefault(week_key, {
+            "total_volume": 0.0,
+            "session_count": 0,
+            "exercises": {},
+        })
+        wd["session_count"] += 1
 
-    weekly[week_start] = {
-        "total_volume": total_vol,
-        "session_count": 1,
-        "exercises": exercise_vols,
-    }
+        for lift in lifts:
+            sets = lift.get("sets", [])
+            vol = volume_load(sets)
+            wd["total_volume"] += vol
+            exercise = lift.get("exercise", "Unknown")
+            wd["exercises"][exercise] = wd["exercises"].get(exercise, 0) + vol
 
     # Build result list for requested weeks
     result: list[WeeklyVolume] = []

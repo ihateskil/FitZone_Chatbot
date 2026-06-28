@@ -20,7 +20,6 @@ from src.config import (
     AGENT_SYSTEM_PROMPT,
     GROQ_FAST_MODEL,
     GROQ_MODEL,
-    INTENT_CLASSIFIER_PROMPT,
     KNOWLEDGE_DB_DIR,
     KNOWLEDGE_MATCH_THRESHOLD,
     LLM_TEMPERATURE,
@@ -98,7 +97,8 @@ def _truncate_history(history: list[ChatTurn]) -> list[ChatTurn]:
 
 
 # ---------------------------------------------------------------------------
-# User Profile Extraction from Conversation
+# User Profile Extraction from Conversation (fallback for contexts without
+# ProfileStore)
 # ---------------------------------------------------------------------------
 
 _WEIGHT_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:kg|kgs|lbs?|pounds?)", re.IGNORECASE)
@@ -107,36 +107,36 @@ _HEIGHT_FT_RE = re.compile(r"(\d)'\s*(\d{1,2})", re.IGNORECASE)
 _AGE_RE = re.compile(r"(\d{1,2})\s*(?:years?\s*old|yr|yo)", re.IGNORECASE)
 _GENDER_RE = re.compile(r"\b(male|female|man|woman|guy|girl|boy)\b", re.IGNORECASE)
 _BODYFAT_RE = re.compile(r"(\d+(?:\.\d+)?)\s*%\s*(?:body\s*fat|bf|bodyfat)", re.IGNORECASE)
-_GOAL_RE = re.compile(r"\b(bulking?|cutting?|lean\s*bulk|recomp|maintain|lose\s*weight|build\s*muscle|gain\s*muscle|shred|get\s*stronger|hypertrophy|strength)\b", re.IGNORECASE)
+_GOAL_RE = re.compile(r"\b(bulk|bulking|cut|cutting|lean\s*bulk|recomp|maintain|lose\s*weight|build\s*muscle|gain\s*muscle|shred|get\s*stronger|hypertrophy|strength)\b", re.IGNORECASE)
 
 
 def _extract_user_profile(history: list[ChatTurn]) -> dict[str, str]:
     """Extract key user metrics from conversation history for context injection."""
     if not history:
         return {}
-    
+
     text = " ".join(t.content for t in history if t.role == "user")
     profile: dict[str, str] = {}
-    
+
     m = _WEIGHT_RE.search(text)
     if m:
         val = float(m.group(1))
         unit = "kg" if "kg" in m.group(0).lower() else "lbs"
         profile["weight"] = f"{val} {unit}"
-    
+
     m = _HEIGHT_CM_RE.search(text)
     if m:
         profile["height"] = f"{m.group(1)} cm"
-    
+
     m = _HEIGHT_FT_RE.search(text)
     if m:
         feet, inches = int(m.group(1)), int(m.group(2))
         profile["height"] = f"{feet}'{inches}\" ({round(feet*30.48 + inches*2.54)} cm)"
-    
+
     m = _AGE_RE.search(text)
     if m:
         profile["age"] = f"{m.group(1)} years"
-    
+
     m = _GENDER_RE.search(text)
     if m:
         g = m.group(1).lower()
@@ -144,138 +144,16 @@ def _extract_user_profile(history: list[ChatTurn]) -> dict[str, str]:
             profile["gender"] = "male"
         elif g in ("female", "woman", "girl"):
             profile["gender"] = "female"
-    
+
     m = _BODYFAT_RE.search(text)
     if m:
         profile["body_fat"] = f"{m.group(1)}%"
-    
+
     m = _GOAL_RE.search(text)
     if m:
         profile["goal"] = m.group(1)
-    
+
     return profile
-
-# ---------------------------------------------------------------------------
-# Intent router
-# ---------------------------------------------------------------------------
-
-
-class IntentRouter:
-    FITNESS_KEYWORDS = frozenset(
-        {
-            "gym", "fitness", "workout", "exercise", "training", "lift", "lifting",
-            "squat", "deadlift", "bench", "cardio", "rep", "reps", "set", "sets",
-            "muscle", "hypertrophy", "strength", "calorie", "calories", "macro",
-            "macros", "protein", "carb", "carbs", "fat", "nutrition", "diet",
-            "meal", "bmr", "tdee", "1rm", "volume", "load", "bulk", "cut",
-            "lean", "weight", "bodyweight", "supplement", "creatine", "preworkout",
-            "recovery", "stretch", "warmup", "cooldown", "hiit", "aerobic",
-            "anaerobic", "metabolism", "hydration", "chicken", "apple",
-            # Training methodology
-            "ppl", "deload", "rpe", "rir", "amrap", "emom", "superset",
-            "dropset", "myo", "overload", "periodization", "mesocycle",
-            # Body composition
-            "recomp", "shred", "gains", "physique", "bodybuilding", "powerlifting",
-            # Supplements & recovery
-            "whey", "casein", "bcaa", "eaa", "caffeine", "sleep", "soreness",
-            "doms", "foam", "roller", "mobility",
-            # Common movements & body parts
-            "abs", "ab", "pushup", "pushups", "pullup", "pullups", "plank",
-            "dumbbell", "barbell", "kettlebell", "dip", "dips", "lunge", "lunges",
-            "curl", "curls", "row", "rows", "press", "fly", "flies", "raise",
-            "shrug", "crunch", "crunches", "extension", "leg", "legs", "arm",
-            "arms", "back", "chest", "shoulder", "shoulders", "bicep", "tricep",
-            "glute", "glutes", "hamstring", "quad", "quadricep", "calf", "calves",
-            "forearm", "trap", "traps", "lat", "lats", "deltoid",
-            # Cardio & conditioning
-            "run", "running", "jog", "jogging", "walk", "walking", "sprint",
-            "swim", "swimming", "cycle", "cycling", "bike", "rowing", "rower",
-            "elliptical", "stair", "stairmaster", "jump", "jumping", "rope",
-            # Mind-body & modalities
-            "yoga", "pilates", "crossfit", "calisthenics", "plyometric",
-            "plyometrics", "agility", "speed", "endurance", "stamina",
-            # Injury & health
-            "injury", "pain", "rehab", "rehabilitation", "posture",
-            "tight", "tightness", "strain", "sprain", "ache", "aching",
-            # Goals & tracking
-            "lbs", "pound", "pounds", "kg", "kilos", "weigh", "weighing",
-            "scale", "measure", "measurement", "progress", "tracking",
-            "goal", "goals", "transform", "transformation",
-            # Diet & nutrition adjacent
-            "fasting", "intermittent", "fasted", "keto", "ketogenic",
-            "vegan", "vegetarian", "gluten", "organic", "calorie",
-            "deficit", "surplus", "maintenance",
-        }
-    )
-    GREETING_KEYWORDS = frozenset(
-        {
-            "hey", "hi", "hello", "sup", "yo", "morning", "evening", "afternoon",
-            "thanks", "thank", "bye", "goodbye", "cheers", "appreciate", "coach",
-            "bro", "dude", "man",
-            "yes", "yeah", "yep", "yup", "sure", "ok", "okay", "alright", "kk",
-            "no", "nope", "nah", "maybe", "idk",
-            "cool", "thx", "ty", "k", "nice", "great", "awesome", "perfect",
-            "gotcha", "understood", "sweet", "deal", "fine",
-        }
-    )
-    OUT_OF_SCOPE_KEYWORDS = frozenset(
-        {
-            "python", "javascript", "code", "programming", "weather", "stock",
-            "election", "politics", "movie", "sql", "kubernetes", "docker", "react",
-            "homework", "essay", "poem", "story", "recipe", "travel", "flight",
-            "crypto", "bitcoin", "algebra", "calculus", "history",
-        }
-    )
-
-    def __init__(self, model: str = GROQ_FAST_MODEL) -> None:
-        self._llm: ChatGroq | None = None
-        self._model = model
-
-    @staticmethod
-    def _tokenize(text: str) -> set[str]:
-        return set(TOKEN_PATTERN.findall(text.lower()))
-
-    @classmethod
-    def heuristic_classify(cls, user_query: str) -> str | None:
-        tokens = cls._tokenize(user_query)
-        if tokens & cls.OUT_OF_SCOPE_KEYWORDS and not (tokens & cls.FITNESS_KEYWORDS):
-            return "OUT_OF_SCOPE"
-        if tokens & cls.FITNESS_KEYWORDS:
-            return "IN_SCOPE"
-        # Short greetings/pleasantries (< 3 tokens, all greeting) — skip LLM
-        if len(tokens) < 3 and tokens & cls.GREETING_KEYWORDS and not (tokens & cls.OUT_OF_SCOPE_KEYWORDS):
-            return "IN_SCOPE"
-        # Longer queries with greeting mixed in — fall through to LLM
-        if tokens & cls.GREETING_KEYWORDS and not (tokens & cls.OUT_OF_SCOPE_KEYWORDS):
-            return "IN_SCOPE"
-        return None
-
-    def _get_llm(self) -> ChatGroq:
-        if self._llm is None:
-            self._llm = ChatGroq(model=self._model, temperature=0.0)
-        return self._llm
-
-    def classify(self, user_query: str) -> bool:
-        heuristic = self.heuristic_classify(user_query)
-        if heuristic == "OUT_OF_SCOPE":
-            return False
-        if heuristic == "IN_SCOPE":
-            return True
-
-        def _classify() -> bool:
-            response = self._get_llm().invoke(
-                [
-                    SystemMessage(content=INTENT_CLASSIFIER_PROMPT),
-                    HumanMessage(content=user_query),
-                ]
-            )
-            label = (response.content or "").strip().upper()
-            if "OUT_OF_SCOPE" in label:
-                return False
-            return "IN_SCOPE" in label
-
-        return with_retries(_classify, label="intent_classifier")
-
 
 # ---------------------------------------------------------------------------
 # Generation layer
@@ -293,7 +171,7 @@ class FitnessAgent:
         self._model = model
         self._temperature = temperature
         self._llm: ChatGroq | None = None
-        self._router = IntentRouter(model=fast_model)
+        self._router = get_intent_router()
         self._knowledge = KnowledgeRetriever(KNOWLEDGE_DB_DIR, top_k=top_k)
         self._food_client = OpenFoodFactsClient()
         self._pubmed_client = PubMedClient()
@@ -536,7 +414,7 @@ class FitnessAgent:
         # Build progression context for each exercise
         progression_parts: list[str] = []
         for lift in parsed:
-            history = self._session_store.get_exercise_history(session_id, lift.exercise)
+            history = self._session_store.get_all_exercise_history(lift.exercise)
             if history:
                 last_entry = history[-1]
                 last_sets = last_entry.get("sets", [])
@@ -573,7 +451,7 @@ class FitnessAgent:
             )
 
         query = validation.cleaned
-        if not self._router.classify(query):
+        if not self._router.classify_scope(query):
             log_event("out_of_scope", query_len=len(query))
             return AgentResponse(
                 text=OUT_OF_SCOPE_RESPONSE,
@@ -646,7 +524,7 @@ class FitnessAgent:
             return
 
         query = validation.cleaned
-        if not self._router.classify(query):
+        if not self._router.classify_scope(query):
             yield OUT_OF_SCOPE_RESPONSE
             return
 

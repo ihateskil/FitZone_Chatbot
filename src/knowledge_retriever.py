@@ -88,16 +88,17 @@ class KnowledgeRetriever:
                 "Add PDF books and/or text knowledge files."
             )
 
-    def _source_fingerprint(self) -> dict[str, float]:
-        fingerprint: dict[str, float] = {}
-        for pattern in [*JSON_INDEX_FILES]:
-            fpath = self.knowledge_dir / pattern
+    def _source_fingerprint(self) -> dict[str, str]:
+        fingerprint: dict[str, str] = {}
+        for fpath in sorted(self.knowledge_dir.glob("*.txt")):
             if fpath.exists():
-                fingerprint[str(fpath)] = fpath.stat().st_mtime
-        for txt_path in sorted(self.knowledge_dir.glob("*.txt")):
-            fingerprint[str(txt_path)] = txt_path.stat().st_mtime
-        for pdf_path in sorted(self.knowledge_dir.glob("*.pdf")):
-            fingerprint[str(pdf_path)] = pdf_path.stat().st_mtime
+                fingerprint[str(fpath)] = _file_hash(fpath)
+        for fpath in sorted(self.knowledge_dir.glob("*.json")):
+            if fpath.exists():
+                fingerprint[str(fpath)] = _file_hash(fpath)
+        for fpath in sorted(self.knowledge_dir.glob("*.pdf")):
+            if fpath.exists():
+                fingerprint[str(fpath)] = _file_hash(fpath)
         return fingerprint
 
     def _load_cache_if_valid(self) -> list[DocumentChunk] | None:
@@ -107,6 +108,10 @@ class KnowledgeRetriever:
         try:
             payload = json.loads(self._cache_path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
+            return None
+
+        cached_fingerprint = payload.get("fingerprint", {})
+        if cached_fingerprint != self._source_fingerprint():
             return None
 
         return [

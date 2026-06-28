@@ -1,0 +1,477 @@
+{
+  "knowledge/exercises.json": {
+    "mtime": 1782610596.92928,
+    "ast_hash": "766e07ea3a12130cd7cf7a40866ee0cb",
+    "semantic_hash": "766e07ea3a12130cd7cf7a40866ee0cb"
+  },
+  "knowledge/formulas.json": {
+    "mtime": 1782644425.252509,
+    "ast_hash": "f14d5933efa29a84a86aba2548e94433",
+    "semantic_hash": "f14d5933efa29a84a86aba2548e94433"
+  },
+  "knowledge/nutrition.json": {
+    "mtime": 1782610570.1551683,
+    "ast_hash": "e0b500ec0b1ba3c03a197e5a91f1eff2",
+    "semantic_hash": "e0b500ec0b1ba3c03a197e5a91f1eff2"
+  },
+  "scripts/download_issn_pdfs.py": {
+    "mtime": 1782603084.9296038,
+    "ast_hash": "1d4d8b921218b9adc3a8b9ed01605fb2",
+    "semantic_hash": "1d4d8b921218b9adc3a8b9ed01605fb2"
+  },
+  "scripts/ingest_exercises.py": {
+    "mtime": 1782601778.133903,
+    "ast_hash": "cf7c2c99f1cf9bfefed7612f7810ff48",
+    "semantic_hash": "cf7c2c99f1cf9bfefed7612f7810ff48"
+  },
+  "scripts/ingest_nutrition.py": {
+    "mtime": 1782601778.135405,
+    "ast_hash": "3647890c36c2690e0e7eab61a65a6681",
+    "semantic_hash": "3647890c36c2690e0e7eab61a65a6681"
+  },
+  "scripts/ingest_usda_foods.py": {
+    "mtime": 1782610448.7375457,
+    "ast_hash": "579a20836e9eb93866ec0b7f66996b5e",
+    "semantic_hash": "579a20836e9eb93866ec0b7f66996b5e"
+  },
+  "scripts/ingest_wger_exercises.py": {
+    "mtime": 1782601778.135405,
+    "ast_hash": "b548863b1f61f929f34b84828f667614",
+    "semantic_hash": "b548863b1f61f929f34b84828f667614"
+  },
+  "scripts/merge_exercises.py": {
+    "mtime": 1782610592.5401633,
+    "ast_hash": "5f072c8407f5ddc6d79fb6b2052510f4",
+    "semantic_hash": "5f072c8407f5ddc6d79fb6b2052510f4"
+  },
+  "scripts/merge_nutrition.py": {
+    "mtime": 1782610565.6902206,
+    "ast_hash": "38292cff66bbab49f03d83e8331eb8db",
+    "semantic_hash": "38292cff66bbab49f03d83e8331eb8db"
+  },
+  "scripts/rebuild_knowledge.py": {
+    "mtime": 1782601778.1364198,
+    "ast_hash": "0989eb10bbea937076b1fceebf41a392",
+    "semantic_hash": "0989eb10bbea937076b1fceebf41a392"
+  },
+  "src/__init__.py": {
+    "mtime": 1782601778.1364198,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "src/adaptive_planner.py": {
+    "mtime": 1782645331.092277,
+    "ast_hash": "fb3f516ce032b5256fd21c278240e2cb",
+    "semantic_hash": "fb3f516ce032b5256fd21c278240e2cb"
+  },
+  "src/api.py": {
+    "mtime": 1782647567.0880804,
+    "ast_hash": "217639cce11f7d9f845cf6c08d627b02",
+    "semantic_hash": "217639cce11f7d9f845cf6c08d627b02"
+  },
+  "src/auth.py": {
+    "mtime": 1782601778.1379223,
+    "ast_hash": "7b0fc7722269e776aad85596a23fc3d2",
+    "semantic_hash": "7b0fc7722269e776aad85596a23fc3d2"
+  },
+  "src/config.py": {
+    "mtime": 1782645440.2438462,
+    "ast_hash": "91d175cc1bb37e95d08e895e06f10088",
+    "semantic_hash": "91d175cc1bb37e95d08e895e06f10088"
+  },
+  "src/exercise_retriever.py": {
+    "mtime": 1782606529.5361478,
+    "ast_hash": "ec13ce73789f2652c236d499c30b9748",
+    "semantic_hash": "ec13ce73789f2652c236d499c30b9748"
+  },
+  "src/fitness_agent.py": {
+    "mtime": 1782647520.710742,
+    "ast_hash": "57e663f74660ac9cf697ad2da580bd0e",
+    "semantic_hash": "57e663f74660ac9cf697ad2da580bd0e"
+  },
+  "src/formula_calculator.py": {
+    "mtime": 1782601778.1400805,
+    "ast_hash": "1c3977713572151c9e5ee86703bfdc42",
+    "semantic_hash": "1c3977713572151c9e5ee86703bfdc42"
+  },
+  "src/formula_registry.py": {
+    "mtime": 1782601778.1415832,
+    "ast_hash": "099aeb0e530d525503c927f053aa360b",
+    "semantic_hash": "099aeb0e530d525503c927f053aa360b"
+  },
+  "src/healthcheck.py": {
+    "mtime": 1782601778.1426022,
+    "ast_hash": "67df574e8f8d80fdc14f2209e1e6bb1e",
+    "semantic_hash": "67df574e8f8d80fdc14f2209e1e6bb1e"
+  },
+  "src/input_validation.py": {
+    "mtime": 1782601778.1451132,
+    "ast_hash": "33c5dfba38ed4be93b80a165f8dd824e",
+    "semantic_hash": "33c5dfba38ed4be93b80a165f8dd824e"
+  },
+  "src/intent_router.py": {
+    "mtime": 1782606613.2439704,
+    "ast_hash": "bfa62fc15a5b70e951833b56c00f0cf2",
+    "semantic_hash": "bfa62fc15a5b70e951833b56c00f0cf2"
+  },
+  "src/knowledge_retriever.py": {
+    "mtime": 1782647614.9935493,
+    "ast_hash": "d942b4a32205fafe201c613a6ddcce3b",
+    "semantic_hash": "d942b4a32205fafe201c613a6ddcce3b"
+  },
+  "src/lift_parser.py": {
+    "mtime": 1782601778.1473422,
+    "ast_hash": "d1def7938ae64ec8dbc6b9e78c44e8ec",
+    "semantic_hash": "d1def7938ae64ec8dbc6b9e78c44e8ec"
+  },
+  "src/logging_utils.py": {
+    "mtime": 1782601778.148344,
+    "ast_hash": "5dbfc12217f1fc157950f0bddb8cfaff",
+    "semantic_hash": "5dbfc12217f1fc157950f0bddb8cfaff"
+  },
+  "src/nutrition_retriever.py": {
+    "mtime": 1782601778.148344,
+    "ast_hash": "ebe86d89f71887dd22d61d6c177f55df",
+    "semantic_hash": "ebe86d89f71887dd22d61d6c177f55df"
+  },
+  "src/open_food_facts.py": {
+    "mtime": 1782647600.1567967,
+    "ast_hash": "54df8099ad4b23ece27003c4e2ad1489",
+    "semantic_hash": "54df8099ad4b23ece27003c4e2ad1489"
+  },
+  "src/personality.py": {
+    "mtime": 1782601778.1506863,
+    "ast_hash": "e091eeeba462f868ca49a708cbb73130",
+    "semantic_hash": "e091eeeba462f868ca49a708cbb73130"
+  },
+  "src/progressor.py": {
+    "mtime": 1782601778.1506863,
+    "ast_hash": "11061b6ded59f0a637b5ed0cc2d795be",
+    "semantic_hash": "11061b6ded59f0a637b5ed0cc2d795be"
+  },
+  "src/pubmed_client.py": {
+    "mtime": 1782644453.094036,
+    "ast_hash": "aa06c625edc022492b339492dc71cc23",
+    "semantic_hash": "aa06c625edc022492b339492dc71cc23"
+  },
+  "src/recovery.py": {
+    "mtime": 1782647578.130773,
+    "ast_hash": "3e468b6a42271898e022c82bbc290fb6",
+    "semantic_hash": "3e468b6a42271898e022c82bbc290fb6"
+  },
+  "src/retry_utils.py": {
+    "mtime": 1782647533.6869648,
+    "ast_hash": "8fb2f3a8967a6ea97d82b3f9fc54230d",
+    "semantic_hash": "8fb2f3a8967a6ea97d82b3f9fc54230d"
+  },
+  "src/routes_exercises.py": {
+    "mtime": 1782601778.1528454,
+    "ast_hash": "5d17880b089fc881ba4b9f05ce6fc5d6",
+    "semantic_hash": "5d17880b089fc881ba4b9f05ce6fc5d6"
+  },
+  "src/routes_formulas.py": {
+    "mtime": 1782601778.1543505,
+    "ast_hash": "209b2f1c15e29ebb35c7f79dbc7add2c",
+    "semantic_hash": "209b2f1c15e29ebb35c7f79dbc7add2c"
+  },
+  "src/routes_nutrition.py": {
+    "mtime": 1782601778.1553533,
+    "ast_hash": "55993cf43a80aedf029d9de6258e3bb8",
+    "semantic_hash": "55993cf43a80aedf029d9de6258e3bb8"
+  },
+  "src/safety.py": {
+    "mtime": 1782601778.1553533,
+    "ast_hash": "e0ca9efd5d3cb6d5fa0e6cf4428784c8",
+    "semantic_hash": "e0ca9efd5d3cb6d5fa0e6cf4428784c8"
+  },
+  "src/session_store.py": {
+    "mtime": 1782606603.7649422,
+    "ast_hash": "f2353f99bee38efc3010d9201dd14503",
+    "semantic_hash": "f2353f99bee38efc3010d9201dd14503"
+  },
+  "src/streamlit_app.py": {
+    "mtime": 1782647586.6430733,
+    "ast_hash": "6e37df65aedbf52b66d551f7345469bf",
+    "semantic_hash": "6e37df65aedbf52b66d551f7345469bf"
+  },
+  "src/user_profile.py": {
+    "mtime": 1782645276.1969883,
+    "ast_hash": "92be64ac52b7dd727a759d3827f47fac",
+    "semantic_hash": "92be64ac52b7dd727a759d3827f47fac"
+  },
+  "src/weekly_tracker.py": {
+    "mtime": 1782645309.3767161,
+    "ast_hash": "825c24e5df7d7db2fa726b6d437d6b40",
+    "semantic_hash": "825c24e5df7d7db2fa726b6d437d6b40"
+  },
+  "tests/__init__.py": {
+    "mtime": 1782601778.162738,
+    "ast_hash": "7ccfdac7bf3254b9e22575273458bb49",
+    "semantic_hash": "7ccfdac7bf3254b9e22575273458bb49"
+  },
+  "tests/conftest.py": {
+    "mtime": 1782601893.4670684,
+    "ast_hash": "1f1195080971ea09f875f0a5e81a4ed4",
+    "semantic_hash": "1f1195080971ea09f875f0a5e81a4ed4"
+  },
+  "tests/test_agent.py": {
+    "mtime": 1782647645.652958,
+    "ast_hash": "45f102541257fdfb39254914b02e6692",
+    "semantic_hash": "45f102541257fdfb39254914b02e6692"
+  },
+  "tests/test_api.py": {
+    "mtime": 1782601897.1439385,
+    "ast_hash": "cd5f450b20c0fb1cca7dc2961c958138",
+    "semantic_hash": "cd5f450b20c0fb1cca7dc2961c958138"
+  },
+  "tests/test_formula_registry.py": {
+    "mtime": 1782601778.1651144,
+    "ast_hash": "967adadf0bc286e32d90eb3165564d5f",
+    "semantic_hash": "967adadf0bc286e32d90eb3165564d5f"
+  },
+  "tests/test_input.py": {
+    "mtime": 1782601778.1651144,
+    "ast_hash": "58ee99e3acb24c77f4ba47c26ac8e129",
+    "semantic_hash": "58ee99e3acb24c77f4ba47c26ac8e129"
+  },
+  "tests/test_lift_parser.py": {
+    "mtime": 1782601778.1662025,
+    "ast_hash": "57ad1fac254e2349242db92172ffda7d",
+    "semantic_hash": "57ad1fac254e2349242db92172ffda7d"
+  },
+  "tests/test_personality.py": {
+    "mtime": 1782601778.1672347,
+    "ast_hash": "dde14a7d890359fdcc1764e2b3fcc825",
+    "semantic_hash": "dde14a7d890359fdcc1764e2b3fcc825"
+  },
+  "tests/test_progressor.py": {
+    "mtime": 1782601778.1672347,
+    "ast_hash": "a579956716845970d22645e6b7137587",
+    "semantic_hash": "a579956716845970d22645e6b7137587"
+  },
+  "tests/test_pubmed.py": {
+    "mtime": 1782639826.8174305,
+    "ast_hash": "6448258109f513b53d4947e6e5d107a2",
+    "semantic_hash": "6448258109f513b53d4947e6e5d107a2"
+  },
+  "tests/test_recovery.py": {
+    "mtime": 1782601778.1682353,
+    "ast_hash": "0a7cc74774f599cfb64732d7b208076c",
+    "semantic_hash": "0a7cc74774f599cfb64732d7b208076c"
+  },
+  "tests/test_safety.py": {
+    "mtime": 1782601778.1682353,
+    "ast_hash": "ae996958f6beed67dcda3e6801f392a5",
+    "semantic_hash": "ae996958f6beed67dcda3e6801f392a5"
+  },
+  "tests/test_user_tracking.py": {
+    "mtime": 1782645602.7260191,
+    "ast_hash": "d51935a87d2dedc83cc3649faf1ed490",
+    "semantic_hash": "d51935a87d2dedc83cc3649faf1ed490"
+  },
+  "README.md": {
+    "mtime": 1782601778.1192703,
+    "ast_hash": "092f3a34cadaaaadc3d80e88492ea198",
+    "semantic_hash": "092f3a34cadaaaadc3d80e88492ea198"
+  },
+  "knowledge/advanced_nutrition.txt": {
+    "mtime": 1782644147.3940506,
+    "ast_hash": "66c564c61f196d4b8147ac56d38a1c79",
+    "semantic_hash": "66c564c61f196d4b8147ac56d38a1c79"
+  },
+  "knowledge/biomechanics.txt": {
+    "mtime": 1782644183.999882,
+    "ast_hash": "779c921816e1ee9d15ebcb4e147fcf28",
+    "semantic_hash": "779c921816e1ee9d15ebcb4e147fcf28"
+  },
+  "knowledge/coaching_psychology.txt": {
+    "mtime": 1782644221.4151568,
+    "ast_hash": "6bceb16daa934316503ca9ff81084651",
+    "semantic_hash": "6bceb16daa934316503ca9ff81084651"
+  },
+  "knowledge/endurance_cardio_training.txt": {
+    "mtime": 1782638098.8673067,
+    "ast_hash": "be46423bfce6c508de8be72e8ce04479",
+    "semantic_hash": "be46423bfce6c508de8be72e8ce04479"
+  },
+  "knowledge/gym_calculations.txt": {
+    "mtime": 1782610667.6877732,
+    "ast_hash": "5947c5d16197291d95447229c4064984",
+    "semantic_hash": "5947c5d16197291d95447229c4064984"
+  },
+  "knowledge/hormones_endocrinology.txt": {
+    "mtime": 1782644050.8168876,
+    "ast_hash": "b1ea36d55b386902f49dc1dbffd0fe4f",
+    "semantic_hash": "b1ea36d55b386902f49dc1dbffd0fe4f"
+  },
+  "knowledge/injury_rehab.txt": {
+    "mtime": 1782644112.5469098,
+    "ast_hash": "e416815955bcd16aa61746d5330a9b25",
+    "semantic_hash": "e416815955bcd16aa61746d5330a9b25"
+  },
+  "knowledge/mobility_flexibility.txt": {
+    "mtime": 1782644303.050889,
+    "ast_hash": "e771f09d191fe335b0edf264eb548a9c",
+    "semantic_hash": "e771f09d191fe335b0edf264eb548a9c"
+  },
+  "knowledge/nutrition.txt": {
+    "mtime": 1782644380.4936862,
+    "ast_hash": "748d0d68ba96286d9c840ee3f464dac3",
+    "semantic_hash": "748d0d68ba96286d9c840ee3f464dac3"
+  },
+  "knowledge/periodization.txt": {
+    "mtime": 1782644077.9237194,
+    "ast_hash": "7357b97f8b594968cd21551621d756d4",
+    "semantic_hash": "7357b97f8b594968cd21551621d756d4"
+  },
+  "knowledge/sleep_recovery.txt": {
+    "mtime": 1782644022.9793146,
+    "ast_hash": "6bb3d35b5d4894915eae8d989b271085",
+    "semantic_hash": "6bb3d35b5d4894915eae8d989b271085"
+  },
+  "knowledge/sport_specific_training.txt": {
+    "mtime": 1782644330.9089048,
+    "ast_hash": "4c8cbccb90a3f069b8343be5faf10a79",
+    "semantic_hash": "4c8cbccb90a3f069b8343be5faf10a79"
+  },
+  "knowledge/sports_psychology.txt": {
+    "mtime": 1782638006.3227684,
+    "ast_hash": "83510e1863cd4faa14ca31c1349213ba",
+    "semantic_hash": "83510e1863cd4faa14ca31c1349213ba"
+  },
+  "knowledge/supplements_guide.txt": {
+    "mtime": 1782610635.1727757,
+    "ast_hash": "c2b315705a8d88749ac54026f7c17311",
+    "semantic_hash": "c2b315705a8d88749ac54026f7c17311"
+  },
+  "knowledge/womens_fitness.txt": {
+    "mtime": 1782644262.0661058,
+    "ast_hash": "4fd811caf24102f49d8625dc9740fc64",
+    "semantic_hash": "4fd811caf24102f49d8625dc9740fc64"
+  },
+  "knowledge/youth_senior_training.txt": {
+    "mtime": 1782638257.92826,
+    "ast_hash": "56c3efd724a4fd9824e327b713698287",
+    "semantic_hash": "56c3efd724a4fd9824e327b713698287"
+  },
+  "requirements.txt": {
+    "mtime": 1782601778.1323998,
+    "ast_hash": "73b5c5282c1f63eb0f11b86e760219ff",
+    "semantic_hash": "73b5c5282c1f63eb0f11b86e760219ff"
+  },
+  "knowledge/Anatomy and Physiology 2e - Student Solution Guide.pdf": {
+    "mtime": 1678987547.0,
+    "ast_hash": "dd8c18498005a60fed3e41ce10bc9732",
+    "semantic_hash": "dd8c18498005a60fed3e41ce10bc9732"
+  },
+  "knowledge/AnatomyAndPhysiology-LR.pdf": {
+    "mtime": 1782600585.7751362,
+    "ast_hash": "2e319716e07c29175d63a3d3842f1815",
+    "semantic_hash": "2e319716e07c29175d63a3d3842f1815"
+  },
+  "knowledge/Arm Hypertrophy Program  Workouts For Bigger And Stronger Arms (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4797368,
+    "ast_hash": "bcb259d947df25be014fcd3d362531ca",
+    "semantic_hash": "bcb259d947df25be014fcd3d362531ca"
+  },
+  "knowledge/Forearm Hypertrophy Guide (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4802623,
+    "ast_hash": "349916dd96c83f831dc46c4007253ca7",
+    "semantic_hash": "349916dd96c83f831dc46c4007253ca7"
+  },
+  "knowledge/Full Body High Frequency Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4807873,
+    "ast_hash": "df49553d54eff486f79cac5e8125209b",
+    "semantic_hash": "df49553d54eff486f79cac5e8125209b"
+  },
+  "knowledge/Fundamentals Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4808471,
+    "ast_hash": "65fa37e6f57043e67f64524c8efb7ca9",
+    "semantic_hash": "65fa37e6f57043e67f64524c8efb7ca9"
+  },
+  "knowledge/ISSN_Beta_Alanine.pdf": {
+    "mtime": 1782603097.0701554,
+    "ast_hash": "8f4d6e56db314edc5c3d2c13a92b20be",
+    "semantic_hash": "8f4d6e56db314edc5c3d2c13a92b20be"
+  },
+  "knowledge/ISSN_Caffeine.pdf": {
+    "mtime": 1782603094.3792715,
+    "ast_hash": "a796ba21d6859f6a8bb7a0522f54e73d",
+    "semantic_hash": "a796ba21d6859f6a8bb7a0522f54e73d"
+  },
+  "knowledge/ISSN_Creatine.pdf": {
+    "mtime": 1782603095.738287,
+    "ast_hash": "4e98d47169f9b725bba6ac31fb9c6596",
+    "semantic_hash": "4e98d47169f9b725bba6ac31fb9c6596"
+  },
+  "knowledge/ISSN_Diets_and_Body_Composition.pdf": {
+    "mtime": 1782603091.7336712,
+    "ast_hash": "176c9c207f4abc7a5b0c4e1974a47ef5",
+    "semantic_hash": "176c9c207f4abc7a5b0c4e1974a47ef5"
+  },
+  "knowledge/ISSN_Nutrient_Timing.pdf": {
+    "mtime": 1782603093.0018618,
+    "ast_hash": "bedbf64837e347809874cb540116ae17",
+    "semantic_hash": "bedbf64837e347809874cb540116ae17"
+  },
+  "knowledge/ISSN_Protein_and_Exercise.pdf": {
+    "mtime": 1782603090.5186436,
+    "ast_hash": "a8581becc588cf46bc464c481523fb75",
+    "semantic_hash": "a8581becc588cf46bc464c481523fb75"
+  },
+  "knowledge/JefF Nippard Powerbuilding 3.0 5x (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4813492,
+    "ast_hash": "43268965f1676aebfc9a695d89cac4ea",
+    "semantic_hash": "43268965f1676aebfc9a695d89cac4ea"
+  },
+  "knowledge/Jeff Nippards Back Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4813492,
+    "ast_hash": "06e8046e1e3d3b3e0fcc954fc85e9b80",
+    "semantic_hash": "06e8046e1e3d3b3e0fcc954fc85e9b80"
+  },
+  "knowledge/Jeff Nippards Chest Hypertrophy Program (Nippard Jeff) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4813492,
+    "ast_hash": "36b5caa61481309c4baf6efeca675f64",
+    "semantic_hash": "36b5caa61481309c4baf6efeca675f64"
+  },
+  "knowledge/Jeff Nippards Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4813492,
+    "ast_hash": "d567ed1b1ed4c56525209b2ebd9534ee",
+    "semantic_hash": "d567ed1b1ed4c56525209b2ebd9534ee"
+  },
+  "knowledge/Mens Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4818747,
+    "ast_hash": "84a83617f87c87a10ff066ae5f44cf52",
+    "semantic_hash": "84a83617f87c87a10ff066ae5f44cf52"
+  },
+  "knowledge/PowerBuilding System 4XWEEK Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4823902,
+    "ast_hash": "f33d08b734393adac4a249aa2d7c164a",
+    "semantic_hash": "f33d08b734393adac4a249aa2d7c164a"
+  },
+  "knowledge/Powerbuilding 2.0 5-6xweek (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4823902,
+    "ast_hash": "aa0c8f0c245d34900f506faca4e1e6f0",
+    "semantic_hash": "aa0c8f0c245d34900f506faca4e1e6f0"
+  },
+  "knowledge/Research_Education_Hub_Science_Based_Resources_2026.pdf": {
+    "mtime": 1782357487.4875064,
+    "ast_hash": "a2582a6a691bbafa48b0b15473cd648b",
+    "semantic_hash": "a2582a6a691bbafa48b0b15473cd648b"
+  },
+  "knowledge/Squat Specialization Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4875064,
+    "ast_hash": "43d144a63b9675a30b693741b9a5dd49",
+    "semantic_hash": "43d144a63b9675a30b693741b9a5dd49"
+  },
+  "knowledge/The Ultimate Exercise Guide Jeff Nippards Best Exercise for Each Muscle (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1782357487.4880147,
+    "ast_hash": "112fa72fe40e2931b3c22cb51c7544f4",
+    "semantic_hash": "112fa72fe40e2931b3c22cb51c7544f4"
+  },
+  "knowledge/The Ultimate Push Pull Legs System 6X (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf": {
+    "mtime": 1752763421.0,
+    "ast_hash": "59dc2b50882483c52083b8e0d6dbd040",
+    "semantic_hash": "59dc2b50882483c52083b8e0d6dbd040"
+  }
+}

@@ -1,0 +1,42 @@
+C:\Users\pc\Desktop\FitZone Chatbot\README.md
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\advanced_nutrition.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\biomechanics.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\coaching_psychology.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\endurance_cardio_training.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\gym_calculations.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\hormones_endocrinology.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\injury_rehab.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\mobility_flexibility.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\nutrition.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\periodization.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\sleep_recovery.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\sport_specific_training.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\sports_psychology.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\supplements_guide.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\womens_fitness.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\youth_senior_training.txt
+C:\Users\pc\Desktop\FitZone Chatbot\requirements.txt
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Anatomy and Physiology 2e - Student Solution Guide.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\AnatomyAndPhysiology-LR.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Arm Hypertrophy Program  Workouts For Bigger And Stronger Arms (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Forearm Hypertrophy Guide (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Full Body High Frequency Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Fundamentals Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Beta_Alanine.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Caffeine.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Creatine.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Diets_and_Body_Composition.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Nutrient_Timing.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\ISSN_Protein_and_Exercise.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\JefF Nippard Powerbuilding 3.0 5x (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Jeff Nippards Back Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Jeff Nippards Chest Hypertrophy Program (Nippard Jeff) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Jeff Nippards Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Jeff NippardΓÇÖs Bench Press Specialization Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Mens Shoulder Hypertrophy Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\PowerBuilding System 4XWEEK Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Powerbuilding 2.0 5-6xweek (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Research_Education_Hub_Science_Based_Resources_2026.pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\Squat Specialization Program (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\The Ultimate Exercise Guide Jeff Nippards Best Exercise for Each Muscle (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+C:\Users\pc\Desktop\FitZone Chatbot\knowledge\The Ultimate Push Pull Legs System 6X (Jeff Nippard) (z-library.sk, 1lib.sk, z-lib.sk).pdf

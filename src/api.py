@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 
 from src.config import APP_NAME, DISCLAIMER, GROQ_API_KEY
 from src.auth import _get_ready_app, _verify_api_key
-from src.fitness_agent import ChatTurn, run_agent_full, stream_agent, warmup_agent
+from src.fitness_agent import ChatTurn, get_agent, run_agent_full, stream_agent, warmup_agent
 from src.lift_parser import LiftParser, is_lift_log as check_lift_log
 from src.session_store import SessionStore
 from src.progressor import recommend_progression
@@ -172,7 +172,9 @@ def chat_stream(
 # Lift Tracking Endpoints
 # ---------------------------------------------------------------------------
 
-_lift_store = SessionStore()
+def _get_agent_store() -> SessionStore:
+    """Return the shared SessionStore from the singleton FitnessAgent."""
+    return get_agent()._session_store
 
 
 class LiftLogRequest(BaseModel):
@@ -199,7 +201,7 @@ def log_lift(
     parsed = LiftParser.parse(payload.entry)
     if not parsed:
         return LiftLogResponse(logged=False, lifts=[], session_id=payload.session_id)
-    result = _lift_store.log_lifts(payload.session_id, parsed)
+    result = _get_agent_store().log_lifts(payload.session_id, parsed)
     return LiftLogResponse(
         logged=True,
         lifts=result.get("lifts", []),
@@ -221,7 +223,7 @@ def lift_history(
     _app: FastAPI = Depends(_get_ready_app),
 ) -> LiftHistoryResponse:
     """Get lift history for a specific exercise."""
-    entries = _lift_store.get_exercise_history(session_id, exercise)
+    entries = _get_agent_store().get_exercise_history(session_id, exercise)
     return LiftHistoryResponse(exercise=exercise, entries=entries, session_id=session_id)
 
 
@@ -245,7 +247,7 @@ def lift_recommend(
 ) -> ProgressionResponse:
     """Get progression recommendation for an exercise based on logged history."""
     from src.progressor import ProgressionRecommendation
-    entries = _lift_store.get_exercise_history(session_id, exercise)
+    entries = _get_agent_store().get_exercise_history(session_id, exercise)
     if not entries:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -286,7 +288,7 @@ def get_recovery(
     _app: FastAPI = Depends(_get_ready_app),
 ) -> RecoveryResponse:
     """Get recovery and fatigue assessment based on logged workout history."""
-    volumes = compute_weekly_volumes(_lift_store, session_id)
+    volumes = compute_weekly_volumes(_get_agent_store(), session_id)
     status = assess_recovery(volumes)
     return RecoveryResponse(
         acute_volume=status.acute_volume,

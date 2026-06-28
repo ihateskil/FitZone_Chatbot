@@ -27,10 +27,11 @@ setup_logging()
 SAMPLE_PROMPTS = [
     ("Out-of-scope", "Can you write me a Python script to scrape weather data?"),
     ("BMR calculation", "I'm a 30-year-old man, 180 cm, 85 kg. What is my BMR using Mifflin-St Jeor?"),
-    ("Groq fallback", "How many rest days should a beginner take on a full-body program?"),
+    ("Training program", "What are good back hypertrophy exercises from my training programs?"),
     ("Open Food Facts", "How many calories and protein are in grilled chicken breast per 100g?"),
-    ("Knowledge PDFs", "What are good back hypertrophy exercises from my training programs?"),
-    ("Research Hub", "What science-based resources do you recommend for evidence-based nutrition?"),
+    ("Log a workout", "benched 185x8, 185x6, 190x5"),
+    ("PubMed research", "What does recent research say about optimal protein intake for muscle growth?"),
+    ("Logging + recovery", "squatted 225x5 — how's my recovery looking?"),
 ]
 
 

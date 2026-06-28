@@ -1,14 +1,17 @@
-"""Tests for intent router heuristics."""
+"""Tests for intent router and context sanitization."""
 
-from src.fitness_agent import IntentRouter, _sanitize_reference_context
+from src.fitness_agent import _sanitize_reference_context
+from src.intent_router import IntentRouter
 
 
 def test_out_of_scope_heuristic():
-    assert IntentRouter.heuristic_classify("Write me Python code for weather") == "OUT_OF_SCOPE"
+    router = IntentRouter()
+    assert router.classify_scope("Write me Python code for weather") is False
 
 
 def test_in_scope_heuristic():
-    assert IntentRouter.heuristic_classify("How many calories in chicken breast?") == "IN_SCOPE"
+    router = IntentRouter()
+    assert router.classify_scope("How many calories in chicken breast?") is True
 
 
 def test_sanitize_strips_source_tags():

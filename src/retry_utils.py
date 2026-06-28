@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import http.client
 import logging
+import socket
 import time
+import urllib.error
 from collections.abc import Callable
 from typing import TypeVar
 
@@ -17,6 +20,9 @@ RETRYABLE_EXCEPTIONS: tuple[type[Exception], ...] = (
     ConnectionError,
     TimeoutError,
     OSError,
+    urllib.error.URLError,
+    http.client.RemoteDisconnected,
+    socket.timeout,
 )
 
 
