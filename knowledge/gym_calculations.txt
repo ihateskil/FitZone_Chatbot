@@ -152,7 +152,179 @@ SECTION 6: TRAINING VOLUME & LOAD MANAGEMENT
   - Acute Workload = Total training volume load completed in the current week (7 days).
   - Chronic Workload = Average weekly training volume load over the past 4 weeks (28 days).
   - ACWR = Acute Workload / Chronic Workload
-  - Injury Danger Zone Thresholds:
-    * Sweet Spot (Optimal fitness progression & low injury risk): 0.8 to 1.3
-    * Danger Zone (High risk of structural fatigue or overuse injury): > 1.5
+   - Injury Danger Zone Thresholds:
+     * Sweet Spot (Optimal fitness progression & low injury risk): 0.8 to 1.3
+     * Danger Zone (High risk of structural fatigue or overuse injury): > 1.5
+
+SECTION 7: ADVANCED BODY COMPOSITION EQUATIONS
+7.1 FAT-FREE MASS INDEX (FFMI)
+  - FFMI = (Lean_Body_Mass_kg) / (Height_m * Height_m)
+  - Normal range: 16-19 (men), 14-17 (women)
+  - Athletic range: 19-22 (men), 17-20 (women)
+  - Likely drug-free limit: ~25 (men), ~22 (women)
+  - Adjusted FFMI (for tall individuals): FFMI_adj = FFMI + (6.1 * (1.8 - Height_m))
+
+7.2 BODY SURFACE AREA (BSA) - Dubois Formula
+  - BSA (m2) = 0.007184 * (Weight_kg ^ 0.425) * (Height_cm ^ 0.725)
+  - Used for chemotherapy dosing, burn treatment, and metabolic scaling
+
+7.3 WAIST-TO-HEIGHT RATIO (WHtR)
+  - WHtR = Waist_cm / Height_cm
+  - Health threshold: < 0.5 (indicating low central obesity risk)
+  - Excellent: < 0.4 | Good: 0.4-0.49 | Elevated: 0.5-0.59 | High: >= 0.6
+
+7.4 DURNIN-WOMERSLEY BODY FAT ESTIMATION (Skinfold Method, 4 Sites)
+  - Measure at: Biceps, Triceps, Subscapular, and Suprailiac
+  - Sum_4 = Biceps + Triceps + Subscapular + Suprailiac (all in mm)
+  - Men (17-72 years): Body Density = 1.1765 - 0.0744 * log10(Sum_4)
+  - Women (17-72 years): Body Density = 1.1567 - 0.0717 * log10(Sum_4)
+  - Then convert Body Density to BF% via Siri: BF% = (495 / Body_Density) - 450
+
+7.5 JACKSON-POLLOCK 3-SITE BODY FAT (Skinfold Method)
+  - Men (chest, abdomen, thigh):
+    * Body Density = 1.10938 - (0.0008267 * Sum_3) + (0.0000016 * Sum_3^2) - (0.0002574 * Age)
+  - Women (triceps, suprailiac, thigh):
+    * Body Density = 1.0994921 - (0.0009929 * Sum_3) + (0.0000023 * Sum_3^2) - (0.0001392 * Age)
+
+SECTION 8: STRENGTH STANDARDS & CLASSIFICATION
+8.1 STRENGTH STANDARDS BY RELATIVE STRENGTH (Based on total for Big 3: Squat + Bench + Deadlift)
+  - Note: These are approximate. Actual standards vary by federation and bodyweight.
+  - Novice: 
+    * Bodyweight ratio total: 1.0x to 2.0x (men), 0.5x to 1.0x (women)
+    * Training age: 0-6 months
+  - Intermediate:
+    * Bodyweight ratio total: 2.0x to 3.5x (men), 1.0x to 2.0x (women)
+    * Training age: 6-24 months
+  - Advanced:
+    * Bodyweight ratio total: 3.5x to 5.0x (men), 2.0x to 3.0x (women)
+    * Training age: 2-5 years
+  - Elite:
+    * Bodyweight ratio total: > 5.0x (men), > 3.0x (women)
+    * Training age: 5+ years
+
+8.2 INDIVIDUAL LIFT STANDARDS (men, per bodyweight)
+  - Squat: Novice 1.0x, Intermediate 1.5x, Advanced 2.0x, Elite 2.5x+
+  - Bench: Novice 0.75x, Intermediate 1.0x, Advanced 1.5x, Elite 2.0x+
+  - Deadlift: Novice 1.25x, Intermediate 1.75x, Advanced 2.25x, Elite 2.75x+
+  - Overhead Press: Novice 0.5x, Intermediate 0.75x, Advanced 1.0x, Elite 1.25x+
+
+8.3 STRENGTH STANDARDS (women, per bodyweight)
+  - Squat: Novice 0.75x, Intermediate 1.25x, Advanced 1.75x, Elite 2.25x+
+  - Bench: Novice 0.5x, Intermediate 0.75x, Advanced 1.0x, Elite 1.5x+
+  - Deadlift: Novice 1.0x, Intermediate 1.5x, Advanced 2.0x, Elite 2.5x+
+  - Overhead Press: Novice 0.35x, Intermediate 0.5x, Advanced 0.75x, Elite 1.0x+
+
+SECTION 9: REST INTERVAL RECOMMENDATIONS
+9.1 REST BETWEEN SETS BY GOAL
+  - Strength (1-5 reps): 3-5 minutes
+  - Hypertrophy (6-15 reps): 60-90 seconds
+  - Muscular Endurance (15+ reps): 30-60 seconds
+  - Power (explosive work): 2-5 minutes
+
+9.2 REST BETWEEN EXERCISES BY COMPOUND vs ISOLATION
+  - Compound exercises (same body part): 3-5 minutes
+  - Compound to isolation: 2-3 minutes
+  - Isolation to isolation (same body part): 60-90 seconds
+  - Alternating antagonist supersets: 60-90 seconds between supersets
+  - Agonist-antagonist supersets (e.g., bench + row): minimal rest between exercises, 2-3 min between supersets
+
+SECTION 10: ENERGY EXPENDITURE FOR ACTIVITIES (MET VALUES)
+10.1 MET (Metabolic Equivalent of Task)
+  - 1 MET = Resting metabolic rate (3.5 ml O2/kg/min or ~1 kcal/kg/hour)
+  - Calories Burned = MET * Weight_kg * Duration_hours
+
+10.2 COMMON EXERCISE MET VALUES
+  - Walking 3 mph (moderate pace): 3.5 METs
+  - Walking 4 mph (brisk): 5.0 METs
+  - Jogging 5 mph (12 min/mile): 8.3 METs
+  - Running 6 mph (10 min/mile): 9.8 METs
+  - Running 8 mph (7.5 min/mile): 11.8 METs
+  - Cycling 12-14 mph (moderate): 8.0 METs
+  - Cycling 14-16 mph (vigorous): 10.0 METs
+  - Resistance training (moderate effort): 5.0 METs
+  - Resistance training (vigorous effort): 6.0 METs
+  - Circuit training (minimal rest): 8.0 METs
+  - Swimming laps (moderate): 8.0 METs
+  - Swimming laps (vigorous): 10.0 METs
+  - HIIT / CrossFit style: 10-12 METs
+  - Yoga (Hatha): 2.5 METs
+  - Yoga (Power/Vinyasa): 4.0 METs
+  - Stretching: 2.5 METs
+  - Rowing machine (moderate): 7.0 METs
+  - Rowing machine (vigorous): 8.5 METs
+  - Jumping rope: 10-12 METs
+  - Elliptical trainer (moderate): 5.0 METs
+  - Elliptical trainer (vigorous): 6.5 METs
+  - Stair climber: 8.0 METs
+  - Kettlebell swings (vigorous): 8.0 METs
+
+10.3 DAILY ACTIVITY MET VALUES
+  - Sleeping: 0.95 METs
+  - Sitting (desk work): 1.3 METs
+  - Standing (cashier, standing desk): 1.8 METs
+  - Light household chores: 2.5 METs
+  - Walking the dog: 3.0 METs
+  - Carrying groceries: 3.5 METs
+  - Moving furniture / heavy cleaning: 5.0 METs
+
+SECTION 11: PROTEIN SYNTHESIS & NITROGEN BALANCE
+11.1 NITROGEN BALANCE
+  - Nitrogen_Balance = Nitrogen_Intake - Nitrogen_Output
+  - Nitrogen_Intake (g) = Protein_Intake_g / 6.25
+  - Positive balance = anabolic state (needed for muscle growth)
+  - Negative balance = catabolic state (muscle breakdown)
+  - Athletes should aim for +2 to +6 g/day nitrogen balance
+
+11.2 LEUCINE THRESHOLD FOR MPS (Muscle Protein Synthesis)
+  - Per-meal leucine needed to maximize MPS: 2-3g leucine per meal
+  - Leucine content of common proteins (per 100g):
+    * Whey protein isolate: ~9-11g leucine
+    * Chicken breast: ~2.5g leucine
+    * Beef (lean): ~2.3g leucine
+    * Eggs: ~1.5g leucine (per 100g, ~0.5g per egg)
+    * Salmon: ~2.5g leucine
+    * Tofu (firm): ~1.8g leucine
+    * Pea protein: ~7g leucine
+    * Rice protein: ~5g leucine
+
+11.3 MEAL FREQUENCY & PROTEIN DOSING
+  - MPS elevated for ~3-5 hours after a protein meal
+  - Optimal protein dose per meal: 0.4-0.55 g/kg bodyweight
+  - For 80kg individual: 32-44g protein per meal
+  - Total daily protein: distribute across 3-5 meals
+  - Pre-sleep casein (30-40g) may improve overnight MPS
+
+SECTION 12: PERIODIZATION & PROGRAMMING FORMULAS
+12.1 WEEKLY PROGRESSION RATES
+  - Beginner: 2.5-5kg per week on main lifts (linear progression)
+  - Intermediate: 1.25-2.5kg per week (weekly or biweekly)
+  - Advanced: 0.5-1.25kg per 2-4 weeks (monthly or block progression)
+
+12.2 DELOAD FORMULA
+  - Deload week volume = Normal_Volume * 0.4 to 0.6
+  - Deload week intensity = Normal_Intensity * 0.7 to 0.9
+  - Frequency: Every 4-8 weeks for most programs
+  - Duration: 5-7 days typically sufficient
+
+12.3 PERCENTAGE-BASED PROGRAMMING (e.g., 5/3/1, Westside)
+  - Week 1: 3x5 at 65%, 75%, 85% of 1RM
+  - Week 2: 3x3 at 70%, 80%, 90% of 1RM
+  - Week 3: 5/3/1+ at 75%, 85%, 95% of 1RM
+  - Week 4: Deload at 60%, 65%, 70% of 1RM
+  - Training max typically set at 90% of actual 1RM
+
+12.4 RPE (RATE OF PERCEIVED EXERTION) SCALE
+  - RPE 10: Maximal effort (0 reps left in tank)
+  - RPE 9: 1 rep left in tank
+  - RPE 8: 2 reps left in tank
+  - RPE 7: 3 reps left in tank
+  - RPE 6: 4 reps left in tank
+  - RPE 5: Easy (5+ reps left)
+  - RIR (Reps In Reserve) = 10 - RPE
+  - Effective for: Daily autoregulation, fatigue management
+
+12.5 RATE OF FORCE DEVELOPMENT (RFD)
+  - RFD = Peak_Force / Time_to_Peak_Force (measured in N/s)
+  - Higher RFD = more explosive force production
+  - Trained specifically with: Olympic lifts, plyometrics, speed work (30-60% 1RM, explosive concentric)
 ================================================================================

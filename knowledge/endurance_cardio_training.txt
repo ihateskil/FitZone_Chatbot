@@ -1,0 +1,74 @@
+===== CARDIOVASCULAR & ENDURANCE TRAINING GUIDE =====
+
+SECTION 1: ENERGY SYSTEMS
+- Phosphagen system (ATP-PC): Powers maximal efforts up to ~10 seconds. Uses stored ATP and creatine phosphate. No oxygen required. Recovers 70% in 30s, full recovery in 3min.
+- Glycolytic system (anaerobic): Powers high-intensity efforts from ~10 seconds to ~2 minutes. Breaks down glucose without oxygen. Produces lactate as byproduct.
+- Oxidative system (aerobic): Powers sustained efforts beyond 2 minutes. Uses oxygen to break down carbs, fats, and protein. Most efficient energy producer.
+
+SECTION 2: HEART RATE ZONES
+Zone 1 (50-60% HRmax): Very light. Warm-up, recovery. Conversational pace.
+Zone 2 (60-70% HRmax): Light to moderate. Base endurance training. Fat-burning zone. Can speak in full sentences.
+Zone 3 (70-80% HRmax): Moderate to hard. Tempo runs/threshold. Can speak 3-4 words at a time.
+Zone 4 (80-90% HRmax): Hard. Lactate threshold. Interval training. Can barely speak.
+Zone 5 (90-100% HRmax): Maximum. VO2 max sprints. All-out effort.
+
+HRmax formula (standard): 220 - age. More accurate: 208 - (0.7 × age)
+Karvonen formula: Target HR = ((HRmax - HRrest) × %intensity) + HRrest
+
+SECTION 3: RUNNING & JOGGING
+- Cadence: Optimal 170-180 steps/minute. Reduces injury risk and improves efficiency.
+- Foot strike: Midfoot striking is recommended over heel striking for most runners.
+- Proper form: Slight forward lean, arms at 90 degrees, relaxed shoulders, high knees during sprinting.
+- 5K training: Base mileage of 15-20 mpw. Long run of 3-5 miles. Include 1 speed session/week.
+- 10K training: Base of 20-30 mpw. Long run of 5-8 miles. Tempo runs at threshold pace.
+- Half marathon training: Base of 25-40 mpw. Long run of 8-12 miles. Include tempo and interval work.
+- Marathon training: Base of 35-50+ mpw. Long run of 16-22 miles. Peak week 3 weeks before race.
+- C25K program: Walk/run intervals. Week 1: run 60s, walk 90s x8. Gradual progression to 30min continuous running.
+
+SECTION 4: CYCLING
+- Cadence: Optimal 80-100 RPM for road cycling.
+- Gearing: Use easier gears for climbing (60-80 RPM), harder gears for flat/descending (90-110 RPM).
+- FTP (Functional Threshold Power): Average power you can sustain for 1 hour. Used to set training zones.
+- Sweet spot training: 88-93% of FTP. Improves endurance and threshold without excessive fatigue.
+- HIIT on bike: 30s all-out sprint / 4min recovery x4-6. Improves VO2 max significantly.
+
+SECTION 5: SWIMMING
+- Freestyle technique: Bilateral breathing (every 3 strokes). High elbow catch. Long streamline.
+- Kick: Small, fast kicks from hips (not knees). 2-beat kick for distance, 6-beat for sprinting.
+- Breathing: Exhale underwater, turn head to side to inhale. Don't lift head forward.
+- Common distances: 50m/100m sprints, 200m/400m middle distance, 800m/1500m distance.
+- Training: Mix of drill work, interval sets, and continuous swimming.
+
+SECTION 6: HIIT (HIGH INTENSITY INTERVAL TRAINING)
+- Tabata protocol: 20s work / 10s rest x8 rounds (4 minutes total). Typically at 170% VO2 max intensity.
+- Wingate protocol: 30s all-out sprint / 4min active recovery x4-6.
+- Gibala protocol: 60s hard effort / 75s recovery x8-12.
+- HIIT benefits: Improves VO2 max more efficiently than steady state. Increases insulin sensitivity. Elevates post-exercise oxygen consumption (EPOC).
+- Frequency: 2-3 HIIT sessions per week maximum. Needs adequate recovery.
+- HIIT vs MICT: HIIT produces similar or superior cardiovascular improvements in less time. MICT (moderate intensity continuous training) builds aerobic base more effectively.
+
+SECTION 7: VO2 MAX
+- VO2 max: Maximum rate of oxygen consumption during exercise. Measured in ml/kg/min.
+- Average untrained male: 35-40 ml/kg/min. Female: 27-31.
+- Average trained male: 45-55. Female: 38-48.
+- Elite endurance athletes: 70-85 (male), 60-75 (female).
+- Improving VO2 max: HIIT intervals at 90-95% HRmax, sustained for 3-5 minutes per interval. Long slow distance builds capillary density.
+
+SECTION 8: LACTATE THRESHOLD
+- LT1 (first lactate threshold): Point where blood lactate begins to rise above baseline. Occurs at ~60-70% VO2 max.
+- LT2 (second lactate threshold / OBLA): Point where lactate accumulates rapidly. Occurs at ~80-90% VO2 max.
+- Tempo runs: Sustained effort at ~85-90% HRmax (just below LT2). Duration: 20-40 minutes.
+- Threshold improvement: Consistent tempo work raises LT2, allowing faster paces at lower lactate levels.
+
+SECTION 9: RECOVERY & OVERTRAINING
+- Deload week: Reduce volume by 40-60% every 4-6 weeks. Keep intensity similar.
+- Signs of overtraining: Persistent fatigue, decreased performance, mood changes, insomnia, increased resting HR, frequent illness.
+- Active recovery: Low-intensity movement (zone 1-2) on rest days improves blood flow and recovery.
+- Sleep: Critical for cardiovascular adaptations. Aim for 7-9 hours. Poor sleep reduces VO2 max improvements by up to 50%.
+
+SECTION 10: SPECIFIC SPORTS NOTES
+- Rowing: Power per stroke (measured in watts). Stroke rate 18-36 spm depending on piece. Leg drive first, then back swing, then arm pull.
+- CrossFit: Combines weightlifting, gymnastics, and metabolic conditioning. "Fitness" defined as increased work capacity across broad time and modal domains.
+- Stair climbing: Low impact, high calorie burn. Equivalent to running with 50% more joint stress.
+- Jump rope: Burns ~10-15 cal/min. Boxer skip, double unders, crossovers.
+- Rucking: Walking with weighted backpack. Improves endurance with low joint impact. Start at 10% bodyweight, progress to 30%.

@@ -77,7 +77,7 @@ class KnowledgeRetriever:
             return
 
         self._chunks = []
-        self._ingest_gym_calculations()
+        self._ingest_text_files()
         self._ingest_pdfs()
         self._ingest_json_files()
         self._save_cache()
@@ -85,15 +85,17 @@ class KnowledgeRetriever:
         if not self._chunks:
             raise RuntimeError(
                 f"No readable content found in {self.knowledge_dir}. "
-                "Add PDF books and/or gym_calculations.txt."
+                "Add PDF books and/or text knowledge files."
             )
 
     def _source_fingerprint(self) -> dict[str, float]:
         fingerprint: dict[str, float] = {}
-        for pattern in [GYM_CALCULATIONS_FILE, *JSON_INDEX_FILES]:
+        for pattern in [*JSON_INDEX_FILES]:
             fpath = self.knowledge_dir / pattern
             if fpath.exists():
                 fingerprint[str(fpath)] = fpath.stat().st_mtime
+        for txt_path in sorted(self.knowledge_dir.glob("*.txt")):
+            fingerprint[str(txt_path)] = txt_path.stat().st_mtime
         for pdf_path in sorted(self.knowledge_dir.glob("*.pdf")):
             fingerprint[str(pdf_path)] = pdf_path.stat().st_mtime
         return fingerprint
@@ -135,16 +137,16 @@ class KnowledgeRetriever:
             os.close(fd)
         os.replace(tmp_path, self._cache_path)
 
-    def _ingest_gym_calculations(self) -> None:
-        gym_path = self.knowledge_dir / GYM_CALCULATIONS_FILE
-        if not gym_path.exists():
-            return
-
-        gym_text = gym_path.read_text(encoding="utf-8")
-        for block in _split_gym_blocks(gym_text):
-            self._chunks.append(
-                DocumentChunk(source=GYM_CALCULATIONS_FILE, text=block)
-            )
+    def _ingest_text_files(self) -> None:
+        for txt_path in sorted(self.knowledge_dir.glob("*.txt")):
+            txt_text = txt_path.read_text(encoding="utf-8")
+            source_name = txt_path.name
+            if source_name == "gym_calculations.txt":
+                for block in _split_gym_blocks(txt_text):
+                    self._chunks.append(DocumentChunk(source=source_name, text=block))
+            else:
+                for block in _split_text_chunks(txt_text):
+                    self._chunks.append(DocumentChunk(source=source_name, text=block))
 
     def _ingest_pdfs(self) -> None:
         seen_hashes: set[str] = set()
