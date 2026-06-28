@@ -31,10 +31,12 @@ class ExerciseEntry:
         self.force: str = data.get("force", "") or ""
         self.level: str = data.get("level", "") or "intermediate"
         self.mechanic: str = data.get("mechanic", "") or ""
-        self.equipment: str = data.get("equipment", "") or "other"
-        self.primary_muscles: list[str] = data.get("primaryMuscles", [])
-        self.secondary_muscles: list[str] = data.get("secondaryMuscles", [])
-        self.instructions: list[str] = data.get("instructions", [])
+        equip = data.get("equipment", "")
+        self.equipment: str = ", ".join(equip) if isinstance(equip, list) else (equip or "other")
+        self.primary_muscles: list[str] = data.get("primaryMuscles") or data.get("target_muscles", [])
+        self.secondary_muscles: list[str] = data.get("secondaryMuscles") or data.get("synergists", [])
+        instructions = data.get("instructions", [])
+        self.instructions: list[str] = instructions if isinstance(instructions, list) else [instructions]
         self.category: str = data.get("category", "") or "strength"
         self.fitzone_domain: str = data.get("fitzone_domain", "General Fitness")
         self.images: list[str] = data.get("images", [])
