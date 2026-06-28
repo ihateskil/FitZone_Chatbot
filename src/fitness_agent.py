@@ -33,6 +33,7 @@ from src.input_validation import ValidationResult, validate_user_input
 from src.knowledge_retriever import KnowledgeRetriever
 from src.logging_utils import log_event, timed_operation
 from src.open_food_facts import OpenFoodFactsClient
+from src.pubmed_client import PubMedClient
 from src.retry_utils import with_retries
 from src.safety import SafetyCheck, SafetyLevel, check_safety
 from src.lift_parser import LiftParser, is_lift_log
@@ -45,6 +46,9 @@ from src.intent_router import get_intent_router, route_query
 from src.nutrition_retriever import get_nutrition_retriever
 from src.formula_calculator import get_formula_calculator
 from src.exercise_retriever import get_exercise_retriever
+from src.user_profile import ProfileStore, UserProfile
+from src.weekly_tracker import compute_weekly_summaries, compute_trends, format_trend_context
+from src.adaptive_planner import AdaptivePlanner
 
 TOKEN_PATTERN = re.compile(r"[a-z0-9]+")
 SOURCE_TAG_PATTERN = re.compile(r"^\[Source:[^\]]+\]\s*\n?", re.MULTILINE)
@@ -292,8 +296,11 @@ class FitnessAgent:
         self._router = IntentRouter(model=fast_model)
         self._knowledge = KnowledgeRetriever(KNOWLEDGE_DB_DIR, top_k=top_k)
         self._food_client = OpenFoodFactsClient()
+        self._pubmed_client = PubMedClient()
         self._session_store = SessionStore()
-        self._pool = ThreadPoolExecutor(max_workers=2)
+        self._profile_store = ProfileStore()
+        self._planner = AdaptivePlanner()
+        self._pool = ThreadPoolExecutor(max_workers=4)
         self._nutrition = get_nutrition_retriever()
         self._formula_calc = get_formula_calculator()
         self._exercises = get_exercise_retriever()
@@ -310,13 +317,23 @@ class FitnessAgent:
         truncated = context[:MAX_CONTEXT_CHARS].rsplit("\n", 1)[0]
         return truncated + "\n[…]"
 
-    def _build_context(self, user_query: str, session_id: str = "default") -> tuple[str, float]:
+    def _build_context(self, user_query: str, session_id: str = "default", profile: UserProfile | None = None) -> tuple[str, float]:
         knowledge_future = self._pool.submit(self._knowledge.retrieve, user_query)
         food_future = None
+        pubmed_future = None
+        trends_future = None
         # Use domain routing to decide which retrievers to invoke
         route_result = route_query(user_query)
         if route_result.domain in ("nutrition_lookup", "general_fitness"):
             food_future = self._pool.submit(self._food_client.retrieve_context, user_query)
+        if PubMedClient.is_research_query(user_query):
+            pubmed_future = self._pool.submit(self._pubmed_client.retrieve_context, user_query)
+
+        # Compute weekly trends in parallel if we have a session
+        if self._session_store.get_session(session_id) is not None:
+            trends_future = self._pool.submit(
+                self._compute_trends_for_context, session_id
+            )
 
         sections: list[str] = []
 
@@ -329,6 +346,11 @@ class FitnessAgent:
             food_context, food_found = food_future.result()
             if food_found:
                 sections.append(f"[NUTRITION DATA]\n{food_context}")
+
+        if pubmed_future is not None:
+            pubmed_context, pubmed_found = pubmed_future.result()
+            if pubmed_found:
+                sections.append(pubmed_context)
 
         # Add nutrition knowledge base context
         nutrition_context = self._nutrition.format_for_llm(
@@ -357,8 +379,37 @@ class FitnessAgent:
         except Exception:
             pass  # Recovery context is optional
 
+        # Inject user profile context
+        if profile is not None:
+            profile_ctx = profile.format_for_context()
+            if profile_ctx:
+                sections.append(profile_ctx)
+
+        # Inject weekly trends + adaptive recommendations
+        if trends_future is not None:
+            try:
+                trend_ctx, rec_ctx = trends_future.result()
+                if trend_ctx:
+                    sections.append(trend_ctx)
+                if rec_ctx:
+                    sections.append(rec_ctx)
+            except Exception:
+                pass
+
         combined = "\n\n---\n\n".join(sections) if sections else ""
         return self._truncate_context(_sanitize_reference_context(combined)), knowledge_score
+
+    def _compute_trends_for_context(self, session_id: str) -> tuple[str, str]:
+        """Compute weekly trends + adaptive recommendations for context injection."""
+        summaries = compute_weekly_summaries(self._session_store)
+        if not summaries:
+            return "", ""
+        trend = compute_trends(summaries)
+        trend_ctx = format_trend_context(trend)
+        profile = self._profile_store.load(session_id)
+        rec = self._planner.analyze(profile, trend)
+        rec_ctx = rec.format_for_context()
+        return trend_ctx, rec_ctx
 
     def _build_exercise_context(self, user_query: str) -> str | None:
         """Build exercise context for exercise lookup queries."""
@@ -408,6 +459,7 @@ class FitnessAgent:
         user_query: str,
         context: str,
         history: list[ChatTurn],
+        profile: UserProfile | None = None,
         science_mode: bool = False,
         personality: str = "coach",
     ) -> list[BaseMessage]:
@@ -419,11 +471,14 @@ class FitnessAgent:
             system_prompt += SCIENCE_MODE_PROMPT_ADDITION
         else:
             system_prompt += COACH_MODE_PROMPT_ADDITION
-        # Inject user profile into system prompt if available
-        user_profile = _extract_user_profile(history)
-        if user_profile:
-            profile_lines = [f"- **{k.replace('_', ' ').title()}**: {v}" for k, v in user_profile.items()]
-            system_prompt += "\n\n## User Profile (extracted from conversation)\n" + "\n".join(profile_lines) + "\n(Use these details in calculations and recommendations.)"
+        # Inject user profile into system prompt (persistent profile preferred, fallback to extraction)
+        if profile is not None and any([profile.weight_kg, profile.age, profile.gender, profile.primary_goal]):
+            system_prompt += "\n\n## User Profile\n" + profile.format_for_context().replace("## User Profile\n", "") + "\n(Use these details in calculations and recommendations.)"
+        else:
+            user_profile = _extract_user_profile(history)
+            if user_profile:
+                profile_lines = [f"- **{k.replace('_', ' ').title()}**: {v}" for k, v in user_profile.items()]
+                system_prompt += "\n\n## User Profile (extracted from conversation)\n" + "\n".join(profile_lines) + "\n(Use these details in calculations and recommendations.)"
 
         messages: list[BaseMessage] = [SystemMessage(content=system_prompt)]
 
@@ -497,7 +552,7 @@ class FitnessAgent:
         progression_ctx = "\n\n".join(progression_parts) if progression_parts else None
         return parsed, progression_ctx
 
-    def run(self, user_query: str, history: list[ChatTurn] | None = None, science_mode: bool = False, personality: str = "coach") -> AgentResponse:
+    def run(self, user_query: str, history: list[ChatTurn] | None = None, science_mode: bool = False, personality: str = "coach", session_id: str = "default") -> AgentResponse:
         start = time.perf_counter()
         history = history or []
 
@@ -529,14 +584,16 @@ class FitnessAgent:
         # Detect and process lift logs
         lift_logged = False
         progression_hint = None
-        session_id = "default"  # Could be extracted from metadata in future
         parsed_lifts, progression_ctx = self._process_lift_log(query, session_id)
         if parsed_lifts:
             lift_logged = True
             progression_hint = progression_ctx
 
+        # Update persistent user profile from this conversation turn
+        profile = self._profile_store.update_from_conversation(session_id, query)
+
         with timed_operation("build_context", query_len=len(query)) as timing:
-            context, score = self._build_context(query, session_id=session_id)
+            context, score = self._build_context(query, session_id=session_id, profile=profile)
             timing["knowledge_score"] = score
 
         # Append progression context if available
@@ -546,7 +603,7 @@ class FitnessAgent:
             else:
                 context = progression_ctx
 
-        messages = self._build_messages(query, context, history, science_mode=science_mode, personality=personality)
+        messages = self._build_messages(query, context, history, profile=profile, science_mode=science_mode, personality=personality)
 
         def _generate() -> str:
             response = self._get_llm().invoke(messages)
@@ -595,14 +652,18 @@ class FitnessAgent:
 
         # Detect and process lift logs — mirrors run() so streaming also records workouts
         parsed_lifts, progression_ctx = self._process_lift_log(query, session_id)
-        context, _ = self._build_context(query, session_id=session_id)
+
+        # Update persistent user profile from this conversation turn
+        profile = self._profile_store.update_from_conversation(session_id, query)
+
+        context, _ = self._build_context(query, session_id=session_id, profile=profile)
 
         # Append progression context if a lift was just logged
         if progression_ctx:
             context = (context + "\n\n---\n\n" + progression_ctx) if context else progression_ctx
 
         messages = self._build_messages(
-            query, context, history, science_mode=science_mode, personality=personality
+            query, context, history, profile=profile, science_mode=science_mode, personality=personality
         )
 
         if parsed_lifts:

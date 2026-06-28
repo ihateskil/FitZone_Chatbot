@@ -1,0 +1,75 @@
+===== SLEEP, RECOVERY & REGENERATION GUIDE =====
+
+SECTION 1: SLEEP FUNDAMENTALS FOR ATHLETES
+- Sleep is the single most effective recovery tool. 7-9 hours for most adults, 8-10 for serious athletes.
+- Growth hormone (GH) is primarily released during slow-wave sleep (stages 3-4 NREM). GH release peaks 60-90 minutes after sleep onset.
+- Cortisol naturally drops during sleep. Poor sleep = elevated evening cortisol = impaired recovery and muscle breakdown.
+- Protein synthesis is reduced by 18-30% after just one night of poor sleep. Chronic sleep restriction compounds this deficit.
+- Sleep deprivation of 4 hours or less for a single night reduces testosterone by 10-15% in men.
+- Reaction time, accuracy, and cognitive function degrade linearly with sleep loss. Motor skill consolidation occurs during REM sleep.
+
+SECTION 2: SLEEP HYGIENE PROTOCOLS
+- Consistency: Same bedtime and wake time 7 days/week. Irregular sleep shifts circadian rhythm similar to jet lag.
+- Temperature: Optimal bedroom temperature is 65-68°F (18-20°C). Core body temperature must drop to initiate sleep.
+- Light exposure: Blue light from screens suppresses melatonin production by up to 50%. Use blue light blocking glasses 90 minutes before bed. Dim lights 1 hour before sleep.
+- Morning light: 10-30 minutes of natural sunlight within 1 hour of waking sets circadian rhythm for the day.
+- Caffeine cutoff: No caffeine after 2 PM (or 8-10 hours before bed). Caffeine half-life is 5-6 hours.
+- Alcohol: Disrupts REM sleep and reduces growth hormone release. Even one drink before bed reduces sleep quality.
+- Meal timing: Avoid heavy meals within 2-3 hours of bed. Protein before bed (casein, cottage cheese) can support overnight muscle protein synthesis.
+
+SECTION 3: RECOVERY MODALITIES
+- Active recovery: Low-intensity exercise (30-60 min at 50-60% max HR) on rest days improves blood flow and reduces soreness. Walking, light cycling, swimming.
+- Compression garments: May reduce perceived soreness and speed recovery marker clearance. Best evidence for post-exercise wear for 24 hours.
+- Cold water immersion (ice baths): Reduces inflammation and soreness but MAY blunt hypertrophy adaptations long-term. Best used after high-impact or CNS-taxing sessions only.
+- Sauna/heat therapy: 15-20 minutes post-workout. Increases growth hormone temporarily, improves heat shock proteins, enhances recovery.
+- Massage therapy: Reduces cortisol, increases parasympathetic activity, improves perceived recovery. Mechanical effect on muscle tension is temporary.
+- Foam rolling: Best for acute ROM improvement and perceived recovery. Little evidence for long-term recovery benefit beyond placebo.
+- Stretching: Static stretching post-workout does NOT significantly reduce DOMS. Dynamic mobility is more effective for recovery.
+- Normatec/ pneumatic compression: Limited evidence beyond placebo for recovery enhancement.
+
+SECTION 4: DELOADING STRATEGIES
+- Deload frequency: Every 4-6 weeks for most programs. More frequent for advanced lifters, less for beginners.
+- Deload types: Active deload (50-60% of normal volume at same intensity), Passive deload (complete rest 3-5 days), Intensity deload (same volume at 60-70% intensity).
+- Signs you need a deload: plateau >2 weeks, persistent fatigue, elevated resting HR by 5+ bpm, poor sleep quality, irritability, loss of motivation, constant soreness.
+- Deload duration: 5-7 days typically. Can extend to 10-14 days after a competition or intense training block.
+- During deload: Maintain protein intake, increase sleep by 1 hour/night, focus on mobility and light cardio.
+
+SECTION 5: PARASYMPATHETIC RECOVERY (NERVOUS SYSTEM)
+- Heart rate variability (HRV): Primary measure of parasympathetic recovery. Higher HRV = more recovered. Track morning HRV (upon waking, before movement).
+- HRV trends: A consistently declining HRV over 7-10 days signals overreaching or overtraining. Acute drops (1-2 days) are normal after hard sessions.
+- HRV improving strategies: Deep breathing (4-6 breaths/min), meditation, mild cold exposure, reduced screen time, consistent sleep schedule.
+- Morning HRV protocol: Upon waking, remain lying down, breathe normally for 60 seconds, then measure. Use a chest strap for accuracy.
+- Chronic stress effect: Psychological stress accumulates with training stress. A high-stress life requires more recovery between sessions.
+
+SECTION 6: NUTRITION FOR RECOVERY
+- Post-workout window: Consume 20-40g protein and carbohydrates within 2 hours post-exercise. The "anabolic window" is wider than once thought (up to 4-6 hours if pre-workout meal was adequate).
+- Recovery meal composition: 0.4g/kg protein, 0.8-1.2g/kg carbs for endurance sessions, 0.4-0.8g/kg carbs for strength sessions.
+- Tart cherry juice: 480ml (16oz) daily shown to reduce muscle soreness and improve sleep quality. High in melatonin and anti-inflammatory compounds.
+- Omega-3 fatty acids: 2-3g EPA/DHA daily reduces inflammation and supports recovery. Food sources: fatty fish (salmon, mackerel, sardines).
+- Magnesium: Supports muscle relaxation, sleep quality, and testosterone production. 300-400mg elemental magnesium before bed. Forms: glycinate (best absorption), citrate, malate.
+- Zinc: 15-30mg/day supports testosterone, immune function, and tissue repair. Often deficient in athletes.
+- Vitamin D: 2000-5000 IU/day supports bone health, immune function, muscle repair, and testosterone. Most athletes are deficient.
+- Water: Dehydration of just 2% body weight impairs performance and recovery. Drink to thirst but increase intake on training days.
+
+SECTION 7: SLEEP DISORDERS & ATHLETES
+- Sleep apnea: Higher prevalence in athletes with high BMI, neck circumference >17 inches (men) or >16 inches (women). Symptoms: snoring, waking gasping, daytime sleepiness. Requires medical diagnosis.
+- Delayed sleep phase: Common in evening exercisers. Exercise within 3 hours of bed does not impair sleep for most people. Individual variation exists.
+- Insomnia: Difficulty falling or staying asleep despite adequate opportunity. CBT-I (cognitive behavioral therapy for insomnia) is first-line treatment.
+
+SECTION 8: PERIODIZATION OF RECOVERY
+- Microcycle (week): Hard days followed by easy or rest days. Common patterns: 2-on-1-off, 3-on-1-off, or alternating hard/easy.
+- Mesocycle (4-8 weeks): Increasing fatigue accumulates across the mesocycle. Deload at the end to dissipate fatigue and allow supercompensation.
+- Macrocycle (year): Recovery needs change with training phases. Highest volume phases need most recovery. Peaking phases need taper recovery.
+- Annual planning: Schedule 1-2 full rest weeks per year (vacation, complete break). Schedule around life stress (exams, busy work periods).
+
+SECTION 9: OVERTRAINING SYNDROME
+- Symptoms: Performance decline despite continued training, persistent fatigue, mood disturbances, sleep disruption, frequent illness, loss of appetite, elevated resting HR, decreased libido.
+- Distinguishing overreaching vs overtraining: Overreaching resolves with 1-2 weeks of rest/deload. Overtraining syndrome requires weeks to months of recovery.
+- Biomarkers: Elevated cortisol, suppressed testosterone, low SHBG, elevated CK, suppressed immune markers, low ferritin.
+- Treatment: Complete rest or very low activity for 2-4 weeks. Gradually reintroduce training at 50% normal volume. Medical supervision recommended.
+
+SECTION 10: TRAVEL AND RECOVERY
+- Jet lag: Allow 1 day per time zone crossed for full circadian adaptation. Eastward travel (losing time) is harder than westward.
+- Travel recovery: Increase water intake, avoid alcohol, prioritize protein, get morning sunlight in new time zone, maintain exercise schedule at reduced intensity.
+- Altitude training: Increases red blood cell production but impairs recovery initially. Allow 3-5 days of reduced training upon arrival at altitude.
+- Sleep hygiene on the road: Pack blackout eye mask, earplugs, melatonin (0.5-3mg), magnesium glycinate, and blue light blocking glasses.

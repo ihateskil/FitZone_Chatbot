@@ -1,74 +1,173 @@
 ===== CARDIOVASCULAR & ENDURANCE TRAINING GUIDE =====
 
-SECTION 1: ENERGY SYSTEMS
-- Phosphagen system (ATP-PC): Powers maximal efforts up to ~10 seconds. Uses stored ATP and creatine phosphate. No oxygen required. Recovers 70% in 30s, full recovery in 3min.
-- Glycolytic system (anaerobic): Powers high-intensity efforts from ~10 seconds to ~2 minutes. Breaks down glucose without oxygen. Produces lactate as byproduct.
-- Oxidative system (aerobic): Powers sustained efforts beyond 2 minutes. Uses oxygen to break down carbs, fats, and protein. Most efficient energy producer.
+SECTION 1: ENERGY SYSTEMS DEEP DIVE
+- Phosphagen system (ATP-PCr): Powers maximal efforts up to ~10 seconds. Uses stored ATP and creatine phosphate. No oxygen required. Recovers 70% within 30 seconds, full recovery in 3 minutes. Train with maximal 5-10 second sprints, full rest.
+- Glycolytic system (anaerobic): Powers high-intensity efforts from ~10 seconds to ~2 minutes. Breaks down glucose without oxygen. Produces lactate as byproduct (which is then recycled as fuel). Rate-limiting enzyme: phosphofructokinase (PFK).
+- Oxidative system (aerobic): Powers sustained efforts beyond 2 minutes. Uses oxygen to break down carbs, fats, and protein. Most efficient energy producer (36 ATP per glucose vs 2 ATP from glycolysis). Primary system for all activities longer than 2-3 minutes.
+- Energy system interplay: All three systems contribute simultaneously at all times. The DOMINANT system shifts based on intensity and duration. Even during a marathon, the ATP-PCr system fires during each stride.
+- Metabolic flexibility: The ability to switch between burning carbs and fats efficiently. Trained endurance athletes are more metabolically flexible. Improves with consistent aerobic training.
+- Substrate utilization during exercise: At low intensity (zone 1-2), fat provides ~60-80% of energy. As intensity increases, carb contribution increases. At high intensity (zone 4-5), carbs provide nearly 100% of energy.
+- EPOC (Excess Post-Exercise Oxygen Consumption): Elevated oxygen consumption after exercise. HIIT produces greater EPOC than steady-state (burning more calories post-workout). Lasts 1-24 hours depending on intensity and duration.
+- Lactate is NOT the cause of muscle soreness: This is a common myth. Lactate is a fuel (shuttled to heart, liver, and slow-twitch fibers to be used as energy). Delayed onset muscle soreness (DOMS) is caused by muscle damage and inflammation, not lactate.
+- Crossover concept: The exercise intensity at which the body shifts from primarily fat to primarily carbohydrate metabolism. Trained individuals have a higher crossover point (can burn fat at higher intensities).
+- Oxygen deficit and EPOC: At exercise onset, oxygen delivery lags demand (oxygen deficit). This deficit is repaid during recovery (EPOC). Training improves the speed of oxygen uptake kinetics.
 
-SECTION 2: HEART RATE ZONES
-Zone 1 (50-60% HRmax): Very light. Warm-up, recovery. Conversational pace.
-Zone 2 (60-70% HRmax): Light to moderate. Base endurance training. Fat-burning zone. Can speak in full sentences.
-Zone 3 (70-80% HRmax): Moderate to hard. Tempo runs/threshold. Can speak 3-4 words at a time.
-Zone 4 (80-90% HRmax): Hard. Lactate threshold. Interval training. Can barely speak.
-Zone 5 (90-100% HRmax): Maximum. VO2 max sprints. All-out effort.
+SECTION 2: HEART RATE ZONES & MONITORING
+Zone 1 (50-60% HRmax): Very light intensity. Warm-up, cool-down, recovery. Conversational pace. Feeling: could maintain for hours. Used for: active recovery, long slow distance, warm-up/cool-down.
+Zone 2 (60-70% HRmax): Light to moderate intensity. Base endurance training. Fat-burning zone (maximal fat oxidation usually occurs here). Can speak in full sentences without difficulty. Feeling: rhythmic, comfortable, could maintain 2+ hours. Used for: 70-80% of total weekly training volume in endurance sports.
+Zone 3 (70-80% HRmax): Moderate to hard intensity. Tempo runs, aerobic threshold. Can speak 3-4 words at a time. Feeling: breathing is deep and rhythmic, starting to push, could maintain 30-60 minutes. Used for: tempo runs, sweet spot training.
+Zone 4 (80-90% HRmax): Hard intensity. Lactate threshold zone. Can barely speak 1-2 words. Feeling: breathing is heavy, muscles starting to burn, could maintain 10-20 minutes. Used for: threshold intervals, hard tempo.
+Zone 5 (90-100% HRmax): Maximum intensity. VO2 max and sprint work. Cannot speak. Feeling: burning, gasping, can only maintain 30 seconds to 3 minutes. Used for: HIIT, sprints, max aerobic intervals.
 
-HRmax formula (standard): 220 - age. More accurate: 208 - (0.7 × age)
-Karvonen formula: Target HR = ((HRmax - HRrest) × %intensity) + HRrest
+Heart rate formulas:
+- Standard HRmax: 220 - age. Simple but can be off by 10-15 bpm for individuals.
+- Tanaka formula (more accurate): 208 - (0.7 × age). Better for older adults.
+- Gulati formula (women): 206 - (0.88 × age).
+- Karvonen formula (HR Reserve): Target HR = ((HRmax - HRrest) × %intensity) + HRrest. More accurate because it accounts for resting heart rate.
+- Max heart rate testing: Best done in a lab (VO2 max test). Field test: 3-minute all-out effort, take HR immediately after. Real max is usually ~5 bpm higher than formulas predict.
 
-SECTION 3: RUNNING & JOGGING
-- Cadence: Optimal 170-180 steps/minute. Reduces injury risk and improves efficiency.
-- Foot strike: Midfoot striking is recommended over heel striking for most runners.
-- Proper form: Slight forward lean, arms at 90 degrees, relaxed shoulders, high knees during sprinting.
-- 5K training: Base mileage of 15-20 mpw. Long run of 3-5 miles. Include 1 speed session/week.
-- 10K training: Base of 20-30 mpw. Long run of 5-8 miles. Tempo runs at threshold pace.
-- Half marathon training: Base of 25-40 mpw. Long run of 8-12 miles. Include tempo and interval work.
-- Marathon training: Base of 35-50+ mpw. Long run of 16-22 miles. Peak week 3 weeks before race.
-- C25K program: Walk/run intervals. Week 1: run 60s, walk 90s x8. Gradual progression to 30min continuous running.
+SECTION 3: RUNNING & JOGGING - COMPREHENSIVE GUIDE
+- Cadence: Optimal 170-180 steps/minute. Higher cadence reduces overstriding (braking force) and injury risk. Check by counting steps for 30 seconds during a run (one foot = 1 step, run for 30s, multiply by 2).
+- Foot strike patterns: Heel strike (most common, 80% of runners), midfoot strike, forefoot strike. Pronation: natural inward roll of the foot. Overpronation can cause injury; proper shoes help.
+- Running form checklist: Slight forward lean from ankles (not waist), arms swing at 90 degrees (not crossing midline), relaxed shoulders (not shrugged), high knees during sprinting, quick foot turnover (don't overstride).
+- Breathing rhythm: 3:3 pattern (3 steps inhale, 3 steps exhale) for easy running, 2:2 for moderate, 2:1 or 1:1 for hard efforts. Belly breathing (diaphragmatic) not chest breathing.
+- Periodized training plan structure: Base phase (8-12 weeks, zone 2 focus, build weekly mileage 10% rule), Build phase (8 weeks, introduce speed work), Peak phase (4 weeks, race-specific work), Taper phase (2-3 weeks, reduce volume 40-60%).
+- 5K training plan: 12 weeks. Base: 15-20 mpw. Long runs: 3-5 miles. Weekly speed session: 400m repeats at 5K pace, 200m recovery jog. Tempo run: 15-20 minutes at LT pace.
+- 10K training plan: 12 weeks. Base: 20-30 mpw. Long runs: 5-8 miles. Tempo runs: 20-30 minutes at threshold pace. Cruise intervals: 1 mile repeats at 10K pace with 2 min rest.
+- Half marathon training: 12-16 weeks. Base: 25-40 mpw. Long runs: 8-12 miles. Yasso 800s: 800m repeats at goal half marathon time (in minutes:seconds). Tempo work at HMP (half marathon pace).
+- Marathon training: 16-20 weeks. Base: 35-50+ mpw. Long runs: 16-22 miles (no more than 25-30% of weekly volume). Progressive long runs: last 3-5 miles at marathon pace. Peak week 3 weeks before race.
+- Couch to 5K (C25K) program: 9 weeks, 3x/week. Week 1: run 60s, walk 90s × 8 intervals. Gradual progression to Week 9: run 30 minutes continuous. Most successful beginner program in existence.
+- 80/20 rule in running: 80% of training at easy intensity (zone 1-2), 20% at moderate-to-hard intensity (zones 3-5). Most runners do too much moderate running (zone 3) and not enough easy or hard.
+- The 10% rule: Increase weekly mileage by no more than 10% per week. More conservative: 3-5 miles per week max increase. Follow every 3-week build with a 1-week cutback (reduce mileage 30-40%).
+- Common running injuries: Runner's knee (patellofemoral pain), shin splints (medial tibial stress syndrome), plantar fasciitis, IT band syndrome, Achilles tendinopathy. Treatment: rest, ice, compression, elevation (RICE). Prevention: strength training, proper shoes, gradual progression.
+- Running shoe selection: Get fitted at a running store. Know your foot type (neutral, overpronator, supinator). Replace shoes every 300-500 miles. Different shoes for different runs (easy day shoes, speed day shoes, race shoes).
+- Pacing strategies: Even pace (same pace throughout) is most efficient for most distances. Negative split (second half faster than first) is ideal but harder. Positive split (first half faster) is most common but least efficient.
+- Race day nutrition: Carbo-load 2-3 days before (increase carbs to 70-80% of calories). Pre-race meal: 2-3 hours before, 1-2g/kg carbs, low fat/fiber. During race (>90 min): 30-60g carbs per hour (gels, chews, sports drinks).
+- Hydration during running: Drink to thirst. Weigh yourself before and after runs; drink 16-24 oz for every pound lost. Overhydration (hyponatremia) is more dangerous than dehydration. Sports drink for runs >60 minutes.
+- Altitude training: Living at altitude increases red blood cell mass. Sea-level performance improves after 2-4 weeks at altitude. Return to sea level: best performance 2-14 days after return (varies by individual).
+- Heat acclimation: Takes 7-14 days of training in heat. Improves plasma volume, sweating efficiency, and cardiovascular stability. Train at reduced intensity during adaptation. Watch for heat illness signs: dizziness, nausea, confusion.
 
-SECTION 4: CYCLING
-- Cadence: Optimal 80-100 RPM for road cycling.
-- Gearing: Use easier gears for climbing (60-80 RPM), harder gears for flat/descending (90-110 RPM).
-- FTP (Functional Threshold Power): Average power you can sustain for 1 hour. Used to set training zones.
-- Sweet spot training: 88-93% of FTP. Improves endurance and threshold without excessive fatigue.
-- HIIT on bike: 30s all-out sprint / 4min recovery x4-6. Improves VO2 max significantly.
+SECTION 4: CYCLING - COMPREHENSIVE GUIDE
+- Cadence: Optimal 80-100 RPM for road cycling. Lower cadence (60-80) for climbing. Higher cadence for sprinting (100-120). New cyclists naturally pedal at lower cadence (~60 RPM); train to increase.
+- Gearing: Use easier gears (bigger rear sprockets) for climbing, harder gears (smaller rear sprockets) for flats and descending. Goal: maintain consistent cadence regardless of terrain. Shift BEFORE the climb starts.
+- FTP (Functional Threshold Power): Average power you can sustain for 1 hour. Measured via a 20-minute test (average power × 0.95). Gold standard for setting training zones. Typical FTP improvements: 5-15% in first year of structured training.
+- Cycling power zones: Zone 1 (Active Recovery): <55% FTP. Zone 2 (Endurance): 56-75% FTP. Zone 3 (Tempo): 76-90% FTP. Zone 4 (Threshold): 91-105% FTP. Zone 5 (VO2 max): 106-120% FTP. Zone 6 (Anaerobic): >120% FTP.
+- Sweet spot training: 88-93% of FTP. The "best bang for buck" intensity. Improves endurance and threshold without excessive fatigue. Session: 2-3 × 15-20 minutes at sweet spot with 5 min recovery.
+- High intensity intervals on the bike: VO2 max intervals at 110-120% FTP. 3-5 min work periods, 1:1 work-to-rest ratio. HIIT: 30s all-out sprint / 4min recovery × 4-6. Both significantly improve VO2 max.
+- Cycling-specific strength training: Maintain or improve if new to strength. Squats, deadlifts, lunges, core work. 2x/week during off-season, 1x/week maintenance during race season. Avoid heavy leg work on hard ride days.
+- Group riding etiquette: Hold your line, point out hazards, don't overlap wheels, communicate clearly (car back, slowing, stopping), take your pull at the front and smoothly pull off.
+- Descending technique: Look where you WANT to go (not at obstacles), inside pedal up (to avoid pedal strike), outside foot down for stability, weight back, hands in drops for control.
+- Indoor training (trainer/Zwift): Highly efficient (no coasting, consistent power). 1 hour of structured indoor training = 1.5 hours outdoor. Mental challenge from lack of distraction. Use fans for cooling (critical for performance).
+- Bike fit basics: Seat height: 25-30 degree knee bend at bottom of pedal stroke. Saddle fore/aft: knee over pedal spindle when cranks are horizontal. Handlebar reach: slight bend in elbows, no strain in shoulders.
+- Aerodynamics: At 20 mph, 70-90% of resistance is wind. Aero bars, tight clothing, tucked position, aero helmet all reduce drag. Aero gains are more significant than weight loss for flat terrain.
+- Gravel cycling: Mix of road and off-road. Lower tire pressure (30-50 psi), wider tires (35-45mm), more relaxed geometry. Technique: stay loose on rough sections, shift weight back when descending, stand up over obstacles.
 
-SECTION 5: SWIMMING
-- Freestyle technique: Bilateral breathing (every 3 strokes). High elbow catch. Long streamline.
-- Kick: Small, fast kicks from hips (not knees). 2-beat kick for distance, 6-beat for sprinting.
-- Breathing: Exhale underwater, turn head to side to inhale. Don't lift head forward.
-- Common distances: 50m/100m sprints, 200m/400m middle distance, 800m/1500m distance.
-- Training: Mix of drill work, interval sets, and continuous swimming.
+SECTION 5: SWIMMING - COMPREHENSIVE GUIDE
+- Freestyle technique fundamentals: Body position (horizontal, head down looking at pool bottom), rotation (shoulder/hip roll 30-45 degrees per side), high elbow catch (elbow above hand during pull phase), long streamline (reach forward fully before starting pull).
+- Bilateral breathing: Breathe every 3 strokes (alternating sides). Benefits: balanced stroke, prevents one-sided overdevelopment, better sighting for open water. Practice with drills (3/5/7 stroke patterns).
+- Kicking technique: Small, fast kicks from the hips (not the knees). 2-beat kick (one kick per arm stroke) for distance swimming. 4-beat or 6-beat kick for sprinting. Ankle flexibility is crucial (point toes, relaxed ankles).
+- Breathing mechanics: Exhale steadily underwater through nose and mouth (don't hold breath). Turn head to side to inhale when arm is recovering. Don't lift head forward (drops hips and creates drag). One goggle should stay in water.
+- Common distances: 50m (sprint), 100m (fast middle), 200m (threshold), 400m (distance), 800m/1500m (long distance). Open water: 1.2mi (half Ironman), 2.4mi (full Ironman).
+- Swim training sessions: Mix of drill work (technique focused), interval sets (kickboard, pull buoy, paddles), threshold sets (longer repeats at race pace), and sprint work.
+- Open water swimming: Sighting every 6-10 strokes to stay on course. Breathe bilaterally to compensate for waves. Drafting behind or beside another swimmer saves energy (20-30%). Practice in murky water if possible (reduces panic).
+- Common swim drills: Catch-up drill (hands touch before each stroke for reach), fist drill (make fists to feel forearm catch), side-kicking (one arm extended, breathe to the side), 6-kick switch (6 kicks per stroke to focus on body position).
+- Wetsuit considerations: Provides buoyancy (legs rise, better body position), warmth, and speed. Practice in wetsuit before race day. Be aware of different shoulder mobility requirements.
+- Triathlon swimming: Usually wetsuit-legal. Mass start (can be chaotic). Position yourself based on ability. Sight frequently. Swim at perceived effort (no lap counter in open water). Exit and transition immediately (don't rest at swim exit).
+- Swim pacing: Rule of thumb: open water is 5-10% slower than pool swimming due to lack of walls, navigation, and crowds. Adjust race pace expectations accordingly.
 
-SECTION 6: HIIT (HIGH INTENSITY INTERVAL TRAINING)
-- Tabata protocol: 20s work / 10s rest x8 rounds (4 minutes total). Typically at 170% VO2 max intensity.
-- Wingate protocol: 30s all-out sprint / 4min active recovery x4-6.
-- Gibala protocol: 60s hard effort / 75s recovery x8-12.
-- HIIT benefits: Improves VO2 max more efficiently than steady state. Increases insulin sensitivity. Elevates post-exercise oxygen consumption (EPOC).
-- Frequency: 2-3 HIIT sessions per week maximum. Needs adequate recovery.
-- HIIT vs MICT: HIIT produces similar or superior cardiovascular improvements in less time. MICT (moderate intensity continuous training) builds aerobic base more effectively.
+SECTION 6: HIIT & INTERVAL TRAINING - COMPREHENSIVE GUIDE
+- Tabata protocol (1996): 20 seconds maximal work / 10 seconds rest × 8 rounds = 4 minutes total. Originally performed at 170% VO2 max on a cycle ergometer. Produces both aerobic and anaerobic improvements.
+- Wingate protocol: 30 seconds all-out sprint on bike / 4 minutes active recovery × 4-6 reps. Extremely demanding. Not recommended for beginners.
+- Gibala protocol (McMaster): 60 seconds hard effort / 75 seconds recovery × 8-12 reps. More manageable than Tabata. Comparable cardiovascular benefits in less weekly time commitment.
+- Norwegian 4x4: 4 minutes at 90-95% HRmax / 3 minutes recovery × 4 rounds. Very well-researched protocol for VO2 max improvement. Popular in elite endurance sports.
+- HIIT benefits compared to steady state:
+  * Greater VO2 max improvement (15-20% vs 8-12% in untrained)
+  * Higher EPOC (post-exercise calorie burn)
+  * Improved insulin sensitivity (significant glucose disposal benefits)
+  * Time-efficient (40 min HIIT ≈ 90 min steady state)
+  * Greater mitochondrial biogenesis
+- HIIT frequency and recovery: 2-3 maximum HIIT sessions per week. At least 48 hours between sessions. HIIT + steady state combinations work well (2 HIIT + 2-3 steady state per week).
+- HIIT vs MICT (Moderate Intensity Continuous Training): HIIT superior for VO2 max, cardiovascular health, time efficiency. MICT superior for building aerobic base, fat oxidation efficiency, and is lower injury risk. Both are valuable; combine them.
+- Interval design variables: Work interval duration, work intensity, recovery duration, recovery intensity, number of repetitions. Manipulate these to target specific energy systems.
+- Work-to-rest ratios by energy system:
+  * ATP-PCr system: 1:5 to 1:12 (5-10 sec work, 45-120 sec rest)
+  * Glycolytic system: 1:2 to 1:4 (30-90 sec work, 1-3 min rest)
+  * Oxidative/VO2 max: 1:0.5 to 1:1 (2-5 min work, 1-3 min rest)
+- Fartlek training: Swedish for "speed play." Unstructured intervals within a continuous run. Alternate between fast and slow based on feel. Less psychologically demanding than structured intervals.
+- Progression for HIIT: Beginners: start with 2:1 work-to-rest ratio at moderate intensity. Gradually reduce rest ratio, increase work intensity. Advanced: manipulate variables (max efforts, different modalities).
+- Rowing intervals: 500m repeats (2-2.5 min work, 2-3 min rest). 2K test pace × 8. Rate cap (24-26) for technique focus. Power 10s: 10 all-out strokes at high rate.
+- Assault bike / fan bike intervals: 30s max effort (any pace), 30s cruise, × 10-20. Known as "Echo bike" or "Airdyne" intervals. Extremely demanding due to non-responsive resistance (harder you push, harder it gets).
+- Stair climber HIIT: 30-60 sec fast, 60-90 sec slow pace. Low impact but high intensity. Good option for runners with impact sensitivity.
+- Jump rope intervals: 30 sec double unders, 30 sec rest, × 10-20. Excellent full-body HIIT. Improves coordination and foot speed.
 
-SECTION 7: VO2 MAX
-- VO2 max: Maximum rate of oxygen consumption during exercise. Measured in ml/kg/min.
-- Average untrained male: 35-40 ml/kg/min. Female: 27-31.
-- Average trained male: 45-55. Female: 38-48.
-- Elite endurance athletes: 70-85 (male), 60-75 (female).
-- Improving VO2 max: HIIT intervals at 90-95% HRmax, sustained for 3-5 minutes per interval. Long slow distance builds capillary density.
+SECTION 7: VO2 MAX - MAXIMUM OXYGEN CONSUMPTION
+- VO2 max definition: Maximum rate of oxygen consumption during incremental exercise to exhaustion. Measured in milliliters of oxygen per kilogram of body weight per minute (ml/kg/min). The gold standard measure of cardiorespiratory fitness.
+- Average values by training status:
+  * Untrained male (20-40): 35-45 ml/kg/min. Female: 30-38.
+  * Trained recreational: Male 45-55, Female 40-48.
+  * Highly trained: Male 55-65, Female 48-58.
+  * Elite endurance: Male 65-85, Female 55-75.
+  * Highest ever recorded: Male ~97 (cross-country skier), Female ~80.
+- VO2 max is determined by: Cardiac output (stroke volume × heart rate), hemoglobin mass (oxygen carrying capacity), capillary density (oxygen delivery to muscle), mitochondrial density (oxygen utilization), and muscle fiber type.
+- Improving VO2 max: HIIT intervals at 90-95% HRmax, sustained for 3-5 minutes per interval with equal recovery. 2x/week for 8-12 weeks produces 10-20% improvement in untrained, 5-10% in trained.
+- Long slow distance and VO2 max: LSD training does not significantly improve VO2 max itself but improves capillary density, mitochondrial density, and the ability to sustain a higher percentage of VO2 max for longer.
+- VO2 max decline with age: VO2 max declines ~10% per decade after age 25 without training. With regular training, decline slows to ~5% per decade. This is one of the most powerful anti-aging benefits of exercise.
+- VO2 max and longevity: VO2 max is one of the strongest predictors of all-cause mortality. Low VO2 max is comparable to smoking as a mortality risk factor. Every 1 MET (3.5 ml/kg/min) increase is associated with 10-25% reduction in mortality.
+- Field tests for VO2 max estimation:
+  * Cooper 12-minute run: VO2max = (distance_meters - 504.9) / 44.73
+  * Rockport 1-mile walk: VO2max = 132.853 - (0.0769 × weight_lbs) - (0.3877 × age) + (6.315 × gender) - (3.2649 × time_min) - (0.1565 × HR)
+  * 1.5-mile run time
+- Factors affecting VO2 max: Genetics (20-50% heritable), altitude, pregnancy, detraining (VO2 max drops 5-15% in 2-4 weeks without training), hydration status, time of day.
 
-SECTION 8: LACTATE THRESHOLD
-- LT1 (first lactate threshold): Point where blood lactate begins to rise above baseline. Occurs at ~60-70% VO2 max.
-- LT2 (second lactate threshold / OBLA): Point where lactate accumulates rapidly. Occurs at ~80-90% VO2 max.
-- Tempo runs: Sustained effort at ~85-90% HRmax (just below LT2). Duration: 20-40 minutes.
-- Threshold improvement: Consistent tempo work raises LT2, allowing faster paces at lower lactate levels.
+SECTION 8: LACTATE THRESHOLD & TEMPO TRAINING
+- LT1 (first lactate threshold / aerobic threshold): The exercise intensity at which blood lactate begins to rise above resting baseline. Occurs at ~60-70% VO2 max (or 75-80% HRmax). Below LT1: primarily aerobic, fat-burning.
+- LT2 (second lactate threshold / onset of blood lactate accumulation - OBLA): The intensity at which lactate accumulates rapidly in the blood (typically at 4 mmol/L). Occurs at ~80-90% VO2 max (or 85-92% HRmax). Above LT2: rapid fatigue.
+- The lactate shuttle: Lactate produced in fast-twitch muscles is shuttled to the heart, liver (gluconeogenesis), and slow-twitch muscles to be used as fuel. Lactate is NOT a waste product; it's a valuable energy source.
+- Tempo runs: Sustained effort at 85-90% HRmax (just below LT2). Typical duration: 20-40 minutes continuous. Feeling: "comfortably hard," can speak 3-4 words. Purpose: raise LT2, improve pace endurance.
+- Threshold intervals: 5-10 minute repeats at threshold pace with 2-3 minute recovery. More total time at threshold than continuous tempo (e.g., 3 × 10 min vs. one 20 min continuous). Better for less experienced athletes.
+- Threshold improvement: Consistent threshold training (1-2x/week) can raise LT2 from 80% to 85-90% of VO2 max. This means you can race faster at the same lactate level.
+- Threshold testing methods: 30-minute time trial (take average HR from last 20 minutes), 20-minute TT on bike (average power × 0.95 = FTP), 5K/10K race pace for runners.
+- Sweet spot training: 88-93% of threshold. Produces threshold adaptations with less fatigue. Popular in cycling for high-volume training without overtraining.
 
-SECTION 9: RECOVERY & OVERTRAINING
-- Deload week: Reduce volume by 40-60% every 4-6 weeks. Keep intensity similar.
-- Signs of overtraining: Persistent fatigue, decreased performance, mood changes, insomnia, increased resting HR, frequent illness.
-- Active recovery: Low-intensity movement (zone 1-2) on rest days improves blood flow and recovery.
-- Sleep: Critical for cardiovascular adaptations. Aim for 7-9 hours. Poor sleep reduces VO2 max improvements by up to 50%.
+SECTION 9: RECOVERY, OVERTRAINING & PERIODIZATION IN ENDURANCE
+- Deload week: Reduce volume by 40-60% every 4-6 weeks. Keep intensity the same. Essential for absorbing training adaptations and preventing overtraining.
+- Overtraining syndrome (OTS): A state of chronic fatigue and decreased performance lasting 2+ weeks despite adequate rest. Differs from overreaching (short-term, recovers in days). OTS can take weeks to months to recover from.
+- Signs of overtraining: Persistent fatigue, decreased performance despite continued training, mood disturbances (irritability, depression), insomnia or poor sleep quality, increased resting heart rate (5+ bpm above normal), frequent illness, loss of motivation, appetite changes.
+- Overreaching vs overtraining: Functional overreaching (planned, short-term overload with recovery) leads to supercompensation. Non-functional overreaching (excessive without planned recovery) leads to OTS. The difference is planned rest.
+- Active recovery: Low-intensity movement (zone 1-2) on rest days. Improves blood flow, reduces muscle soreness, maintains mobility. 20-30 minutes of walking, very easy cycling, or gentle swimming.
+- Sleep and endurance: Critical for cardiovascular adaptations. Aim for 7-9 hours per night. Even 1-2 hours of sleep debt reduces VO2 max improvements by up to 50%. Most underrated recovery tool.
+- Nutrition for recovery: Within 30-60 minutes post-exercise: 20-40g protein + 0.8-1.2g/kg carbs. Rehydration: 1.25-1.5L fluid per kg lost. Anti-inflammatory foods (tart cherry juice, fatty fish, berries) may speed recovery.
+- Periodization for endurance: Macrocycle (yearly plan), Mesocycle (monthly blocks), Microcycle (weekly plan). Base → Build → Peak → Race → Transition. Each phase has specific intensity and volume targets.
+- The 3-week cycle: 2 weeks progressive overload, 1 week recovery. More sustainable than linear progression. Allows for continued improvement over months.
+- Polarized training model: 80% zone 1-2, 20% zone 4-5. Minimize zone 3. Used by elite endurance athletes. Produces better long-term results than threshold-heavy training.
+- Block periodization: A more extreme approach. 2-4 week blocks focused on one quality (e.g., VO2 max block, threshold block, volume block). Followed by recovery. Popular in triathlon and cycling.
 
-SECTION 10: SPECIFIC SPORTS NOTES
-- Rowing: Power per stroke (measured in watts). Stroke rate 18-36 spm depending on piece. Leg drive first, then back swing, then arm pull.
-- CrossFit: Combines weightlifting, gymnastics, and metabolic conditioning. "Fitness" defined as increased work capacity across broad time and modal domains.
-- Stair climbing: Low impact, high calorie burn. Equivalent to running with 50% more joint stress.
-- Jump rope: Burns ~10-15 cal/min. Boxer skip, double unders, crossovers.
-- Rucking: Walking with weighted backpack. Improves endurance with low joint impact. Start at 10% bodyweight, progress to 30%.
+SECTION 10: SPECIFIC SPORTS & CONDITIONING
+- Rowing: Power per stroke measured in watts. Stroke rate: 18-36 strokes per minute depending on piece. Power phase: leg drive (60% contribution), back swing (20%), arm pull (20%). Recovery phase: arms away, body over, slide forward. The drive should be explosive; the recovery should be controlled.
+- CrossFit: Combines weightlifting, gymnastics, and metabolic conditioning. Defined as "increased work capacity across broad time and modal domains." Common WOD formats: AMRAP (as many rounds as possible), For Time, EMOM (every minute on the minute). Risk: rhabdomyolysis from excessive volume at high intensity.
+- Stair climbing (StairMaster, stadium steps): Low impact, high cardiovascular demand. Equivalent to running with 50% more joint stress (but better than running for impact). Improves quadriceps and gluteal endurance.
+- Jump rope: Burns 10-15 calories per minute. Double unders (rope passes under feet twice per jump) are the benchmark of cardiovascular conditioning. Common in boxing, CrossFit, and general conditioning.
+- Rucking: Walking with a weighted backpack or vest. Improves endurance with very low joint impact. Start at 10% of bodyweight, gradually progress to 30%. Army standard: 12-mile ruck with 35-50 lbs in under 3 hours.
+- Boxing conditioning: Heavy bag rounds (3 min work, 1 min rest). Focus on combination punching, footwork, head movement. Jump rope for warm-up. Shadow boxing for technique. Boxing builds exceptional cardiovascular endurance and coordination.
+- Sprint interval training: 40-100 meter all-out sprints with full recovery (2-5 minutes). Develops speed, power, and neuromuscular coordination. Different from HIIT (which targets aerobic system). Best done fresh after warm-up.
+- Hybrid training: Combining strength training with endurance training. Concurrent training interference effect: high-volume endurance can blunt strength gains. Mitigation strategies: separate sessions by 6+ hours, prioritize protein, periodize focus.
+
+SECTION 11: ENDURANCE NUTRITION & HYDRATION
+- Carbohydrate loading: 2-3 days before endurance event. Increase carb intake to 8-12g/kg bodyweight per day. Decrease fiber to avoid GI distress. Taper training to allow glycogen supercompensation.
+- During-exercise fueling: For efforts > 90 minutes: 30-60g carbs per hour (up to 90g for elite athletes). Sources: sports drinks, gels (25-30g each), chews, bananas, dates. Train the gut: practice fueling during training to avoid GI distress.
+- Multiple transportable carbs: Glucose and fructose use different intestinal transporters. Combining them (2:1 glucose:fructose ratio) allows 60-90g carb absorption per hour vs ~60g with glucose alone.
+- Electrolyte replacement: Sodium (500-1000mg/L sweat rate), potassium (150-200mg/L), magnesium (50-100mg/L). Sports drinks contain electrolytes; water alone during long exercise can lead to hyponatremia.
+- Hydration protocol: Pre-exercise: 5-10ml/kg 2-4 hours before. During: drink to thirst, 400-800ml/hour depending on sweat rate. Post: 1.25-1.5L per kg lost (weigh before and after). Signs of dehydration: dark urine, thirst, headache, fatigue.
+- Caffeine for endurance: 3-6 mg/kg 30-60 minutes before exercise. Improves time trial performance by 2-4%. Effects: reduced perceived exertion, increased fat oxidation, improved alertness. May cause GI issues in some athletes.
+- Beetroot juice / nitrates: 400-500mg nitrates 2-3 hours before exercise. Improves blood flow, reduces oxygen cost of exercise, improves time trial performance. Effects most pronounced in less trained individuals and at moderate intensities.
+- Beta-alanine for endurance: 3-6g/day for 4-8 weeks (divided doses to avoid paresthesia). Increases intramuscular carnosine, buffers H+ ions, delays fatigue during high-intensity endurance efforts (1-4 minute maximal efforts).
+- Recovery nutrition: Post-exercise window (30-60 minutes): 20-40g protein (to maximize MPS), 0.8-1.2g/kg carbs (to replenish glycogen). Chocolate milk is an excellent recovery drink (4:1 carb:protein ratio naturally).
+
+SECTION 12: SPECIAL ENVIRONMENTS & ENDURANCE
+- Heat training: Acclimation takes 7-14 days. Benefits: increased plasma volume, earlier sweating, lower core temperature during exercise, reduced electrolyte loss. Train at reduced intensity during first week of heat exposure.
+- Cold weather training: Layer properly (base layer wicking, mid layer insulating, outer layer wind/water proof). Avoid cotton. Cover extremities (fingers, toes, ears). Warm up thoroughly indoors. Hydrate (cold suppresses thirst response). Watch for frostbite signs.
+- Altitude training: Living at 2000-3000m for 2-4 weeks increases red blood cell mass. "Live high, train low" (sleep at altitude, train at sea level) is optimal. Altitude tents simulate this. Post-altitude: best performance window is 2-14 days after return.
+- High humidity training: Humidity impairs evaporative cooling (sweat doesn't evaporate). Perceived exertion increases significantly. Reduce intensity expectations, increase hydration, watch for heat illness.
+- Indoor vs outdoor training: Indoor (controlled environment, no traffic/weather, consistent pacing, easier to do intervals). Outdoor (variable terrain, real-world conditions, more engaging mentally). Balance both for best results.
+- Travel and training: Jet lag affects performance (1 day per time zone to adjust). Hydrate during flights. Do light exercise on arrival day. Schedule key workouts for 3+ days after arrival.
+- Air quality and exercise: Avoid exercising in high AQI (air quality index > 100). PM2.5 particles penetrate deep into lungs. Indoor training on poor air quality days. Morning exercise has lower ozone levels than midday.

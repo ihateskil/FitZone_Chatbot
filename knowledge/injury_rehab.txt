@@ -1,0 +1,90 @@
+===== INJURY REHABILITATION & PREVENTION GUIDE =====
+
+SECTION 1: INJURY CLASSIFICATION AND HEALING PHASES
+- Acute injuries: Sudden onset (sprains, strains, fractures). Caused by a single traumatic event.
+- Chronic injuries: Gradual onset (tendinopathy, stress fractures, bursitis). Caused by repetitive microtrauma and cumulative load.
+- Healing phases: Inflammatory (0-7 days, protect and manage inflammation), Repair/Proliferative (3-21 days, tissue regeneration), Remodeling (21 days - 12+ months, tissue maturation and strengthening).
+- Healing time varies by tissue: Muscle (2-4 weeks), Tendon (4-12 weeks), Ligament (6-12 weeks), Bone (6-12 weeks), Cartilage (12+ months, limited healing capacity).
+- Pain does not always equal tissue damage. Chronic pain can persist after tissue healing due to central sensitization.
+
+SECTION 2: SHOULDER INJURIES
+- Rotator cuff injuries: Supraspinatus most commonly affected. Symptoms: pain with overhead activity, nighttime pain, weakness in external rotation or abduction.
+- Rehab: Rotator cuff strengthening (external rotation, internal rotation, prone Y/T/W/L), scapular stabilization (serratus punches, wall slides, prone I/Y/T), gradual return to overhead loading.
+- Impingement: Subacromial space narrowing. Pain in 60-120 degrees of abduction (painful arc).
+- Rehab: Posterior capsule stretching, rotator cuff strengthening, scapular retraining, avoid provocative positions (overhead pressing, upright rows behind neck).
+- Adhesive capsulitis (frozen shoulder): Global loss of shoulder ROM. Stages: freezing (painful, 2-9 months), frozen (stiff, 4-12 months), thawing (gradual ROM return, 5-24 months).
+- Rehab: Gentle stretching (not aggressive, which worsens inflammation), joint mobilizations, pendulum exercises, eventually strengthening.
+- Shoulder instability: Excessive humeral head translation in glenoid. Traumatic (dislocation) or atraumatic (multidirectional).
+- Rehab: Rotator cuff and periscapular strengthening, proprioceptive training, avoid end-range positions until dynamic stability restored.
+
+SECTION 3: KNEE INJURIES
+- ACL tear: Non-contact (sudden deceleration, cutting, landing with knee extended). Complete tears do not heal; require surgical reconstruction for active athletes.
+- Rehab pre-surgery (prehab): Restore full ROM, quadriceps activation, reduce swelling. Post-surgery: Phase 1 (0-6 wks) brace, crutches, passive ROM, quad sets. Phase 2 (6-12 wks) full ROM, closed chain exercises, gait retraining. Phase 3 (12-24 wks) strengthening, balance, plyometric progression. Return to sport (6-12 months) sport-specific training.
+- Patellofemoral pain (runner's knee): Pain around/behind patella, worse with stairs, squatting, prolonged sitting. Most common running injury.
+- Rehab: Hip strengthening (glute medius, maximus), quadriceps strengthening (especially VMO), patellar taping, activity modification (reduce load, avoid painful ranges), gradual return.
+- Meniscus tear: Pain with twisting, locking, clicking, giving way. Medial meniscus most commonly injured.
+- Rehab: Small stable tears (non-surgical) quad/hamstring strengthening, ROM restoration, neuromuscular control. Surgical repair (6+ weeks protected weight bearing, gradual progression).
+- Patellar/quadriceps tendinopathy (jumper's knee): Pain at inferior pole of patella (patellar) or superior (quadriceps). Common in jumping sports.
+- Rehab: Isometric holds (heavy, long duration 45 sec) for immediate pain relief, heavy slow resistance training (eccentric focus), progressive loading, avoid explosive movements initially.
+
+SECTION 4: LOWER BACK INJURIES
+- Muscular strain: Most common back injury. Pain in paraspinal muscles, muscle spasm, relief with rest.
+- Rehab: Acute (1-3 days) ice, gentle motion, avoid bed rest >2 days. Subacute: Core stabilization (McGill Big 3: curl-up, side plank, bird dog), hip mobility, graded exposure to movement.
+- Disc herniation: Radicular pain (sciatica) down leg, numbness, tingling, possible weakness. L4-L5 and L5-S1 most common levels.
+- Rehab: Centralization exercises (extension bias for most disc herniations), avoid flexion in acute phase, nerve flossing, core stabilization, gradual return to loading.
+- Spinal stenosis: Narrowing of spinal canal causing neurogenic claudication (pain with walking/extension, relief with flexion).
+- Rehab: Flexion bias exercises, cycling (flexed position), core strengthening, avoid extension loading. May require surgical decompression if conservative fails.
+- Spondylolysis/spondylolisthesis: Stress fracture of pars interarticularis (spondylolysis) or vertebral slippage (spondylolisthesis). Common in gymnasts, football linemen, weightlifters.
+- Rehab: Avoid hyperextension, core stabilization, hip flexor stretching, hamstring flexibility, gradual return to sport.
+
+SECTION 5: HIP AND GROIN INJURIES
+- Hip impingement (FAI): Cam (femoral head deformity) or pincer (acetabular overcoverage). Pain with deep hip flexion, squatting, sitting.
+- Rehab: Activity modification (avoid deep flexion), hip strengthening (abductors, extensors, external rotators), core stability, movement retraining.
+- Hip labral tear: Deep groin pain, clicking, catching, restricted motion. Often accompanies FAI.
+- Rehab: Similar to FAI. Avoid provocative positions (deep squat, full hip flexion). Strengthen supporting musculature. May require arthroscopic surgery.
+- Groin strain (adductor strain): Pain in inner thigh, common in sports with rapid direction changes (soccer, hockey).
+- Rehab: Acute (rest, ice, compression). Subacute: Isometric adduction, progressive strengthening (concentric then eccentric), sport-specific movements, Copenhagen adductor progression.
+- Hamstring strain: Most common in sprinting sports. High reinjury rate (30-40% without proper rehab).
+- Rehab: Acute phase (protection, avoid stretch). Subacute: Isometrics at 60 degrees knee flexion, progressive strengthening (Nordic curls, RDLs, single-leg bridges), eccentric focus, sprint progression.
+
+SECTION 6: ANKLE AND FOOT INJURIES
+- Lateral ankle sprain (most common): Inversion mechanism. ATFL most commonly torn, then CFL, then PTFL. Grades: I (stretch), II (partial tear), III (complete tear).
+- Rehab: Acute (RICE: Rest, Ice, Compression, Elevation). Subacute: ROM restoration (alphabet writing), proprioception (single leg stance, wobble board), strengthening (evertors, peroneals), functional progression.
+- Chronic ankle instability: Recurrent sprains due to ligamentous laxity and proprioceptive deficits.
+- Rehab: Proprioceptive training (single leg stance with perturbations, BOSU ball), peroneal strengthening, balance training, sport-specific return.
+- Achilles tendinopathy: Pain in Achilles tendon, stiffness in morning, pain with jumping/running. Mid-portion or insertional.
+- Rehab: Heavy slow resistance (heel raises, eccentric focus), isometrics for pain relief, avoid painful high-load activities initially, load management.
+- Plantar fasciitis: Heel pain with first steps in morning (most specific sign). Caused by excessive tension on plantar fascia.
+- Rehab: Calf stretching, foot intrinsic strengthening (toe curls, towel scrunches, short foot exercise), night splint, appropriate footwear, gradual return to activity.
+
+SECTION 7: ELBOW AND WRIST INJURIES
+- Lateral epicondylitis (tennis elbow): Extensor tendon overuse. Pain with gripping, wrist extension. Common in climbing, racket sports, throwing.
+- Rehab: Eccentric wrist extension (Tyler twist with FlexBar), isometrics, gradual strengthening, counterforce brace, activity modification.
+- Medial epicondylitis (golfer's elbow): Flexor tendon overuse. Pain with wrist flexion, gripping. Common in throwing, climbing, golf.
+- Rehab: Eccentric wrist flexion (reverse Tyler twist), isometrics, gradual strengthening, activity modification.
+- Wrist sprain: Ligamentous injury from fall on outstretched hand (FOOSH). Scapholunate ligament most commonly injured.
+- Rehab: Immobilization (if severe), then ROM exercises, grip strengthening, proprioception, gradual return to weight bearing (push-up progressions).
+
+SECTION 8: REHABILITATION PRINCIPLES
+- Load management is the foundation of all rehab: Find the dose that stimulates healing without aggravating symptoms. Start low, progress slowly (10% rule: increase load no more than 10% per week).
+- Pain monitoring: Use the 24-hour rule. If pain increases significantly 24 hours after activity, reduce load. 0-3/10 pain during activity is generally acceptable during rehab.
+- Strength continuum: Isometric (no movement, good for pain relief) → Concentric (muscle shortens) → Eccentric (muscle lengthens, important for tendon rehab) → Plyometric (stretch-shorten cycle).
+- Progression criteria: Move to next phase when: (1) pain-free at current level, (2) full ROM achieved, (3) strength 80%+ of uninjured side, (4) functional tests passed.
+- Bilateral deficit: The injured side loses strength in the uninjured side too (neural inhibition). Train both sides during rehab.
+- Psychological factors: Fear of reinjury is the strongest predictor of poor rehab outcomes. Gradual exposure, education, and confidence-building are essential.
+
+SECTION 9: INJURY PREVENTION STRATEGIES
+- Movement screening: Identify asymmetries, mobility deficits, and movement faults before they become injuries. Overhead squat, single-leg squat, lunge patterns.
+- Core stability: Anti-extension (planks, dead bugs), anti-rotation (pallof press), anti-lateral flexion (side planks, suitcase carries). McGill Big 3 for spine protection.
+- Eccentric training: Nordic curls reduce hamstring strain risk by 50%+. Eccentric heel drops reduce Achilles injury risk.
+- Strength ratios: Hamstring/quad strength ratio >0.6 for knee health. External rotation/internal rotation ratio 0.65-0.85 for shoulder health. Adductor/abductor ratio 0.8-1.0 for hip health.
+- Training load management: ACWR (acute:chronic workload ratio) of 0.8-1.3 is optimal. Spikes above 1.5 significantly increase injury risk.
+- Fatigue management: Most injuries occur late in sessions or late in weeks. Reduce volume during high fatigue periods.
+- Proper warm-up: RAMP protocol (Raise, Activate, Mobilize, Potentiate). 10-15 minutes before training.
+
+SECTION 10: RETURN TO TRAINING AFTER INJURY
+- General timeline: Pain-free daily activities (1-2 wks) → Pain-free light training (2-4 wks) → Full training at reduced load (4-8 wks) → Full training normal load (8-12+ wks).
+- Starting load: Begin at 50-60% of pre-injury volume and intensity. Increase volume first, then intensity.
+- De-loading strategy: After returning to full training, take a deload week at 50% volume on week 3 to allow tissue accommodation.
+- Muscle rebuild: After 2+ weeks of inactivity, muscle mass decreases. Expect 8-12 weeks of focused training to rebuild lost muscle. Neural adaptations return faster than muscle mass.
+- Red flags requiring medical attention: Joint instability, inability to bear weight, numbness/tingling in extremity, loss of function, deformity, pain that worsens despite rest, systemic symptoms (fever, night sweats).

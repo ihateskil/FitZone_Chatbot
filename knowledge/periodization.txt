@@ -1,0 +1,87 @@
+===== TRAINING PERIODIZATION & PROGRAM DESIGN =====
+
+SECTION 1: WHAT IS PERIODIZATION?
+- Periodization is the systematic planning of training over time to optimize performance, manage fatigue, and reduce injury risk.
+- Core principle: The General Adaptation Syndrome (Hans Selye). Training stimulus causes Alarm (fatigue) → Resistance (adaptation) → Exhaustion (overtraining if stimulus continues unmanaged).
+- Three levels of periodization: Macrocycle (year/season), Mesocycle (4-8 weeks), Microcycle (week).
+- Stimulus variation prevents accommodation (the body stops adapting to a repeated stimulus after 4-8 weeks).
+
+SECTION 2: LINEAR PERIODIZATION (CLASSIC)
+- Also called "traditional periodization." Progresses from high volume/low intensity to low volume/high intensity over a mesocycle.
+- Typical structure: Hypertrophy phase (8-12 reps, 3-5 sets, 60-75% 1RM) → Strength phase (3-5 reps, 3-5 sets, 75-90% 1RM) → Peaking phase (1-3 reps, 1-3 sets, 90-100% 1RM).
+- Best for: Beginner to intermediate lifters, athletes with a single competition goal, those needing simple programming.
+- Advantages: Simple to program, predictable progress, clear progression structure.
+- Disadvantages: Fatigue accumulates toward the end of each phase, less variety, may not suit athletes needing multiple qualities simultaneously.
+
+SECTION 3: UNDULATING PERIODIZATION
+- Varies training variables (volume, intensity, exercise selection) more frequently than linear.
+- Daily undulating periodization (DUP): Variables change every session. Example: Day 1 strength (5 reps heavy), Day 2 hypertrophy (10 reps moderate), Day 3 power (3 reps explosive).
+- Weekly undulating periodization (WUP): Variables change weekly. Example: Week 1 strength, Week 2 hypertrophy, Week 3 power.
+- Best for: Intermediate to advanced lifters, athletes needing multiple qualities, those who respond better to frequent variation.
+- Research advantage: DUP often produces superior strength and hypertrophy gains compared to linear periodization over 12+ week studies.
+- Programming example DUP: Monday: Heavy squat 5x5 at 82%, Wednesday: Volume squat 4x10 at 65%, Friday: Explosive squat 8x3 at 60%.
+
+SECTION 4: BLOCK PERIODIZATION
+- Divides training into focused blocks (2-4 weeks each), each targeting a specific quality.
+- Consecutive blocks build upon each other: Accumulation (high volume, moderate intensity) → Transmutation (moderate volume, high intensity) → Realization (low volume, very high intensity).
+- Best for: Advanced athletes, those with specific competition peaks, athletes needing to develop multiple qualities in sequence.
+- Advantages: Highly focused, excellent for peaking, manages fatigue well, superior for advanced athletes.
+- Disadvantages: Some qualities may detrain during later blocks, requires precise planning.
+
+SECTION 5: CONJUGATE PERIODIZATION (WESTSIDE BARBELL)
+- Developed by Louie Simmons. Trains multiple qualities (maximal strength, speed strength, strength endurance) simultaneously.
+- Key feature: Rotate main exercises (max effort lifts) every 1-3 weeks to prevent accommodation and manage CNS fatigue.
+- Structure: Max Effort upper day, Max Effort lower day, Dynamic Effort upper day, Dynamic Effort lower day + supplemental/repeat work.
+- Max Effort: Heavy compound variations (e.g., 2-board press, safety bar squat, deficit deadlift). Work up to 1RM or 3RM.
+- Dynamic Effort: Submaximal weight (50-60% 1RM) performed explosively for 8-12 sets of 1-3 reps.
+- Best for: Advanced powerlifters, those who need maximal strength and explosive strength simultaneously.
+
+SECTION 6: PERIODIZATION FOR HYPERTROPHY
+- Progressive overload: Gradually increase volume or intensity over time. Double progression method: Add reps first, then add weight when target rep range is achieved.
+- Volume landmarks: Minimum effective volume (MEV) ~5 sets per muscle group per week, Maximum adaptive volume (MAV) 10-20 sets, Maximum recoverable volume (MRV) 20-30+ sets.
+- Mesocycle length for hypertrophy: 4-8 weeks before a deload. Longer mesocycles (6-8 weeks) may produce more total gains than shorter ones (3-4 weeks).
+- Exercise rotation: Change main lifts every 4-8 weeks. Change accessories every 2-4 weeks. Keep main compounds consistent longer, rotate isolation work more frequently.
+- Intensification techniques: Myo-reps, drop sets, rest-pause, supersets, and mechanical drop sets can increase density. Use sparingly (1-2x per mesocycle).
+
+SECTION 7: PERIODIZATION FOR STRENGTH
+- Intensity zones: 70-79% 1RM (moderate, 8-12 reps), 80-89% (heavy, 4-7 reps), 90%+ (maximal, 1-3 reps).
+- Volume for strength: 4-10 working sets per lift per session, 2-4 sessions per lift per week. Higher intensities require lower volumes.
+- Fatigue management: Accumulate fatigue over 3-4 weeks, then deload. Use RPE (RPE 7-9 for working sets) or RIR (1-3 reps in reserve).
+- Peaking protocol: 4-6 weeks of progressive intensity increase and volume decrease. Week 1: 3x8 at 70%. Week 4: 4x3 at 87%. Week 6: singles at 92-95%.
+- Taper before competition: 7-14 days. Volume reduced 40-60%, intensity maintained or slightly reduced. 5-10% performance improvement expected.
+
+SECTION 8: PERIODIZATION FOR ENDURANCE
+- Periodization model: Base (high volume, low intensity) → Build (moderate volume, moderate-high intensity) → Peak (low volume, very high intensity) → Race/Taper.
+- Polarized training: 80% of training at low intensity (zone 1-2), 20% at high intensity (zone 4-5). Minimal time in moderate zone (zone 3).
+- Threshold training (sweet spot): 60-90 minutes at 80-90% lactate threshold. Used in build phase to raise lactate threshold.
+- Intensity distribution: Research supports polarized (80/20) over threshold (sweet spot) or pyramidal distributions for endurance performance.
+- Concurrent training: Endurance and strength can be trained simultaneously with proper periodization. Separate sessions by 6+ hours or prioritize one quality per mesocycle.
+
+SECTION 9: AUTOREGULATION
+- Adjust training based on daily readiness rather than following a rigid plan.
+- Methods: RPE-based (adjust weight to hit target RPE), Reps in Reserve (RIR, adjust based on how many reps you had left), Velocity-based (bar speed determines readiness).
+- Daily readiness factors: Sleep quality, nutrition, stress, soreness, motivation, previous training response.
+- Best for: Intermediate to advanced athletes who can accurately gauge effort. Not recommended for beginners who lack experience with RPE/RIR.
+- Tools: Training log (subjective readiness score 1-10, morning HRV, resting heart rate, grip strength, vertical jump).
+
+SECTION 10: PROGRAM DESIGN PRINCIPLES
+- SAID principle: Specific Adaptation to Imposed Demands. Train the specific energy system, movement pattern, and contraction type you want to improve.
+- FITT-VP: Frequency, Intensity, Time, Type, Volume, Progression. All variables must be manipulated systematically.
+- Progressive overload: 2-5% increase in volume or load per week on average. Linear progress for beginners (<1 year), wave-like progress for intermediates (1-3 years), small incremental for advanced (3+ years).
+- Variation: Change exercise selection every 4-8 weeks. Change rep ranges every 3-6 weeks. Change loading patterns every 2-4 weeks.
+- Individualization: Account for training age, injury history, goals, schedule, recovery capacity, life stress, and preferences.
+- Minimum effective dose: The smallest amount of training that produces results. More is not always better. Find the lowest effective dose first, then add volume if needed.
+- Autoregulation combined with periodization: Follow a plan but adjust daily based on readiness. The most effective approach for advanced athletes.
+
+SECTION 11: MESOCYCLE TEMPLATES
+- 4-week block: Week 1 (build, 3x10-12), Week 2 (overload, 4x8-10), Week 3 (peak, 5x5-6), Week 4 (deload, 2x10 at 50%).
+- 6-week block: Weeks 1-2 (accumulation, 4x12), Weeks 3-4 (intensification, 4x8), Week 5 (peak, 5x5), Week 6 (deload).
+- 8-week block: Weeks 1-2 (hypertrophy I, 3x15), Weeks 3-4 (hypertrophy II, 4x10), Weeks 5-6 (strength, 5x5), Week 7 (peaking, 3x3), Week 8 (deload).
+- Undulating 4-week: Week 1 (DUP), Week 2 (overload DUP), Week 3 (peak DUP), Week 4 (deload).
+
+SECTION 12: LONG-TERM ATHLETE DEVELOPMENT
+- Stage 1 (0-1 year): Linear periodization, full body 3x/week, focus on technique and consistency.
+- Stage 2 (1-3 years): Undulating periodization, split routines, introduction to specialized blocks.
+- Stage 3 (3-5 years): Block or conjugate periodization, specialized programming, periodized annually.
+- Stage 4 (5+ years): Highly individualized, advanced methods, precise peaking for competition.
+- Annual plan template: Off-season (general preparation 8-12 wks) → Pre-season (specific preparation 8-12 wks) → In-season (maintenance, peaking for competition) → Transition (active rest 2-4 wks).

@@ -688,5 +688,194 @@
     "alternatives": [
       "volume_load (raw tonnage)"
     ]
+  },
+  "one_rm_lombardi": {
+    "name": "1RM Estimation (Lombardi)",
+    "category": "Strength",
+    "description": "Alternative 1RM formula using exponential relationship between reps and weight.",
+    "inputs": [
+      {"name": "weight", "type": "float", "unit": "kg or lbs", "description": "Weight lifted"},
+      {"name": "reps", "type": "int", "unit": "reps", "description": "Number of reps completed (1-15)"}
+    ],
+    "formula": "1RM = weight * reps^0.10",
+    "compute": "lambda weight, reps: round(weight * (reps ** 0.10), 1)",
+    "example": {"weight": 100, "reps": 5, "result": 117.5, "unit": "same as input"},
+    "conditions": "Works best in the 5-15 rep range. More conservative than Epley for low reps.",
+    "alternatives": ["one_rm_brzycki", "one_rm_epley"]
+  },
+  "one_rm_oconner": {
+    "name": "1RM Estimation (O'Conner)",
+    "category": "Strength",
+    "description": "Simple linear 1RM formula. Best for moderate rep ranges (2-10).",
+    "inputs": [
+      {"name": "weight", "type": "float", "unit": "kg or lbs", "description": "Weight lifted"},
+      {"name": "reps", "type": "int", "unit": "reps", "description": "Number of reps completed"}
+    ],
+    "formula": "1RM = weight * (1 + 0.025 * reps)",
+    "compute": "lambda weight, reps: round(weight * (1 + 0.025 * reps), 1)",
+    "example": {"weight": 100, "reps": 5, "result": 112.5, "unit": "same as input"},
+    "conditions": "Conservative formula good for beginners or when estimating from higher rep sets.",
+    "alternatives": ["one_rm_brzycki", "one_rm_epley"]
+  },
+  "wilks_coefficient": {
+    "name": "Wilks Coefficient",
+    "category": "Strength",
+    "description": "Strength-to-bodyweight ratio used in powerlifting to compare across weight classes.",
+    "inputs": [
+      {"name": "total_kg", "type": "float", "unit": "kg", "description": "Total of squat + bench + deadlift"},
+      {"name": "bodyweight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "sex", "type": "str", "unit": "m/f", "description": "Sex: m for male, f for female"}
+    ],
+    "formula": "Wilks = total_kg * 500 / (a + b*BW + c*BW^2 + d*BW^3 + e*BW^4 + f*BW^5) where coefficients differ by sex",
+    "compute": "lambda total_kg, bodyweight_kg, sex: round(total_kg * 500 / ((61.95563 + -12.10477*bodyweight_kg + 0.27155*bodyweight_kg**2 + -0.001627*bodyweight_kg**3 + -8.9163e-6*bodyweight_kg**4 + 1.034e-7*bodyweight_kg**5) if sex=='m' else (242.70031 + -19.42251*bodyweight_kg + 0.48823*bodyweight_kg**2 + -0.003423*bodyweight_kg**3 + -7.847e-6*bodyweight_kg**4 + 1.383e-7*bodyweight_kg**5)), 1)",
+    "example": {"total_kg": 600, "bodyweight_kg": 90, "sex": "m", "result": 379.4, "unit": "Wilks points"},
+    "conditions": "Used in powerlifting to compare lifters across weight classes. Higher is better.",
+    "alternatives": ["ipf_gl_points (IPF's newer system)"]
+  },
+  "lean_body_mass": {
+    "name": "Lean Body Mass (LBM)",
+    "category": "Body Composition",
+    "description": "Calculates lean body mass from total weight and body fat percentage.",
+    "inputs": [
+      {"name": "weight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "body_fat_pct", "type": "float", "unit": "%", "description": "Body fat percentage (0-100)"}
+    ],
+    "formula": "LBM = weight_kg * (1 - body_fat_pct/100)",
+    "compute": "lambda weight_kg, body_fat_pct: round(weight_kg * (1 - body_fat_pct/100), 1)",
+    "example": {"weight_kg": 85, "body_fat_pct": 15, "result": 72.3, "unit": "kg"},
+    "conditions": "LBM includes muscle, bone, organs, and water. Changes slowly over time.",
+    "alternatives": ["fat_mass (complementary metric)"]
+  },
+  "fat_mass": {
+    "name": "Total Fat Mass",
+    "category": "Body Composition",
+    "description": "Calculates total fat mass from body weight and body fat percentage.",
+    "inputs": [
+      {"name": "weight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "body_fat_pct", "type": "float", "unit": "%", "description": "Body fat percentage (0-100)"}
+    ],
+    "formula": "Fat Mass = weight_kg * (body_fat_pct/100)",
+    "compute": "lambda weight_kg, body_fat_pct: round(weight_kg * (body_fat_pct/100), 1)",
+    "example": {"weight_kg": 85, "body_fat_pct": 15, "result": 12.8, "unit": "kg"},
+    "conditions": "Track over time to distinguish fat loss from weight loss (which may include muscle/water).",
+    "alternatives": ["lean_body_mass (complementary metric)"]
+  },
+  "waist_to_hip_ratio": {
+    "name": "Waist-to-Hip Ratio (WHR)",
+    "category": "Health Risk",
+    "description": "Health risk marker for cardiovascular disease and metabolic syndrome.",
+    "inputs": [
+      {"name": "waist_cm", "type": "float", "unit": "cm", "description": "Waist circumference at navel"},
+      {"name": "hip_cm", "type": "float", "unit": "cm", "description": "Hip circumference at widest point"}
+    ],
+    "formula": "WHR = waist_cm / hip_cm",
+    "compute": "lambda waist_cm, hip_cm: round(waist_cm / hip_cm, 2)",
+    "example": {"waist_cm": 85, "hip_cm": 100, "result": 0.85, "unit": "ratio"},
+    "conditions": "Men: <0.90 low risk, 0.90-0.99 moderate, >1.0 high risk. Women: <0.80 low, 0.80-0.89 moderate, >0.90 high.",
+    "alternatives": ["bmi", "body_fat_navy_men/women"]
+  },
+  "bmr_cunningham": {
+    "name": "Cunningham BMR",
+    "category": "Energy Expenditure",
+    "description": "BMR equation based on lean body mass. Most accurate for athletic populations.",
+    "inputs": [
+      {"name": "lbm_kg", "type": "float", "unit": "kg", "description": "Lean body mass in kilograms"}
+    ],
+    "formula": "BMR = 500 + (22 * LBM_kg)",
+    "compute": "lambda lbm_kg: round(500 + (22 * lbm_kg), 1)",
+    "example": {"lbm_kg": 72.3, "result": 2090.6, "unit": "kcal"},
+    "conditions": "Requires accurate LBM measurement. Most accurate BMR formula for athletic populations (RMR research).",
+    "alternatives": ["katch_mcardle", "mifflin_st_jeor_men/women (if BF% unknown)"]
+  },
+  "weight_for_reps": {
+    "name": "Weight for Target Reps (from 1RM)",
+    "category": "Strength",
+    "description": "Calculate what weight to use for a target number of reps based on known 1RM.",
+    "inputs": [
+      {"name": "one_rm", "type": "float", "unit": "kg or lbs", "description": "Known one-rep max"},
+      {"name": "target_reps", "type": "int", "unit": "reps", "description": "Target number of reps"}
+    ],
+    "formula": "Weight = 1RM / (1 + target_reps/30) [Epley-based]",
+    "compute": "lambda one_rm, target_reps: round(one_rm / (1 + target_reps/30), 1)",
+    "example": {"one_rm": 140, "target_reps": 5, "result": 120.0, "unit": "same as input"},
+    "conditions": "Based on Epley formula inverted. Use for programming sets across.",
+    "alternatives": ["one_rm_epley (inverse)"]
+  },
+  "energy_cost_running": {
+    "name": "Energy Cost of Running (ACSM)",
+    "category": "Cardio",
+    "description": "ACSM metabolic equation for running calorie expenditure. Valid for speeds >5 mph (134 m/min).",
+    "inputs": [
+      {"name": "speed_mph", "type": "float", "unit": "mph", "description": "Running speed in miles per hour"},
+      {"name": "bodyweight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "minutes", "type": "float", "unit": "min", "description": "Duration in minutes"}
+    ],
+    "formula": "VO2 (ml/kg/min) = 0.2 * speed_m/min + 0.9 * speed_m/min * grade + 3.5; Kcal = VO2 * bodyweight_kg * minutes / 1000 * 5",
+    "compute": "lambda speed_mph, bodyweight_kg, minutes: round(((0.2 * (speed_mph * 26.8224) + 3.5) * bodyweight_kg * minutes / 1000 * 5), 0)",
+    "example": {"speed_mph": 6.0, "bodyweight_kg": 75, "minutes": 30, "result": 344, "unit": "kcal"},
+    "conditions": "Valid for speeds >5 mph (running). Not accurate for walking or sprinting.",
+    "alternatives": ["energy_cost_walking (for speeds <5 mph)"]
+  },
+  "energy_cost_walking": {
+    "name": "Energy Cost of Walking (ACSM)",
+    "category": "Cardio",
+    "description": "ACSM metabolic equation for walking calorie expenditure. Valid for speeds 1.9-3.7 mph.",
+    "inputs": [
+      {"name": "speed_mph", "type": "float", "unit": "mph", "description": "Walking speed in miles per hour"},
+      {"name": "bodyweight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "minutes", "type": "float", "unit": "min", "description": "Duration in minutes"}
+    ],
+    "formula": "VO2 (ml/kg/min) = 0.1 * speed_m/min + 1.8 * speed_m/min * grade + 3.5; Kcal = VO2 * bodyweight_kg * minutes / 1000 * 5",
+    "compute": "lambda speed_mph, bodyweight_kg, minutes: round(((0.1 * (speed_mph * 26.8224) + 3.5) * bodyweight_kg * minutes / 1000 * 5), 0)",
+    "example": {"speed_mph": 3.0, "bodyweight_kg": 75, "minutes": 45, "result": 185, "unit": "kcal"},
+    "conditions": "Valid for speeds 1.9-3.7 mph (50-100 m/min). Not accurate for running speeds.",
+    "alternatives": ["energy_cost_running (for speeds >5 mph)"]
+  },
+  "daily_water_needs": {
+    "name": "Daily Water Intake Recommendation",
+    "category": "Health",
+    "description": "Estimates daily water needs based on body weight and activity.",
+    "inputs": [
+      {"name": "weight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "exercise_minutes", "type": "float", "unit": "min", "description": "Minutes of exercise per day"}
+    ],
+    "formula": "Water (L) = weight_kg * 0.033 + (exercise_minutes / 30 * 0.35)",
+    "compute": "lambda weight_kg, exercise_minutes: round(weight_kg * 0.033 + (exercise_minutes / 30 * 0.35), 1)",
+    "example": {"weight_kg": 80, "exercise_minutes": 60, "result": 3.3, "unit": "liters"},
+    "conditions": "Base formula: 30-35 ml/kg. Add 350ml per 30 min of exercise. Adjust for climate.",
+    "alternatives": []
+  },
+  "macronutrient_split": {
+    "name": "Macronutrient Distribution",
+    "category": "Nutrition",
+    "description": "Calculate grams of protein, carbs, and fat from total calories and percentages.",
+    "inputs": [
+      {"name": "total_calories", "type": "float", "unit": "kcal", "description": "Daily calorie target"},
+      {"name": "protein_pct", "type": "float", "unit": "%", "description": "Protein as percentage of calories (0-100)"},
+      {"name": "carbs_pct", "type": "float", "unit": "%", "description": "Carbs as percentage of calories (0-100)"},
+      {"name": "fat_pct", "type": "float", "unit": "%", "description": "Fat as percentage of calories (0-100)"}
+    ],
+    "formula": "Protein g = (total_calories * protein_pct/100) / 4; Carbs g = (total_calories * carbs_pct/100) / 4; Fat g = (total_calories * fat_pct/100) / 9",
+    "compute": "lambda total_calories, protein_pct, carbs_pct, fat_pct: {'protein_g': round((total_calories * protein_pct/100) / 4, 0), 'carbs_g': round((total_calories * carbs_pct/100) / 4, 0), 'fat_g': round((total_calories * fat_pct/100) / 9, 0)}",
+    "example": {"total_calories": 2500, "protein_pct": 30, "carbs_pct": 40, "fat_pct": 30, "result": {"protein_g": 188, "carbs_g": 250, "fat_g": 83}, "unit": "g"},
+    "conditions": "Protein and carbs: 4 kcal/g. Fat: 9 kcal/g. Percentages should sum to 100.",
+    "alternatives": ["macro_protein_target (weight-based)", "macro_calorie_targets"]
+  },
+  "vo2_max_rockport": {
+    "name": "VO2 Max Estimation (Rockport 1-Mile Walk)",
+    "category": "Cardio",
+    "description": "Estimates VO2 max from a 1-mile walking test. Suitable for non-athletes and older adults.",
+    "inputs": [
+      {"name": "weight_kg", "type": "float", "unit": "kg", "description": "Body weight in kilograms"},
+      {"name": "age", "type": "int", "unit": "years", "description": "Age in years"},
+      {"name": "sex", "type": "str", "unit": "m/f", "description": "Sex: m for male, f for female"},
+      {"name": "time_minutes", "type": "float", "unit": "min", "description": "Time to walk 1 mile in minutes"},
+      {"name": "heart_rate_bpm", "type": "float", "unit": "bpm", "description": "Heart rate at end of walk"}
+    ],
+    "formula": "VO2max = 132.853 - (0.0769 * weight_lbs) - (0.3877 * age) + (6.315 * sex_m=1,f=0) - (3.2649 * time_min) - (0.1565 * hr)",
+    "compute": "lambda weight_kg, age, sex, time_minutes, heart_rate_bpm: round(132.853 - (0.0769 * weight_kg*2.20462) - (0.3877 * age) + (6.315 * (1 if sex=='m' else 0)) - (3.2649 * time_minutes) - (0.1565 * heart_rate_bpm), 1)",
+    "example": {"weight_kg": 80, "age": 30, "sex": "m", "time_minutes": 13.5, "heart_rate_bpm": 145, "result": 44.5, "unit": "ml/kg/min"},
+    "conditions": "Use brisk, steady walking pace. Test on flat, measured 1-mile course. Heart rate at finish is critical.",
+    "alternatives": ["max_hr_fox", "karvonen_thr"]
   }
 }

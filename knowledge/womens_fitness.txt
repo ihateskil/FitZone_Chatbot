@@ -1,13 +1,16 @@
 ===== WOMEN'S FITNESS & PHYSIOLOGY GUIDE =====
 
 SECTION 1: MENSTRUAL CYCLE & TRAINING
-- Average cycle: 28 days (range 21-35). Phases: Follicular (days 1-14) and Luteal (days 15-28).
-- Follicular phase (days 1-14): Estrogen rising. Better recovery, lower perceived exertion, higher strength output. Good for heavy strength training and PR attempts.
-- Ovulation (~day 14): Peak estrogen. Highest potential strength and power output. Increased injury risk due to higher ligament laxity.
-- Luteal phase (days 15-28): Progesterone dominant. Higher resting heart rate, body temperature, perceived exertion. Recovery may be slower. 
-- Late luteal / PMS (days 25-28): Potential for decreased performance, increased fatigue, water retention. Reduce volume and intensity expectations.
-- Cycle syncing training: Not strictly necessary but can optimize results. Adjust intensity based on how you feel each phase.
-- Birth control: Oral contraceptives suppress the natural cycle. Performance effects vary by pill type and individual.
+- Average cycle: 28 days (range 21-45 for some women). Phases: Follicular (days 1-14) and Luteal (days 15-28).
+- Follicular phase (days 1-14): Estrogen rising, progesterone low. Better recovery, lower RPE at same workload, higher strength output. Good for heavy strength training and PR attempts.
+- Menses (days 1-5): Estrogen and progesterone both low. Some women feel fatigued, others feel fine. No automatic need to reduce training unless symptoms require it.
+- Ovulation (~day 14): Peak estrogen. Highest potential strength and power output. Increased injury risk due to higher ligament laxity (relaxin hormone peaks). Warm up thoroughly.
+- Luteal phase (days 15-28): Progesterone dominant. Higher resting HR (+3-7 bpm), body temperature (+0.3-0.5 C), perceived exertion. Recovery may be slower. Fat oxidation increases.
+- Late luteal / PMS (days 25-28): Potential for decreased performance, increased fatigue, water retention, mood changes. Reduce volume and intensity expectations. This is not weakness; it's physiology.
+- Cycle syncing training: Not strictly necessary but can optimize comfort and results. Adjust intensity based on how you feel each phase. Tracking your cycle helps plan training peaks around follicular phase.
+- Birth control: Oral contraceptives (combined pill) suppress the natural cycle. Progestin-only methods may cause irregular bleeding. Performance effects vary by pill type and individual. Some women experience strength decrease on hormonal contraceptives.
+- Tracking: Use apps or journal to track cycle phases, energy, performance, and symptoms. 3-6 months of data reveals personal patterns.
+- Myth busting: Women CAN train hard during their period. Some of the best performances in sports history occurred during menstruation.
 
 SECTION 2: HORMONAL CONSIDERATIONS
 - Women have 10-20x less testosterone than men, but are more sensitive to its effects.
@@ -73,5 +76,32 @@ SECTION 10: SPECIAL CONSIDERATIONS
 - Eating disorders: Higher prevalence in women's fitness. Watch for orthorexia (obsession with clean eating), overtraining, body dysmorphia.
 - PCOS (Polycystic Ovary Syndrome): ~10% of women. Insulin resistance common. Strength training and HIIT particularly beneficial. 
 - Endometriosis: May affect training around menstruation. Modify intensity based on pain. Focus on gentle movement during flares.
-- Iron deficiency: More common in female athletes. Symptoms: fatigue, poor recovery, shortness of breath. Test ferritin levels.
-- ACL injury risk: Women have 2-8x higher ACL tear rate than men in sports. Prevention: hamstring strengthening, landing mechanics, plyometric training, core stability.
+- Iron deficiency: More common in female athletes. Symptoms: fatigue, poor recovery, shortness of breath. Test ferritin levels (target >30 ng/mL for athletes). Supplementation may be needed.
+- ACL injury risk: Women have 2-8x higher ACL tear rate than men in sports. Prevention: hamstring strengthening (Nordic curls), landing mechanics (soft landings, knee over toe alignment), plyometric training (progressions from low to high intensity), core stability, neuromuscular training programs (FIFA 11+, PEP program).
+
+SECTION 11: NUTRITION CONSIDERATIONS FOR WOMEN
+- Iron needs: 18mg/day (pre-menopausal). Heme iron (meat) absorbs 2-3x better than non-heme (plants). Pair plant iron with vitamin C (citrus, peppers) to boost absorption.
+- Calcium needs: 1000mg/day (1200mg for teens and post-menopausal). Critical for bone density. Dairy, fortified plant milks, leafy greens, canned fish with bones.
+- Folate (B9): 400-800 mcg/day for women of childbearing age. Critical for fetal development. Sources: leafy greens, legumes, fortified grains.
+- Protein needs: Same as men relative to body weight (1.6-2.2g/kg for muscle building). Women often undereat protein relative to needs.
+- Carbohydrate needs: Women may benefit from slightly higher carb intake during luteal phase (increased glycogen utilization, higher resting metabolic rate). Add 100-200 kcal of carbs in the week before menstruation.
+- Fat needs: Minimum 0.5-1g/kg for hormonal health. Very low fat diets (<15% calories from fat) can disrupt menstrual function.
+- Hydration: Women have lower total body water than men. Thirst mechanisms differ. Drink to thirst, increase intake during luteal phase.
+- Caffeine: May affect PMS symptoms and breast tenderness in some women. 200-300mg moderate consumption is safe for most.
+
+SECTION 12: BODY IMAGE & PSYCHOLOGICAL FACTORS
+- Social media influence: Comparison to filtered/edited images is a major source of body dissatisfaction. Coach clients to curate feeds toward educational content, not inspiration images.
+- The "bulky" myth: Women lack the hormonal profile (10-20x less testosterone) to accidentally get bulky. Visible muscle requires years of intentional training and surplus calories.
+- Performance focus over appearance: Clients who focus on performance markers (strength, endurance, skill) have better body satisfaction and training adherence than those focused on appearance.
+- Scale weight fluctuations: Women's weight fluctuates 2-5 lbs during a menstrual cycle due to water retention, glycogen storage, and hormonal changes. Track trends (monthly averages), not daily numbers.
+- Eating disorder red flags: Extreme calorie restriction, compulsive exercise, ritualistic eating, avoidance of social eating, intense fear of weight gain, distorted body perception. Refer to specialist.
+- Coaching approach: Affirm effort and consistency. Never comment on body size or shape unprompted. Use neutral language: "You're getting stronger" not "You're looking better."
+- Body image and athletics: Female athletes in aesthetic sports (gymnastics, figure skating, dance, bodybuilding) face higher body image pressure and disordered eating rates.
+
+SECTION 13: LIFESPAN TRAINING FOR WOMEN
+- Teens (13-19): Focus on technique, movement skill development, and building exercise habit. Emphasize bone density building (jumping, impact). Avoid excessive specialization.
+- Early adulthood (20-35): Peak bone density window (ends ~age 30). Peak muscle building potential. Establish training consistency. Manage life transitions (career, relationships, pregnancy).
+- Pregnancy (any age): Continue training as able. Modify intensity in third trimester. Pelvic floor training essential. Diastasis recti prevention (avoid crunches, control core loading).
+- Perimenopause (35-50): Hormonal fluctuations begin 5-10 years before menopause. Strength training becomes critical. Protein intake should increase to 2g/kg. Sleep and stress management priorities.
+- Menopause (50-60): Estrogen drops dramatically. Fat redistribution to abdomen. Accelerated bone density loss (1-2% per year in first 5 years post-menopause). Strength training 3-4x/week non-negotiable. Impact training for bones. Protein 2-2.4g/kg.
+- Older adult (60+): Fall prevention is primary goal. Balance training (single leg stance, tai chi), lower body strength for mobility, bone density maintenance. Modify intensity for joint health.

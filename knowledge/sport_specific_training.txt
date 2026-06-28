@@ -75,11 +75,44 @@ SECTION 9: COMPETITION PREP & TAPERING
 - Nutrition before competition: Carb loading for endurance events (2-3 days). Normal intake for strength events. Hydration 48 hours out.
 - Competition day routine: Wake time, pre-competition meal (2-3 hours before), warm-up protocol, mental preparation.
 
-SECTION 10: PROGRAM DESIGN PRINCIPLES
-- SAID principle: Specific Adaptation to Imposed Demands. Train the specific energy system and movement pattern you want to improve.
-- FITT-VP: Frequency, Intensity, Time, Type, Volume, Progression.
-- Progressive overload: Gradual increase in training stimulus. 2-5% increase in volume or intensity per week.
-- Variation: Change exercises, rep ranges, and loading patterns every 4-8 weeks to avoid stagnation.
-- Individualization: Program must account for training age, injury history, goals, schedule, recovery capacity.
-- Minimum effective dose: The smallest amount of training that produces results. More is NOT always better.
-- Autoregulation: Adjust training based on daily readiness (sleep, stress, nutrition, previous training response).
+SECTION 10: SOCCER / FOOTBALL
+- Demands: Mix of aerobic endurance (10-12 km per game) and high-intensity sprints (800-1200 m of sprinting per game). Change of direction every 2-4 seconds.
+- Strength priorities: Lower body power (squat, trap bar deadlift, single-leg work), hamstring injury prevention (Nordic curls, Romanian deadlifts), core stability for change of direction.
+- Conditioning: HIIT with multidirectional movements, repeated sprint ability training, small-sided games for sport-specific conditioning.
+- Periodization: Off-season (strength focus, 3-4x/week lifting + conditioning), Pre-season (power and sport-specific conditioning, 2-3x/week lifting + increased conditioning), In-season (maintenance, 1-2x/week lifting + tactical conditioning).
+- Injury prevention: FIFA 11+ warm-up program (20 min, 2-3x/week) reduces injury rates by 30-50%. Hamstring and groin strengthening, landing mechanics, and balance training are critical.
+
+SECTION 11: BASKETBALL
+- Demands: Vertical jumping (50-70 jumps per game), multidirectional sprinting (4-6 km total), quick changes of direction, upper body for passing and shooting.
+- Strength priorities: Lower body power (squat, deadlift, Olympic lifts or variations), single-leg strength (lunges, split squats, step-ups), calf and ankle strength for jumping.
+- Conditioning: Intervals mimicking game play (30-90 sec high intensity, 1-2 min rest), repeated jump training, change of direction drills.
+- Vertical jump training: Squat strength (1.5-2x bodyweight for advanced), plyometrics (box jumps, depth jumps, bounding), Olympic lift variations (hang clean, power clean), amortization phase reduction (quick transitions from eccentric to concentric).
+- Injury prevention: Ankle strengthening (single-leg balance, wobble board), ACL prevention (landing mechanics, hamstring strengthening, plyometric progression), patellar tendon management (load management, isometrics).
+
+SECTION 12: AMERICAN FOOTBALL
+- Demands: Explosive power for short bursts (5-10 seconds max effort), strength for blocking and tackling, speed and agility for position-specific demands.
+- Position-specific training: Linemen (absolute strength, power clean, bench press, squat 2+ x BW), Skill positions (speed, agility, change of direction, vertical jump), Linebackers and tight ends (hybrid strength and speed).
+- Strength priorities: Full body power (squat, deadlift, bench press, Olympic lifts), neck strengthening (for impact protection), grip strength, hip hinge power.
+- Conditioning: Intervals matching play duration (5-10 sec max effort, 30-60 sec rest), position-specific drills, agility and change of direction.
+- Periodization: Off-season (strength and hypertrophy, 4x/week), Pre-season (power and sport-specific, 3x/week + practice), In-season (maintenance lifting 2x/week + games/practice), Post-season (active recovery 2-4 weeks).
+
+SECTION 13: SWIMMING
+- Demands: Upper body endurance (lat, shoulder, core strength), lower body kick power, high aerobic + anaerobic capacity. Events range from 50m sprints (20-30 sec) to 1500m (15-20 min).
+- Strength priorities: Lat pull-down and pull-up strength (for pull phase), shoulder health (rotator cuff, scapular stability), core for body position and rotation, leg power for kick.
+- Dry land training: 3-4x/week off-season, 2x/week in-season. Pull-ups, rows, lat pull-downs, core work, medicine ball throws, jump training.
+- Periodization: Off-season (general strength, hypertrophy focus, 4x/week), Pre-season (power and endurance, 3x/week + increased pool volume), In-season (maintenance 2x/week), Taper (reduced volume, maintained intensity).
+- Shoulder health: Swimmer's shoulder is the most common injury (70% of swimmers experience shoulder pain). Prevention: external rotation strengthening, scapular retraction, posterior cuff work, lat stretching, avoiding overuse.
+
+SECTION 14: CYCLING
+- Demands: Lower body muscular endurance, high aerobic capacity (VO2 max 70-85 ml/kg/min for elite), sustained power output for 1-6 hours.
+- Strength priorities: Lower body strength (squat, leg press, Bulgarian split squat), core stability for aero position maintenance, hip and knee health.
+- Gym training: Off-season (heavy lower body 2x/week + accessories), In-season (maintenance 1x/week, lighter loads, higher reps, focus on muscular endurance).
+- Periodization: Base (long rides at low intensity, 80% of training), Build (threshold intervals, VO2 max work, 4-8 weeks), Peak (race-specific intensity, reduced volume), Race/Taper (low volume, high intensity spikes).
+- Common issues: Patellofemoral pain (from bike fit issues, quad/hamstring imbalance), Lower back pain (from prolonged aero position, weak core), Neck pain (from head position), Ulnar nerve compression (from handlebar pressure).
+
+SECTION 15: BASEBALL / SOFTBALL
+- Demands: Explosive rotational power for hitting and throwing, sprint speed (short bursts), upper body strength for throwing velocity, agility for fielding.
+- Strength priorities: Rotational power (medicine ball throws, cable rotations, landmine presses), lower body power (squat, deadlift, hip hinge variations), shoulder health (rotator cuff, scapular stability, sleeper stretch).
+- Throwing velocity: Linked to lower body power (hip and core rotation generates 50%+ of throwing force). Training: med ball rotational throws, hip mobility, resistance band rotational work.
+- Periodization: Off-season (strength and power, 3-4x/week), Pre-season (power and sport-specific, 3x/week + practice), In-season (maintenance 2x/week, minimize fatigue), Post-season (active recovery, address injuries).
+- Injury prevention: UCL (ulnar collateral ligament) protection from Tommy John surgery risk. Manage pitch counts, strengthen forearm flexors, proper throwing mechanics, avoid year-round throwing.

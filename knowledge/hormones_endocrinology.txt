@@ -1,0 +1,88 @@
+===== HORMONES & ENDOCRINOLOGY FOR FITNESS =====
+
+SECTION 1: TESTOSTERONE
+- Primary male sex hormone and key anabolic hormone in both sexes. Produced in Leydig cells (testes in men, ovaries/adrenals in women).
+- Normal ranges: Men 300-1000 ng/dL, Women 15-70 ng/dL. Optimal fitness levels: 600-900 ng/dL for men.
+- Testosterone effects: Increases muscle protein synthesis, bone density, red blood cell production, libido, mood, cognitive function, and recovery.
+- Training effects: Heavy compound lifts (squat, deadlift, bench) produce acute testosterone spikes (15-30% increase lasting 30-60 minutes post-exercise).
+- Chronic training: Basal testosterone levels do NOT significantly increase with training in men. Women may see minor increases.
+- Testosterone and body fat: Adipose tissue contains aromatase enzyme which converts testosterone to estrogen. Higher body fat = lower testosterone.
+- Sleep: Cutting sleep from 8 to 5 hours reduces testosterone by 10-15%. This is cumulative over consecutive nights.
+- Nutrition: Adequate fat intake (0.5-1g/kg body weight) is necessary for testosterone production. Very low fat diets (<20% calories from fat) reduce testosterone.
+- Zinc and magnesium are critical cofactors for testosterone synthesis. Deficiencies directly lower testosterone.
+- Alcohol: Acute consumption reduces testosterone within 30 minutes. Chronic heavy use causes testicular shrinkage and permanently reduced production.
+
+SECTION 2: ESTROGEN
+- Primary female sex hormone. Produced in ovaries (women) and via aromatization from testosterone (both sexes).
+- Estrogen effects: Bone density maintenance, collagen synthesis, fat distribution, mood regulation, cognitive function, joint health.
+- Estrogen and training: Estrogen may improve muscle recovery through antioxidant effects. Women often experience greater endurance and faster recovery between sets than men.
+- Menstrual cycle phases: Follicular phase (days 1-13, low estrogen), Ovulation (day 14, estrogen peak), Luteal phase (days 15-28, high estrogen + progesterone).
+- Training across the cycle: Follicular phase may favor higher intensity training. Luteal phase may favor higher volume due to better glycogen utilization and fat oxidation.
+- Female athlete triad: Low energy availability (disordered eating), menstrual dysfunction, low bone density. Requires medical intervention.
+
+SECTION 3: CORTISOL
+- Primary stress hormone. Produced by adrenal cortex. Follows a diurnal rhythm (peak upon waking, lowest at midnight).
+- Cortisol effects: Mobilizes energy (gluconeogenesis, lipolysis), reduces inflammation, suppresses non-essential functions (digestion, reproduction, growth).
+- Acute training response: Cortisol rises with exercise intensity and duration. HIIT and endurance training produce larger spikes than strength training.
+- Chronic elevation: Overtraining, chronic calorie restriction, sleep deprivation, and psychological stress chronically elevate cortisol.
+- Consequences of high cortisol: Muscle breakdown, fat gain (especially visceral), immune suppression, bone loss, insulin resistance, cognitive impairment.
+- Cortisol management: Adequate sleep (7-9 hrs), deload weeks, stress management (meditation, breathwork), sufficient carbohydrate intake, avoiding excessive cardio.
+- Morning cortisol test: Best marker for adrenal function. Blood or saliva test upon waking. Low morning cortisol can indicate adrenal fatigue or HPA axis dysregulation.
+
+SECTION 4: GROWTH HORMONE (GH)
+- Produced in anterior pituitary. Release is pulsatile, with largest pulse during slow-wave sleep (60-90 min after sleep onset).
+- GH effects: Stimulates IGF-1 production, protein synthesis, lipolysis, bone growth, collagen synthesis, immune function.
+- Training effects: High-intensity exercise (heavy resistance, HIIT) stimulates GH release. Training with moderate reps (8-12), short rest (60 sec), and moderate loads produces highest GH response.
+- GH and aging: GH production declines ~14% per decade after age 30. This contributes to sarcopenia and increased body fat in aging.
+- GH secretagogues: Arginine, ornithine, glutamine, glycine, and GABA may modestly increase GH. Effect is small compared to training and sleep.
+- GH and fasting: Fasting increases GH secretion (up to 5x after 24 hours). This is a survival mechanism to mobilize fat stores.
+
+SECTION 5: IGF-1 (INSULIN-LIKE GROWTH FACTOR 1)
+- Produced primarily in liver in response to GH. Mediates many of GH's anabolic effects.
+- IGF-1 effects: Muscle protein synthesis, satellite cell activation, muscle repair, bone formation, glucose uptake.
+- Training effects: Resistance training increases IGF-1 levels. Both acute (post-exercise) and chronic (baseline) increases occur in response to consistent training.
+- Nutrition: Protein intake is essential for IGF-1 production. Calorie restriction reduces IGF-1. Adequate carbohydrate intake supports IGF-1 through insulin signaling.
+- IGF-1 declines with age, contributing to age-related muscle loss. Resistance training attenuates this decline.
+
+SECTION 6: INSULIN
+- Produced by pancreatic beta cells. Primary anabolic hormone for nutrient storage.
+- Insulin effects: Drives glucose into cells (muscle, fat, liver), stimulates protein synthesis (through mTOR pathway), inhibits protein breakdown, promotes fat storage.
+- Insulin sensitivity: High sensitivity = better nutrient partitioning (more to muscle, less to fat). Improved by resistance training, cardio, lower body fat, adequate sleep.
+- Insulin resistance: Reduced glucose uptake in response to insulin. Associated with obesity, metabolic syndrome, type 2 diabetes. Improved by training and weight loss.
+- Nutrient timing: Post-workout insulin sensitivity is highest. Consuming carbs + protein post-workout optimizes glycogen replenishment and muscle protein synthesis.
+- Fasted training: May improve insulin sensitivity long-term but does NOT increase fat loss vs fed training when calories are equated.
+
+SECTION 7: THYROID HORMONES (T3, T4)
+- Produced by thyroid gland. T4 is the storage form, converted to active T3 in tissues.
+- Thyroid effects: Metabolic rate regulation, protein synthesis, heart rate, body temperature, lipid metabolism.
+- Training effects: Both resistance and endurance training may increase T4 to T3 conversion, boosting metabolic rate.
+- Dieting effects: Calorie restriction reduces T3 production (adaptive thermogenesis). This is why metabolic rate drops during prolonged dieting, plateauing weight loss.
+- Reverse dieting: Gradually increasing calories over weeks/months may restore T3 levels and metabolic rate after prolonged dieting.
+- Clinical hypothyroidism: Symptoms include fatigue, weight gain, cold intolerance, constipation, depression, slow heart rate. Requires medical diagnosis and treatment.
+- Clinical hyperthyroidism: Symptoms include weight loss, heat intolerance, racing heart, anxiety, tremor, frequent bowel movements. Requires medical diagnosis.
+
+SECTION 8: LEPTIN AND GHRELIN
+- Leptin: Produced by fat cells. Signals satiety and energy sufficiency to the hypothalamus. Higher body fat = higher leptin.
+- Leptin resistance: Common in obesity. High leptin levels but brain does not respond. Similar mechanism to insulin resistance.
+- Dieting effect: Calorie restriction rapidly drops leptin (within 24 hours). Low leptin triggers hunger, reduced metabolic rate, and increased cortisol.
+- Ghrelin: Produced by stomach. Signals hunger. Rises before meals, falls after eating.
+- Ghrelin and training: Acute exercise suppresses ghrelin (reduces hunger post-workout). Chronic training may improve ghrelin sensitivity.
+- Sleep and appetite: Sleep restriction increases ghrelin (hunger) and decreases leptin (satiety), leading to increased calorie intake of ~300 kcal/day.
+
+SECTION 9: HORMONAL CONSIDERATIONS FOR WOMEN
+- Menstrual cycle phases significantly affect performance, recovery, and injury risk.
+- Follicular phase (days 1-13): Lower estrogen. May favor strength, power, and high-intensity training. Lower injury risk (ACL injuries more common during luteal/ovulatory phase).
+- Ovulation (day 14): Estrogen peak. May see peak strength and power. Increased ligament laxity (higher ACL injury risk).
+- Luteal phase (days 15-28): Higher progesterone. May reduce endurance, increase core temperature, impair recovery, increase carbohydrate needs. Some women experience reduced strength.
+- Contraceptives: Hormonal birth control suppresses natural cycle. May blunt some training adaptations but provides predictable hormone levels.
+- Perimenopause (40s): Declining estrogen and progesterone. Increased injury risk, slower recovery, weight gain tendency. Protein needs increase to 1.6-2.2g/kg.
+- Menopause (50s+): Dramatic estrogen drop. Increased risk of sarcopenia, osteoporosis, cardiovascular disease. Resistance training becomes critical. Protein needs further increase.
+
+SECTION 10: HORMONAL OPTIMIZATION STRATEGIES
+- Nutrition: Adequate protein (1.6-2.2g/kg), healthy fats (0.5-1g/kg), sufficient carbs for training demands, micronutrient sufficiency (zinc, magnesium, vitamin D, B6, selenium).
+- Training: Heavy compound lifts, adequate volume, proper periodization, avoid overtraining, include both strength and metabolic work.
+- Sleep: 7-9 hours, consistent schedule, dark/cool room, no screens before bed.
+- Stress management: Meditation, breathwork, nature exposure, adequate leisure time, social connection.
+- Body composition: Maintain healthy body fat (10-20% men, 18-28% women). Extreme low body fat disrupts hormonal function in both sexes.
+- Avoid endocrine disruptors: BPA (plastics), phthalates (fragrances), pesticides (non-organic produce), and excessive alcohol.
+- Medical assessment: If experiencing symptoms of hormonal imbalance (low libido, fatigue, mood changes, weight changes, sleep issues), get blood work: total and free testosterone, estradiol, SHBG, LH, FSH, cortisol, TSH, T3, T4, vitamin D, ferritin, zinc.

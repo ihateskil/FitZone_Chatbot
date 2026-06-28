@@ -1,0 +1,83 @@
+===== ADVANCED NUTRITION STRATEGIES & NUTRIENT TIMING =====
+
+SECTION 1: CARB CYCLING
+- Carb cycling is the strategic manipulation of carbohydrate intake based on training demands, alternating high-carb, moderate-carb, and low-carb days.
+- High-carb days: Placed on highest training volume or most intense training days. Supports performance, glycogen replenishment, anabolic signaling (mTOR activation).
+- Low-carb days: Placed on rest or light training days. May improve insulin sensitivity, fat adaptation, and metabolic flexibility.
+- Moderate-carb days: Standard training days. Matches carbohydrate intake to training expenditure.
+- Typical setup (fat loss): Training days: 2-3g/kg carbs, rest days: 1g/kg or less. Protein kept high (2-2.4g/kg) across all days, fat adjusted to meet calorie targets.
+- Typical setup (maintenance): Training days: 4-6g/kg, rest days: 2-3g/kg.
+- Carb cycling benefits: May improve adherence (flexibility), supports performance on training days, improves insulin sensitivity over time.
+- Carb cycling limitations: Logistically complex, not necessary for most people, no metabolic advantage over consistent daily intake when calories and protein are equated.
+
+SECTION 2: REVERSE DIETING
+- Reverse dieting is the gradual increase in calorie intake after a prolonged diet to restore metabolic rate and minimize fat regain.
+- Metabolic adaptation: Calorie restriction reduces metabolic rate beyond what weight loss predicts (adaptive thermogenesis). T3, leptin, and NEAT all decrease.
+- Reverse protocol: Increase calories by 50-100 kcal per week (or 5-10% of maintenance calories per week) from carbohydrates or fats while keeping protein high.
+- Duration: 4-12 weeks depending on diet duration and restriction severity. Longer, more severe diets require longer, slower reverse dieting.
+- Weight gain expectations: 1-3 lbs of water weight initially (glycogen + water), then 0.5-1 lb per week of tissue gain. Some fat gain is unavoidable.
+- Maintenance phase: After reverse dieting, maintain at final calorie level for 4-8 weeks to allow metabolic rate to stabilize before next diet.
+- Reverse dieting is NOT necessary for everyone. Short diet phases (<8 weeks) and small deficits (<300 kcal) may not require reverse dieting.
+
+SECTION 3: NUTRIENT TIMING AROUND TRAINING
+- Pre-workout meal (1-3 hours before): 0.4-0.5g/kg carbs, 0.2-0.3g/kg protein, low fat and fiber for digestion. Example: banana + whey shake, rice cakes with honey, oatmeal with protein.
+- Intra-workout: Only necessary for sessions >90 minutes or multiple sessions in a day. 30-60g carbs per hour (glucose or glucose+fructose) + water + electrolytes.
+- Post-workout (within 2 hours): 0.4-0.5g/kg carbs, 0.3-0.4g/kg protein. The anabolic window is wider (4-6 hours) if a pre-workout meal was consumed.
+- Pre-sleep protein: 30-40g casein or slow-digesting protein before bed increases overnight muscle protein synthesis. Cottage cheese, Greek yogurt, casein supplement.
+- Fasted training: No performance advantage for strength training. May increase fat oxidation during exercise but does NOT increase total fat loss over 24 hours when calories are equated.
+- Fed training: Improves performance, reduces muscle breakdown, supports training quality. Recommended for most athletes.
+
+SECTION 4: PERIODIZATION OF NUTRITION
+- Nutrition should follow training periodization: Higher carb/higher calorie during high volume phases, lower carb/lower calorie during deload or active rest.
+- Bulking phases: Surplus of 300-500 kcal/day above maintenance. Protein 1.6-2.2g/kg, carbs 4-7g/kg, fats 0.8-1.2g/kg. Duration 8-16 weeks.
+- Cutting phases: Deficit of 300-500 kcal/day below maintenance. Protein 2-2.4g/kg (higher to preserve muscle), carbs 2-3g/kg, fats 0.5-0.8g/kg. Duration 8-16 weeks.
+- Maintenance phases: Calories at or slightly above TDEE. Duration 4-12+ weeks between surplus and deficit phases.
+- Refractory period: After a cut, stay at maintenance for at least as long as the cut before beginning a bulk. Hormonal recovery takes time.
+- Diet breaks: During a cut, take 1-2 weeks at maintenance calories every 8-12 weeks to restore metabolic rate and hormones.
+
+SECTION 5: MICRONUTRIENTS FOR PERFORMANCE
+- Iron: Critical for oxygen transport. Deficiency causes fatigue, reduced endurance, impaired recovery. Athletes at risk: female, endurance, vegetarian/vegan. Sources: red meat, spinach, lentils, fortified cereals.
+- Vitamin D: Hormone precursor, immune function, bone health, muscle function. 2000-5000 IU/day for athletes. Most athletes are deficient. Sources: sunlight, fatty fish, fortified dairy, supplementation.
+- Calcium: Bone health, muscle contraction, nerve signaling. 1000-1300 mg/day. Sources: dairy, leafy greens, fortified plant milks, sardines.
+- Magnesium: 300+ enzymatic reactions including protein synthesis, muscle contraction, ATP production, sleep regulation. 300-400 mg/day. Athletes often deficient. Sources: nuts, seeds, dark leafy greens, dark chocolate, supplementation.
+- Zinc: Testosterone production, immune function, protein synthesis, wound healing. 11 mg/day men, 8 mg/day women (athletes may need more). Sources: oysters, red meat, pumpkin seeds, chickpeas.
+- B vitamins (B6, B12, folate): Energy metabolism, red blood cell production, homocysteine regulation. Athletes with high energy expenditure need more. Sources: meat, eggs, dairy, leafy greens, fortified grains.
+- Antioxidants (vitamin C, E, selenium, polyphenols): Combat exercise-induced oxidative stress. Best obtained from whole foods (berries, colorful vegetables, dark chocolate). High-dose antioxidant SUPPLEMENTS may blunt training adaptations.
+
+SECTION 6: HYDRATION AND ELECTROLYTES
+- Water needs: 30-45 ml/kg body weight per day minimum. More on training days. 500-1000 ml per hour of intense exercise depending on sweat rate.
+- Dehydration effects: 2% body weight loss impairs performance. 5%+ loss is dangerous (heat illness, cognitive impairment, cardiovascular strain).
+- Electrolytes: Sodium (500-1000mg per hour of exercise in heat), Potassium (3-5g/day), Magnesium (300-400mg/day).
+- Sweat rate test: Weigh before and after 1 hour of exercise. 1 kg lost = ~1 liter fluid replacement needed. Replace with 1.25-1.5 liters per kg lost (to account for urine production).
+- Overhydration risk (hyponatremia): Drinking too much water without electrolytes dilutes blood sodium. Symptoms: nausea, headache, confusion, seizures. More common in endurance events.
+- Hydration protocol: Pre-exercise (500ml 2 hours before), During (150-300ml every 15-20 min), Post (1.25-1.5L per kg lost).
+
+SECTION 7: MEAL PREP AND ADHERENCE STRATEGIES
+- Meal prep frequency: 1-2x per week. Cook proteins and carbs in bulk, prep vegetables, portion into containers.
+- Macro tracking: Weigh food raw when possible. Use food scale for accuracy. Track for 2-4 weeks to calibrate portion sizes, then switch to intuitive/palm-based tracking for maintenance.
+- Palm portions: Protein (1 palm = 20-30g), Carbs (1 cupped hand = 20-30g), Fats (1 thumb = 10-15g), Vegetables (1 fist = 1 serving). Build meals around these portions.
+- Flexible dieting (IIFYM): All foods fit within macro targets. Allows treats within limits. Improves long-term adherence vs rigid dieting.
+- 80/20 rule: 80% of calories from nutrient-dense whole foods, 20% from flexible choices. Sustainable for most people long-term.
+- Hunger management: High volume eating (vegetables, popcorn, watermelon), adequate protein (30-40g per meal), fiber (25-35g/day), caffeine (appetite suppressant), carbonated water.
+- Eating out strategies: Look up menu macros beforehand, prioritize grilled over fried, ask for sauces/dressings on the side, box half the meal immediately.
+
+SECTION 8: SUPPLEMENT STACKING AND CYCLING
+- Foundational stack: Protein powder (whey or plant), Creatine (5g/day), Vitamin D (2000-5000 IU), Magnesium (300-400mg), Fish oil (2-3g EPA/DHA).
+- Performance stack (add for training blocks): Pre-workout (caffeine 200-400mg + citrulline malate 6g + beta-alanine 3.2g), intra-workout carbs (for sessions >90 min), post-workout fast-digesting protein.
+- Recovery stack (add for high volume/hardening phases): ZMA (zinc + magnesium + B6), tart cherry extract, ashwagandha (Cortisol management, 300-600mg).
+- Cycling supplements: Caffeine (cycle 2 weeks off every 8-12 weeks to maintain sensitivity), Pre-workouts (rotate ingredients every 8 weeks), Beta-alanine (no cycle needed).
+- Supplement timing: Creatine (any time, consistent daily), Protein (post-workout ideal), Pre-workout (30-60 min before), ZMA (before bed), Vitamin D (with fat-containing meal), Fish oil (with meals, split doses).
+- Supplement safety: Third-party tested brands (NSF, Informed Choice, USP) for banned substance screening. Avoid proprietary blends (disclose exact ingredient amounts).
+
+SECTION 9: DIETARY APPROACHES FOR SPECIAL POPULATIONS
+- Vegan/vegetarian athletes: Higher protein needs (2-2.4g/kg) due to lower digestibility of plant proteins. Combine complementary proteins (rice + pea, soy + grain). Monitor iron, zinc, B12, calcium, omega-3s, creatine, and carnosine intake. Supplement B12 and consider creatine and beta-alanine.
+- Athletes with diabetes: Consistent carbohydrate timing to match insulin/medication. Pre-exercise carbs to prevent hypoglycemia. Post-exercise recovery nutrition is critical. Monitor blood glucose around training.
+- Athletes with GI issues (IBS, IBD): Low FODMAP diet trial to identify triggers. Avoid high-fat and high-fiber pre-workout meals. Smaller, more frequent meals. Soluble fiber for symptom management. Work with registered dietitian.
+- Older athletes (50+): Higher protein needs (2-2.4g/kg) to overcome anabolic resistance. Vitamin D and calcium critical for bone health. B12 absorption decreases with age. Hydration becomes more important (thirst mechanism declines). Omega-3s for joint and cognitive health.
+
+SECTION 10: BODY COMPOSITION PLATEAUS AND SOLUTIONS
+- Calorie deficit plateau (weight loss stalls): Possible causes: metabolic adaptation (reduce deficit further slowly or take diet break), inaccurate tracking, decreased NEAT (non-exercise activity thermogenesis), medical issues (thyroid, insulin resistance).
+- Solutions: Diet break (2 weeks at maintenance), increase step count (10-15k/day), re-evaluate tracking accuracy, add 1-2 extra cardio sessions, increase protein to 2.4g/kg.
+- Muscle gain plateau (gains stall): Possible causes: insufficient calories or protein, training plateau (need periodization change), recovery deficit, unrealistic expectations (natural gains slow after first 2 years).
+- Solutions: Increase calories by 100-200/day, ensure 1.6-2.2g/kg protein, change training stimulus, improve sleep and recovery, manage stress.
+- Body recomposition (simultaneous fat loss and muscle gain): Best for beginners, deconditioned individuals, those returning from break, and obese individuals. Requires small deficit (200-300 kcal), high protein (2-2.4g/kg), progressive resistance training. Fat loss rate is slow (0.5-1 lb/week).

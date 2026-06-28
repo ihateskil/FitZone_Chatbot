@@ -15,18 +15,22 @@ SECTION 2: STATIC STRETCHING
 - Never bounce during static stretches (ballistic stretching increases injury risk).
 
 SECTION 3: DYNAMIC WARM-UP
-- Purpose: Increase body temperature, activate nervous system, improve joint lubrication, practice movement patterns.
+- Purpose: Increase body temperature, activate nervous system, improve joint lubrication, practice movement patterns, reduce injury risk.
 - Key components: 5-10 minutes of light cardio, followed by dynamic stretches and sport-specific movements.
 - Lower body warm-up: Leg swings (forward and lateral), walking lunges, butt kicks, high knees, hip circles, bodyweight squats.
 - Upper body warm-up: Arm circles, shoulder rotations, cat-cow, thoracic rotations, band pull-aparts.
-- RAMP protocol: Raise (body temp), Activate (key muscles), Mobilize (joints), Potentiate (sport-specific drills).
+- RAMP protocol: Raise (body temp, 3-5 min light cardio), Activate (key muscles, glute bridges, band work), Mobilize (joints, dynamic stretches, CARs), Potentiate (sport-specific drills, 1-2 working sets at 50-70% intensity).
+- Total warm-up time: 10-15 minutes. Longer for older athletes, colder environments, and first session of the day.
+- General vs specific warm-up: General (increase core temp, 5 min) then specific (movements that mimic the workout, 5-10 min). Example: before squats, do bodyweight squats, goblet squats, then empty bar squats.
 
 SECTION 4: COMMON MOBILITY ISSUES
-- Ankle mobility: Limited dorsiflexion causes squat issues (heels lifting, excessive forward lean). Fix: Calf stretching, ankle CARs (controlled articular rotations), banded mobilizations.
-- Hip mobility: Tight hip flexors from sitting. Fix: Hip flexor lunges, 90/90 hip rotations, frog stretch, hip CARs.
-- Thoracic spine mobility: Rounded upper back from desk work. Fix: Thoracic extensions over foam roller, open books, cat-cow, thread-the-needle.
-- Shoulder mobility: Tight pecs and lats limit overhead reaching. Fix: Doorway pec stretch, lat stretch, banded shoulder dislocates, wall slides.
-- Wrist mobility: Important for push-ups and handstands. Fix: Wrist CARs, prayer stretch, finger extensions.
+- Ankle mobility: Limited dorsiflexion causes squat issues (heels lifting, excessive forward lean, knees caving). Fix: Calf stretching, ankle CARs (controlled articular rotations), banded mobilizations (pull ankle forward with band), tibialis raises, deep squat holds.
+- Hip mobility: Tight hip flexors from prolonged sitting. Fix: Hip flexor lunges (couch stretch), 90/90 hip rotations, frog stretch, hip CARs, pigeon pose, elephant walk.
+- Thoracic spine mobility: Rounded upper back from desk work. Fix: Thoracic extensions over foam roller (3 positions: upper, mid, lower T-spine), open books, cat-cow, thread-the-needle, T-spine rotations in half-kneeling.
+- Shoulder mobility: Tight pecs and lats limit overhead reaching. Fix: Doorway pec stretch (vary arm height for different fibers), lat stretch (holding onto rack), banded shoulder dislocates, wall slides, floor angels.
+- Wrist mobility: Important for push-ups, handstands, and front rack position in squats. Fix: Wrist CARs, prayer stretch, finger extensions, wrist flexor/extensor stretches.
+- Cervical spine (neck): Forward head posture from screen use. Fix: Chin tucks (2-3 sets of 10, held 3-5 sec), neck rotations, side-bending stretches, suboccipital release with lacrosse ball.
+- Assessment: Overhead squat test reveals mobility deficits in real time. Watch for: arms falling forward (tight lats/pecs, weak upper back), torso leaning forward (poor ankle/hip mobility), knees caving (weak glutes, poor ankle mobility), lower back arching (tight hip flexors, weak core).
 
 SECTION 5: FOAM ROLLING & SELF-MYOFASCIAL RELEASE
 - Purpose: Reduce muscle tension, improve blood flow, break up adhesions.
@@ -66,8 +70,32 @@ SECTION 9: JOINT-SPECIFIC CARE
 - Hips: Labral tears and FAI (femoroacetabular impingement). Fix: Avoid deep squats if painful, strengthen glute medius, improve hip CARs.
 
 SECTION 10: FLEXIBILITY STANDARDS
-- Toe touch: Sit and reach test. Palms past toes = good. Fingertips to toes = average.
+- Toe touch: Sit and reach test. Palms past toes = good. Fingertips to toes = average. Palms at shins = poor.
 - Squat depth: Thighs parallel to ground minimum, below parallel ideal. Ankles, hips, and T-spine all contribute.
-- Overhead squat test: Hold PVC pipe overhead, squat down. Pipe should stay over mid-foot, torso upright.
-- Shoulder flexion: Arms straight overhead against wall. 180 degrees = full ROM. 140-150 is common deficit.
+- Overhead squat test: Hold PVC pipe overhead, squat down. Pipe should stay over mid-foot, torso upright. Watch for: arms falling forward, heels lifting, knees caving, excessive forward lean.
+- Shoulder flexion: Arms straight overhead against wall. 180 degrees = full ROM. 140-150 is common deficit in desk workers.
 - Hip extension: Thomas test. Lying on back, pull one knee to chest. Other leg should remain flat on table. If it lifts, hip flexors are tight.
+- Hip internal rotation: Sitting, knees at 90 degrees. Rotate lower leg outward. 45 degrees each side is normal. Less than 30 degrees indicates restriction.
+- Ankle dorsiflexion: Knee-to-wall test. With foot flat, knee should touch wall 4-6 inches (10-15 cm) from toes while heel stays down. Less than 4 inches indicates ankle mobility deficit.
+
+SECTION 11: MOBILITY PROGRAMMING
+- Frequency: Daily for 5-15 minutes is better than 60 minutes once per week. Consistency over intensity.
+- When to mobilize: Morning (stiff, focus on movement quality and circulation), Pre-workout (dynamic, sport-specific), Post-workout (static holds, PNF, greatest ROM gains from warm tissue), Evening (de-stress, gentle, deep breathing).
+- Mobility progression: Start with CARs (controlled articular rotations) for awareness, then targeted drills for specific deficits, then integrate into warm-ups and cool-downs.
+- Maintenance vs corrective: Maintenance mobility (10-15 min daily, full body, low intensity). Corrective mobility (20-30 min daily, targeted to specific deficits, higher intensity). Allocate 80% to maintenance, 20% to corrective when no major deficits exist.
+- Mobility tools: Lacrosse ball (targeted release), foam roller (general release), resistance bands (mobilization flossing), yoga blocks (support for stretches), PVC pipe (overhead position training).
+
+SECTION 12: FLEXIBILITY TRAINING METHODS
+- Static stretching: Hold at end-range without pain. 30-60 second holds, 2-4 sets per muscle group. Best performed on warm muscles (post-workout or after warm-up). Total weekly dose: 5-10 minutes per muscle group.
+- Dynamic stretching: Controlled movement through ROM. 10-15 reps per movement. Best pre-workout. Examples: leg swings, torso twists, cat-cow, walking lunges with rotation.
+- PNF stretching: Contract-relax (CR): contract target muscle for 5-7 seconds, relax, then stretch further. Contract-relax-antagonist-contract (CRAC): same as CR then contract opposing muscle. Most effective method for acute ROM increase. Best with partner or using band/towel.
+- Loaded stretching: Hold end-range position with light weight (5-10% body weight) for 60-120 seconds. Examples: weighted pigeon pose, weighted splits, Jefferson curls. May produce longer-lasting ROM gains than unloaded stretching.
+- Eccentric stretching (loaded): Slow, controlled lengthening of muscle under tension. Example: Romanian deadlift for hamstring length. Combines strength and flexibility training.
+- Combining methods: Dynamic warm-up → main training → static or PNF stretching post-workout. 3-5 days per week for consistent progress.
+
+SECTION 13: MOBILITY FOR SPECIFIC ACTIVITIES
+- Squat mobility: Ankle dorsiflexion (banded distraction, calf stretch, deep squat holds), Hip internal rotation (90/90, couch stretch), T-spine extension (foam roller, open books), Bar position comfort (shoulder and lat mobility).
+- Deadlift mobility: Hamstring length (RDLs, Jefferson curls, seated hamstring stretch), Hip hinge patterning (wall drill, dowel hip hinge), Ankle ROM (not critical for conventional unless sumo stance).
+- Overhead press mobility: Shoulder flexion (wall slides, floor angels, banded dislocates), T-spine extension, Lat length (overhead banded lat stretch, kneeling lat stretch).
+- Running mobility: Hip flexor length (couch stretch), Hip extension (glute bridge, single-leg bridge), Ankle ROM (calf stretch, tibialis raise), core stability for pelvic control.
+- Swimming mobility: Shoulder internal/external rotation (banded rotations), T-spine rotation, Lat length, Ankle plantarflexion (pointed toes for kicking).

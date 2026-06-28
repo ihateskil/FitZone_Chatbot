@@ -1,357 +1,95 @@
-Food: Chicken breast, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 165 kcal, 31.0g protein, 0.0g carbs, 3.6g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Chicken thigh, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 209 kcal, 26.0g protein, 0.0g carbs, 10.9g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Ground beef 90% lean, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 215 kcal, 26.0g protein, 0.0g carbs, 11.3g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Ground beef 80% lean, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 254 kcal, 25.0g protein, 0.0g carbs, 16.2g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Salmon, Atlantic, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 208 kcal, 20.0g protein, 0.0g carbs, 13.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Tuna, canned in water | Source: curated | Category: Protein | Serving: 100g | Per 100g: 116 kcal, 26.0g protein, 0.0g carbs, 0.8g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Turkey breast, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 135 kcal, 30.0g protein, 0.0g carbs, 1.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Egg, whole, large | Source: curated | Category: Protein | Serving: 50g | Per 100g: 143 kcal, 12.6g protein, 0.7g carbs, 9.5g fat, 0.0g fiber, 0.4g sugar
-
-----
-
-Food: Egg whites, raw | Source: curated | Category: Protein | Serving: 100g | Per 100g: 52 kcal, 10.9g protein, 0.7g carbs, 0.2g fat, 0.0g fiber, 0.7g sugar
-
-----
-
-Food: Pork tenderloin, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 143 kcal, 26.0g protein, 0.0g carbs, 3.5g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Shrimp, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 99 kcal, 24.0g protein, 0.2g carbs, 0.3g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Cod, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 82 kcal, 18.0g protein, 0.0g carbs, 0.7g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Tilapia, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 128 kcal, 26.0g protein, 0.0g carbs, 2.7g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Sardines, canned | Source: curated | Category: Protein | Serving: 100g | Per 100g: 208 kcal, 24.6g protein, 0.0g carbs, 11.5g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Beef steak sirloin, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 206 kcal, 26.0g protein, 0.0g carbs, 11.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Lamb lean, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 258 kcal, 25.0g protein, 0.0g carbs, 16.5g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Bison ground, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 179 kcal, 20.0g protein, 0.0g carbs, 10.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Venison, cooked | Source: curated | Category: Protein | Serving: 100g | Per 100g: 158 kcal, 30.0g protein, 0.0g carbs, 3.2g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Greek yogurt plain nonfat | Source: curated | Category: Dairy | Serving: 100g | Per 100g: 59 kcal, 10.0g protein, 3.6g carbs, 0.4g fat, 0.0g fiber, 3.6g sugar
-
-----
-
-Food: Greek yogurt plain whole milk | Source: curated | Category: Dairy | Serving: 100g | Per 100g: 97 kcal, 9.0g protein, 4.0g carbs, 5.0g fat, 0.0g fiber, 4.0g sugar
-
-----
-
-Food: Cottage cheese low-fat | Source: curated | Category: Dairy | Serving: 100g | Per 100g: 72 kcal, 11.0g protein, 3.4g carbs, 1.0g fat, 0.0g fiber, 3.4g sugar
-
-----
-
-Food: Milk whole | Source: curated | Category: Dairy | Serving: 100ml | Per 100g: 61 kcal, 3.2g protein, 4.8g carbs, 3.3g fat, 0.0g fiber, 5.1g sugar
-
-----
-
-Food: Milk 2% | Source: curated | Category: Dairy | Serving: 100ml | Per 100g: 50 kcal, 3.4g protein, 5.0g carbs, 2.0g fat, 0.0g fiber, 5.1g sugar
-
-----
-
-Food: Milk skim | Source: curated | Category: Dairy | Serving: 100ml | Per 100g: 34 kcal, 3.4g protein, 5.0g carbs, 0.1g fat, 0.0g fiber, 5.1g sugar
-
-----
-
-Food: Cheddar cheese | Source: curated | Category: Dairy | Serving: 100g | Per 100g: 403 kcal, 25.0g protein, 1.3g carbs, 33.1g fat, 0.0g fiber, 0.5g sugar
-
-----
-
-Food: Mozzarella cheese part-skim | Source: curated | Category: Dairy | Serving: 100g | Per 100g: 254 kcal, 24.0g protein, 2.8g carbs, 15.9g fat, 0.0g fiber, 1.0g sugar
-
-----
-
-Food: Whey protein powder | Source: curated | Category: Supplements | Serving: 100g | Per 100g: 400 kcal, 80.0g protein, 8.0g carbs, 7.0g fat, 0.0g fiber, 4.0g sugar
-
-----
-
-Food: Casein protein powder | Source: curated | Category: Supplements | Serving: 100g | Per 100g: 360 kcal, 78.0g protein, 4.0g carbs, 2.0g fat, 0.0g fiber, 3.0g sugar
-
-----
-
-Food: White rice cooked | Source: curated | Category: Grains | Serving: 100g | Per 100g: 130 kcal, 2.7g protein, 28.2g carbs, 0.3g fat, 0.4g fiber, 0.0g sugar
-
-----
-
-Food: Brown rice cooked | Source: curated | Category: Grains | Serving: 100g | Per 100g: 123 kcal, 2.7g protein, 25.6g carbs, 1.0g fat, 1.6g fiber, 0.4g sugar
-
-----
-
-Food: Oats dry | Source: curated | Category: Grains | Serving: 100g | Per 100g: 389 kcal, 16.9g protein, 66.3g carbs, 6.9g fat, 10.6g fiber, 0.0g sugar
-
-----
-
-Food: Quinoa cooked | Source: curated | Category: Grains | Serving: 100g | Per 100g: 120 kcal, 4.4g protein, 21.3g carbs, 1.9g fat, 2.8g fiber, 0.9g sugar
-
-----
-
-Food: Whole wheat bread | Source: curated | Category: Grains | Serving: 100g | Per 100g: 247 kcal, 13.0g protein, 41.3g carbs, 3.4g fat, 7.0g fiber, 6.0g sugar
-
-----
-
-Food: White bread | Source: curated | Category: Grains | Serving: 100g | Per 100g: 265 kcal, 9.0g protein, 49.0g carbs, 3.2g fat, 2.7g fiber, 5.0g sugar
-
-----
-
-Food: Pasta cooked | Source: curated | Category: Grains | Serving: 100g | Per 100g: 131 kcal, 5.0g protein, 25.0g carbs, 1.1g fat, 1.8g fiber, 0.6g sugar
-
-----
-
-Food: Sweet potato cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 90 kcal, 2.0g protein, 20.7g carbs, 0.1g fat, 3.3g fiber, 6.5g sugar
-
-----
-
-Food: Potato white baked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 93 kcal, 2.5g protein, 21.1g carbs, 0.1g fat, 2.2g fiber, 1.2g sugar
-
-----
-
-Food: Corn cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 96 kcal, 3.4g protein, 21.0g carbs, 1.5g fat, 2.4g fiber, 4.5g sugar
-
-----
-
-Food: Banana | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 89 kcal, 1.1g protein, 22.8g carbs, 0.3g fat, 2.6g fiber, 12.2g sugar
-
-----
-
-Food: Apple with skin | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 52 kcal, 0.3g protein, 13.8g carbs, 0.2g fat, 2.4g fiber, 10.4g sugar
-
-----
-
-Food: Blueberries | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 57 kcal, 0.7g protein, 14.5g carbs, 0.3g fat, 2.4g fiber, 10.0g sugar
-
-----
-
-Food: Strawberries | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 32 kcal, 0.7g protein, 7.7g carbs, 0.3g fat, 2.0g fiber, 4.9g sugar
-
-----
-
-Food: Orange | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 47 kcal, 0.9g protein, 11.8g carbs, 0.1g fat, 2.4g fiber, 9.4g sugar
-
-----
-
-Food: Grapes | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 69 kcal, 0.7g protein, 18.1g carbs, 0.2g fat, 0.9g fiber, 15.5g sugar
-
-----
-
-Food: Mango | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 60 kcal, 0.8g protein, 15.0g carbs, 0.4g fat, 1.6g fiber, 13.7g sugar
-
-----
-
-Food: Pineapple | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 50 kcal, 0.5g protein, 13.1g carbs, 0.1g fat, 1.4g fiber, 9.9g sugar
-
-----
-
-Food: Avocado | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 160 kcal, 2.0g protein, 8.5g carbs, 14.7g fat, 6.7g fiber, 0.7g sugar
-
-----
-
-Food: Watermelon | Source: curated | Category: Fruits | Serving: 100g | Per 100g: 30 kcal, 0.6g protein, 7.6g carbs, 0.2g fat, 0.4g fiber, 6.2g sugar
-
-----
-
-Food: Broccoli cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 35 kcal, 2.4g protein, 7.2g carbs, 0.4g fat, 3.3g fiber, 1.4g sugar
-
-----
-
-Food: Spinach raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 23 kcal, 2.9g protein, 3.6g carbs, 0.4g fat, 2.2g fiber, 0.4g sugar
-
-----
-
-Food: Kale raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 49 kcal, 4.3g protein, 8.8g carbs, 0.9g fat, 3.6g fiber, 2.3g sugar
-
-----
-
-Food: Bell pepper red raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 31 kcal, 1.0g protein, 6.0g carbs, 0.3g fat, 2.1g fiber, 4.2g sugar
-
-----
-
-Food: Carrots raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 41 kcal, 0.9g protein, 9.6g carbs, 0.2g fat, 2.8g fiber, 4.7g sugar
-
-----
-
-Food: Cucumber raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 15 kcal, 0.7g protein, 3.6g carbs, 0.1g fat, 0.5g fiber, 1.7g sugar
-
-----
-
-Food: Tomato raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 18 kcal, 0.9g protein, 3.9g carbs, 0.2g fat, 1.2g fiber, 2.6g sugar
-
-----
-
-Food: Onion raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 40 kcal, 1.1g protein, 9.3g carbs, 0.1g fat, 1.7g fiber, 4.2g sugar
-
-----
-
-Food: Mushrooms white raw | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 22 kcal, 3.1g protein, 3.3g carbs, 0.3g fat, 1.0g fiber, 2.0g sugar
-
-----
-
-Food: Asparagus cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 22 kcal, 2.4g protein, 4.0g carbs, 0.2g fat, 2.1g fiber, 1.9g sugar
-
-----
-
-Food: Green beans cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 35 kcal, 1.9g protein, 7.9g carbs, 0.3g fat, 3.4g fiber, 1.5g sugar
-
-----
-
-Food: Zucchini cooked | Source: curated | Category: Vegetables | Serving: 100g | Per 100g: 17 kcal, 1.2g protein, 3.1g carbs, 0.3g fat, 1.0g fiber, 2.5g sugar
-
-----
-
-Food: Black beans cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 132 kcal, 8.9g protein, 23.7g carbs, 0.5g fat, 8.7g fiber, 0.3g sugar
-
-----
-
-Food: Kidney beans cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 127 kcal, 8.7g protein, 22.8g carbs, 0.5g fat, 7.4g fiber, 0.3g sugar
-
-----
-
-Food: Chickpeas cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 164 kcal, 8.9g protein, 27.4g carbs, 2.6g fat, 7.6g fiber, 4.8g sugar
-
-----
-
-Food: Lentils cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 116 kcal, 9.0g protein, 20.1g carbs, 0.4g fat, 7.9g fiber, 1.8g sugar
-
-----
-
-Food: Edamame cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 121 kcal, 11.9g protein, 8.9g carbs, 5.2g fat, 5.2g fiber, 2.2g sugar
-
-----
-
-Food: Pinto beans cooked | Source: curated | Category: Legumes | Serving: 100g | Per 100g: 143 kcal, 9.0g protein, 26.2g carbs, 0.7g fat, 9.0g fiber, 0.3g sugar
-
-----
-
-Food: Almonds raw | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 579 kcal, 21.2g protein, 21.6g carbs, 49.9g fat, 12.5g fiber, 4.4g sugar
-
-----
-
-Food: Walnuts raw | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 654 kcal, 15.2g protein, 13.7g carbs, 65.2g fat, 6.7g fiber, 2.6g sugar
-
-----
-
-Food: Peanuts raw | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 567 kcal, 25.8g protein, 16.1g carbs, 49.2g fat, 8.5g fiber, 4.0g sugar
-
-----
-
-Food: Peanut butter natural | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 588 kcal, 25.1g protein, 20.0g carbs, 50.4g fat, 6.0g fiber, 9.2g sugar
-
-----
-
-Food: Cashews raw | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 553 kcal, 18.2g protein, 30.2g carbs, 43.9g fat, 3.3g fiber, 5.9g sugar
-
-----
-
-Food: Chia seeds | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 486 kcal, 16.5g protein, 42.1g carbs, 30.7g fat, 34.4g fiber, 0.0g sugar
-
-----
-
-Food: Flax seeds ground | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 534 kcal, 18.3g protein, 28.9g carbs, 42.2g fat, 27.3g fiber, 1.6g sugar
-
-----
-
-Food: Pumpkin seeds | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 559 kcal, 30.2g protein, 10.7g carbs, 49.1g fat, 6.0g fiber, 1.4g sugar
-
-----
-
-Food: Sunflower seeds | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 584 kcal, 20.8g protein, 20.0g carbs, 51.5g fat, 8.6g fiber, 2.6g sugar
-
-----
-
-Food: Hemp seeds hulled | Source: curated | Category: Nuts & Seeds | Serving: 100g | Per 100g: 553 kcal, 31.6g protein, 8.7g carbs, 48.8g fat, 4.0g fiber, 1.5g sugar
-
-----
-
-Food: Olive oil extra virgin | Source: curated | Category: Fats & Oils | Serving: 100ml | Per 100g: 884 kcal, 0.0g protein, 0.0g carbs, 100.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Coconut oil | Source: curated | Category: Fats & Oils | Serving: 100ml | Per 100g: 862 kcal, 0.0g protein, 0.0g carbs, 100.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Butter unsalted | Source: curated | Category: Fats & Oils | Serving: 100g | Per 100g: 717 kcal, 0.9g protein, 0.1g carbs, 81.1g fat, 0.0g fiber, 0.1g sugar
-
-----
-
-Food: Ghee clarified butter | Source: curated | Category: Fats & Oils | Serving: 100g | Per 100g: 876 kcal, 0.0g protein, 0.0g carbs, 99.5g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Coffee black | Source: curated | Category: Beverages | Serving: 100ml | Per 100g: 2 kcal, 0.1g protein, 0.0g carbs, 0.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Green tea brewed | Source: curated | Category: Beverages | Serving: 100ml | Per 100g: 1 kcal, 0.0g protein, 0.2g carbs, 0.0g fat, 0.0g fiber, 0.0g sugar
-
-----
-
-Food: Orange juice fresh | Source: curated | Category: Beverages | Serving: 100ml | Per 100g: 45 kcal, 0.7g protein, 10.4g carbs, 0.2g fat, 0.2g fiber, 8.4g sugar
-
-----
-
-Food: Coconut water | Source: curated | Category: Beverages | Serving: 100ml | Per 100g: 19 kcal, 0.7g protein, 3.7g carbs, 0.2g fat, 1.1g fiber, 2.6g sugar
-
-----
-
-Food: Honey | Source: curated | Category: Condiments | Serving: 100g | Per 100g: 304 kcal, 0.3g protein, 82.4g carbs, 0.0g fat, 0.2g fiber, 82.1g sugar
-
-----
-
-Food: Maple syrup | Source: curated | Category: Condiments | Serving: 100g | Per 100g: 260 kcal, 0.0g protein, 67.0g carbs, 0.1g fat, 0.0g fiber, 60.5g sugar
-
-----
-
-Food: Soy sauce | Source: curated | Category: Condiments | Serving: 100ml | Per 100g: 53 kcal, 8.1g protein, 4.9g carbs, 0.1g fat, 0.8g fiber, 0.4g sugar
-
-----
-
-Food: Hot sauce | Source: curated | Category: Condiments | Serving: 100g | Per 100g: 12 kcal, 0.5g protein, 2.0g carbs, 0.1g fat, 0.3g fiber, 1.0g sugar
-
-----
-
-Food: Tofu firm | Source: curated | Category: Protein | Serving: 100g | Per 100g: 144 kcal, 15.6g protein, 2.8g carbs, 8.7g fat, 0.3g fiber, 0.6g sugar
-
-----
-
-Food: Tempeh | Source: curated | Category: Protein | Serving: 100g | Per 100g: 192 kcal, 20.3g protein, 7.6g carbs, 10.8g fat, 0.0g fiber, 0.0g sugar
+===== NUTRITION FUNDAMENTALS & DIETARY GUIDELINES =====
+
+SECTION 1: ENERGY BALANCE
+- Calories in vs calories out is the fundamental driver of weight change. 1 lb of body fat ~ 3500 kcal. 1 kg ~ 7700 kcal.
+- Total Daily Energy Expenditure (TDEE) = BMR (basal metabolic rate) + TEF (thermic effect of food) + NEAT (non-exercise activity thermogenesis) + EAT (exercise activity thermogenesis).
+- BMR accounts for 60-75% of TDEE. Determined primarily by lean body mass (muscle). Each kg of muscle burns ~13 kcal/day at rest. Each kg of fat burns ~4.5 kcal/day.
+- TEF: 10-15% of calorie intake. Protein has highest TEF (20-30% of protein calories burned digesting protein), carbs (5-10%), fat (0-3%).
+- NEAT: All non-exercise movement (walking, fidgeting, standing). Highly variable between individuals (200-900 kcal/day difference).
+- Weight loss: Deficit of 300-500 kcal/day for sustainable fat loss (0.5-1 lb per week). Aggressive deficits (>1000 kcal) cause muscle loss, metabolic adaptation, and are unsustainable.
+- Weight gain: Surplus of 300-500 kcal/day for lean muscle gain (0.25-0.5 lb per week). Higher surpluses cause disproportionate fat gain.
+- Metabolic adaptation: Calorie restriction causes metabolic rate to drop 10-20% more than predicted by weight loss alone. This is why diet plateaus happen and reverse dieting exists.
+
+SECTION 2: PROTEIN
+- Protein is composed of 20 amino acids. 9 are essential (must come from diet): histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan, valine.
+- Leucine is the primary mTOR activator (muscle protein synthesis trigger). ~2-3g leucine per meal is needed to maximally stimulate MPS.
+- Protein timing: MPS is elevated for 3-5 hours after a protein-rich meal. Consuming 3-4 doses of 30-40g protein spread across the day optimizes 24-hour MPS.
+- Per-meal dose: 0.4g/kg per meal (e.g., 80 kg person = 32g per meal). Doses above 0.6g/kg per meal have no additional benefit.
+- Pre-sleep protein: 30-40g casein (slow-digesting) before bed increases overnight MPS by ~20-30%.
+- Protein sources ranked by leucine content per 100g: Whey isolate (12g), Chicken breast (8g), Beef (7.5g), Tuna (7g), Eggs (5.5g), Greek yogurt (5g), Tofu (4g), Quinoa (3g).
+- Complete proteins (all EAAs): Animal sources (meat, fish, eggs, dairy), soy, quinoa, buckwheat. Incomplete: most plant sources (rice, wheat, legumes, nuts).
+- Protein combining: Eating complementary incomplete proteins within the same day provides complete amino acid profile. Classic combos: rice + beans, hummus + pita, peanut butter + whole wheat bread.
+
+SECTION 3: CARBOHYDRATES
+- Carbohydrates are the body's preferred fuel source for high-intensity exercise. Stored as muscle glycogen (~300-500g) and liver glycogen (~80-100g).
+- Types of carbs: Simple (mono/disaccharides: glucose, fructose, sucrose) and Complex (polysaccharides: starch, glycogen, fiber).
+- Glycemic Index (GI): Rate at which carbs raise blood sugar. High GI (fast absorption, >70): white bread, rice, potatoes, sugar. Low GI (slow absorption, <55): oats, beans, lentils, most vegetables.
+- Glycemic Load (GL): GI x grams of carbs per serving / 100. More practical than GI alone because it accounts for portion size. Low GL (<10), Medium (11-19), High (20+).
+- Fiber: 25-35g/day recommended. Soluble fiber (oats, apples, beans) lowers cholesterol and stabilizes blood sugar. Insoluble fiber (vegetables, whole grains, nuts) promotes digestive regularity.
+- Carbs and performance: Low-carb diets impair high-intensity exercise performance. Full glycogen stores improve endurance (by 20-30%) and strength output.
+- Carb needs by activity: Sedentary (2-3g/kg), Light activity (3-5g/kg), Moderate (4-6g/kg), High volume (6-8g/kg), Elite endurance (8-12g/kg).
+- Carb backloading: Concentrating carb intake around training sessions may improve body composition for some individuals by improving insulin sensitivity when it matters most.
+
+SECTION 4: FATS
+- Fats are essential for hormone production (testosterone, estrogen), vitamin absorption (A, D, E, K), cell membrane integrity, and nervous system function.
+- Types of dietary fat: Saturated (solid at room temp, animal fats, coconut oil), Unsaturated (liquid, plant oils, nuts, avocados, fatty fish), Trans fats (artificially hydrogenated oils, processed foods).
+- Saturated fat: Moderate intake (10% or less of total calories). Not inherently harmful in moderation from whole food sources.
+- Monounsaturated fats (MUFAs): Olive oil, avocados, nuts, seeds. Associated with better heart health and insulin sensitivity.
+- Polyunsaturated fats (PUFAs): Omega-3 (anti-inflammatory, EPA/DHA from fish, ALA from flax/walnuts) and Omega-6 (pro-inflammatory in excess, from seed oils: soybean, corn, sunflower).
+- Omega-3 to Omega-6 ratio: Modern diet is 15:1 to 20:1 (too high omega-6). Ideal ratio is 1:1 to 4:1. Increase omega-3 intake (fatty fish 2-3x/week, fish oil supplement) and reduce processed seed oils.
+- Recommended fat intake: 0.5-1g/kg body weight per day (20-35% of total calories). Minimum 0.3g/kg for hormonal health. Below this, testosterone and estrogen production suffer.
+- Dietary fat does NOT directly cause body fat gain. Calorie surplus causes fat gain regardless of macro composition. Dietary fat is merely the most calorie-dense macronutrient (9 kcal/g vs 4 kcal/g for protein and carbs).
+
+SECTION 5: MICRONUTRIENTS
+- Fat-soluble vitamins (A, D, E, K): Absorbed with dietary fat, stored in body tissues. Can reach toxic levels in excess (especially A and D).
+- Water-soluble vitamins (B complex, C): Not stored in large amounts. Excess excreted in urine. Need regular intake.
+- Vitamin A: Vision, immune function, skin health, gene expression. Sources: liver, carrots, sweet potatoes, spinach, eggs.
+- Vitamin D: Bone health, immune function, muscle function, hormone production. 2000-5000 IU/day through supplementation. Sources: sunlight (primary), fatty fish, fortified dairy, egg yolks.
+- Vitamin E: Antioxidant, cell membrane protection. Sources: nuts, seeds, vegetable oils, spinach.
+- Vitamin K: Blood clotting, bone metabolism. Sources: leafy greens (kale, spinach, broccoli), fermented foods, natto.
+- B vitamins (B1, B2, B3, B5, B6, B7, B9, B12): Energy metabolism, red blood cell production, DNA synthesis, neurotransmitter production. Sources: whole grains, meat, eggs, dairy, legumes, leafy greens.
+- Vitamin C: Antioxidant, collagen synthesis, immune function, iron absorption. Sources: citrus fruits, peppers, strawberries, broccoli, kiwi.
+- Minerals: Calcium (1000mg, bone health), Magnesium (300-400mg, 300+ enzymatic reactions), Zinc (11mg men/8mg women, testosterone, immune), Iron (18mg women/8mg men, oxygen transport), Potassium (4700mg, blood pressure, muscle contraction), Sodium (<2300mg, fluid balance, but higher for active individuals), Selenium (55mcg, antioxidant, thyroid function), Iodine (150mcg, thyroid hormone production).
+
+SECTION 6: HYDRATION
+- Water is the most essential nutrient. 50-70% of body weight is water. 2-3 days without water is fatal.
+- Water functions: Temperature regulation, joint lubrication, nutrient transport, waste removal, chemical reactions.
+- Hydration needs: 30-45 ml/kg body weight per day minimum. More on training days, in hot environments, and at altitude.
+- Thirst is not a reliable indicator of hydration. By the time you're thirsty, you're already 1-2% dehydrated. Pre-hydrate before exercise.
+- Dehydration impacts: 2% body weight loss impairs performance 10-20%. 3-5% loss causes significant cognitive and physical impairment. 10%+ loss is life-threatening.
+- Overhydration (hyponatremia): Drinking excessive water without electrolytes dilutes blood sodium levels below 135 mmol/L. Symptoms: nausea, headache, confusion, seizures, coma. More common in endurance events.
+- Electrolyte balance: Sodium (500-1000mg lost per hour of intense exercise via sweat), Potassium (intracellular, lost in smaller amounts), Magnesium (lost in sweat, critical for muscle function), Calcium (lost in sweat, important for muscle contraction).
+
+SECTION 7: MEAL TIMING AND FREQUENCY
+- Meal frequency: 3-6 meals per day are equally effective for body composition when total calories and macros are equated. Choose what fits your lifestyle and preferences.
+- Intermittent fasting (IF): 16:8 (16 hour fast, 8 hour eating window), 20:4 (OMAD), or 5:2 (5 normal days, 2 restricted days). IF improves insulin sensitivity and may increase diet adherence through a restricted eating window.
+- IF limitations: NO metabolic advantage over calorie-matched normal feeding. Some people experience reduced training performance when training fasted. Not recommended for underweight individuals, those with eating disorder history, or pregnant/breastfeeding women.
+- Pre-training nutrition (1-3 hours before): 0.4-0.5g/kg carbs, 0.2-0.3g/kg protein, low fat and fiber. Timing closer to training = smaller meals.
+- Post-training nutrition (within 2 hours): 0.4-0.5g/kg carbs, 0.3-0.4g/kg protein. The post-workout anabolic window is wider than once thought (4-6 hours if pre-workout meal was adequate).
+- Pre-sleep nutrition: 30-40g slow-digesting protein (casein, cottage cheese, Greek yogurt) before bed increases overnight muscle protein synthesis. A small amount of fat with the protein further slows digestion.
+
+SECTION 8: DIET QUALITY AND FOOD CHOICES
+- Whole foods vs processed foods: Whole foods (single-ingredient, minimally processed) have higher nutrient density, higher satiety, and lower calorie density. Processed foods are engineered to be hyper-palatable and easy to overconsume.
+- 80/20 rule: 80% of calories from nutrient-dense whole foods, 20% from flexible choices. This approach optimizes health while maintaining adherence and social flexibility.
+- Nutrient density ranking per calorie: Leafy greens (highest), colorful vegetables, fruits, lean proteins, fatty fish, legumes, whole grains, nuts/seeds, dairy, eggs, tubers.
+- Calorie density: Vegetables (0-1 kcal/g), Fruits (0.5-1.5 kcal/g), Lean protein (1-2 kcal/g), Grains/legumes (1-2 kcal/g), Fattier meats (2-4 kcal/g), Nuts/seeds (5-6 kcal/g), Oils (9 kcal/g), Processed foods (3-6 kcal/g).
+- Volume eating: Eating large volumes of low-calorie-density foods (vegetables, salad, broth-based soups) increases satiety without adding many calories. Effective for weight loss adherence.
+- Food reward vs satiety: Highly rewarding foods (sugar, fat, salt combinations) bypass satiety signals. Processed foods are engineered to maximize reward and minimize satiety. Minimize these for better appetite control.
+- Reading nutrition labels: Check serving size first, then calories, then protein (aim high), fiber (aim high), saturated fat (moderate), added sugar (low), sodium (moderate). Ingredients list: first ingredient is the largest amount.
+
+SECTION 9: DIETARY APPROACHES
+- Mediterranean diet: High in olive oil, fish, vegetables, fruits, whole grains, legumes, nuts. Moderate in dairy and wine. Low in red meat. Best evidence for longevity and heart health.
+- Low-carb / keto: <50g carbs per day. Forces ketone production from fat. Effective for short-term weight loss and blood sugar control. May impair high-intensity exercise performance. Not superior for long-term weight loss vs moderate carb when calories equated.
+- Plant-based (vegan/vegetarian): Can meet all nutritional needs with planning. Higher protein needs (plant proteins less bioavailable). Watch iron, zinc, B12, calcium, omega-3 DHA, creatine, carnosine. B12 supplementation mandatory for vegans.
+- Paleo: Whole foods, no grains, legumes, dairy, or processed foods. Eliminates ultra-processed foods. May be low in calcium and fiber. No metabolic advantage over other whole-food approaches.
+- DASH diet (Dietary Approaches to Stop Hypertension): Low sodium, high potassium, calcium, magnesium. Rich in vegetables, fruits, whole grains, lean protein, low-fat dairy. Proven to lower blood pressure.
+- Flexible dieting (IIFYM): Any foods allowed within macro targets. Emphasizes calorie and macro tracking without food restrictions. May improve long-term adherence for some. Risk: can lead to micronutrient deficiencies if food quality is ignored.
+
+SECTION 10: SPECIAL DIETARY CONSIDERATIONS
+- Food intolerances: Lactose intolerance (lactase deficiency, affects 65% of global population), Gluten sensitivity (non-celiac, affects 0.5-6% of population), FODMAP intolerance (fermentable carbs, IBS).
+- Common allergies: Peanuts, tree nuts, shellfish, fish, eggs, milk, wheat, soy (the "Big 8"). Severity varies from mild to anaphylactic. Strict avoidance is the only treatment.
+- Gut health: Probiotics (live beneficial bacteria from fermented foods: yogurt, kefir, sauerkraut, kimchi) and Prebiotics (fiber that feeds good bacteria: garlic, onion, leeks, asparagus, bananas, oats).
+- Anti-inflammatory foods: Fatty fish (omega-3), berries (polyphenols), turmeric (curcumin), ginger (gingerol), green tea (EGCG), dark leafy greens, olive oil (oleocanthal).
+- Nutrient timing for recovery: Post-exercise protein + carbs (2:1 or 3:1 carb-to-protein ratio), tart cherry juice for sleep/recovery, omega-3s for inflammation management, vitamin D for immune function.
+- Caffeine: 100-400mg pre-workout improves performance. Tolerance builds; cycle 2 weeks off every 8-12 weeks. Avoid 8-10 hours before bed. Half-life: 5-6 hours.
+- Alcohol: 7 kcal/g, no nutritional value. Impairs protein synthesis by 20-30% (even moderate doses). Disrupts sleep quality. Reduces testosterone. Increases fat storage (alcohol is prioritized for oxidation, halting fat burning). Limit to 1-2 drinks max, preferably not post-workout.

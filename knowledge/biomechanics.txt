@@ -1,0 +1,82 @@
+===== EXERCISE BIOMECHANICS & MOVEMENT SCIENCE =====
+
+SECTION 1: FUNDAMENTAL BIOMECHANICAL CONCEPTS
+- Force: A push or pull that causes change in motion (Newtons). In lifting, force = mass x acceleration. Heavier weight or faster movement = more force.
+- Torque (moment): Rotational force = force x moment arm (perpendicular distance from joint axis to line of force action). All joint movements are rotational, driven by torque.
+- Moment arm: The perpendicular distance from the joint's axis of rotation to the line of pull of the muscle or resistance. Longer moment arm = more torque produced (or required) for the same force.
+- Lever systems in the body: Most skeletal muscles operate as third-class levers (effort between fulcrum and load). This favors speed and range of motion over force production.
+- Mechanical advantage: The ratio of effort arm to resistance arm. When effort arm is longer, less muscle force is needed to overcome a given resistance.
+- Center of mass (COM): The point where body mass is evenly distributed. In a standing squat, keeping the bar path over mid-foot maintains balance by keeping COM over base of support.
+
+SECTION 2: THE STRENGTH-CURVE AND JOINT ANGLES
+- Length-tension relationship: A muscle produces maximum force at its optimal length (usually mid-range). Too short or too long reduces force production.
+- Descending strength curve: Some exercises get harder in certain ranges. Example: Squat is hardest at the bottom (sticking point around parallel) due to longer moment arm on the hip and knee.
+- Ascending strength curve: Some exercises get easier as you move through the ROM. Example: Bench press is hardest at the bottom (long moment arm on shoulder) and easiest at lockout.
+- Bell-shaped strength curve: Some exercises have peak torque in mid-range. Example: Bicep curl peaks at 90 degrees elbow flexion due to optimal length-tension of biceps.
+- Sticking point: The position in a lift where the moment arm on the prime movers is longest and mechanical advantage is lowest. For squat: just above parallel. For deadlift: just off the floor. For bench: just off the chest.
+- Overcoming sticking points: Targeted accessory work at the weak ROM (pin squats, board presses, deficit deadlifts), improving rate of force development (RFD) through the sticking point.
+
+SECTION 3: SQUAT BIOMECHANICS
+- Bar position: High bar (on traps) vs low bar (on rear delts). Low bar shifts the moment arm, reducing knee torque and increasing hip torque, allowing heavier loads.
+- Depth: Below parallel (hip crease below knee) recruits more glute and hamstring, reduces shear forces on knee. Quarter squats limit quad development.
+- knee travel: Knees moving past toes is normal and safe for most people. Restricting knee travel shifts load to hips and lower back, increasing spinal shear forces.
+- Hip angle: Open hip angle (wider stance, toes out) increases adductor and glute contribution. Narrow stance increases quad contribution.
+- Stance width: Wider stance reduces total ROM (less depth needed), increases hip torque. Narrow stance increases ROM, increases quad torque. Optimal stance is individual based on femur length and hip anatomy.
+- Bar path: Should stay over mid-foot throughout the movement. Forward lean increases hip moment but shifts bar path forward, increasing low back shear.
+
+SECTION 4: DEADLIFT BIOMECHANICS
+- Conventional vs sumo: Conventional has narrower stance, longer ROM, more back and hamstring loading. Sumo has wider stance, shorter ROM, more quad and adductor loading.
+- Hip height: Higher hips at setup reduce knee torque but increase low back shear. Lower hips increase knee torque (more quad involvement) but reduce back shear. Optimal is individual.
+- Bar path: Should travel in a straight vertical line over mid-foot. If the bar drifts forward of mid-foot, the moment arm increases and the lift becomes mechanically disadvantaged.
+- Back angle: A more upright back (closer to 45 degrees from horizontal) reduces spinal shear. Rounding the back increases shear forces on the spine (increases disc injury risk).
+- Sticking point in conventional: Usually just off the floor (where glutes and hamstrings are at mechanical disadvantage) or just below the knee (transition from knee extension to hip extension).
+- Hook grip vs mixed grip: Hook grip (thumb wrapped by fingers) maintains symmetrical loading but is painful. Mixed grip (one hand supinated) allows heavier loads but creates asymmetric torque on the spine.
+- Belt use: A lifting belt increases intra-abdominal pressure, reducing spinal compressive and shear forces by 10-15%. Use for working sets above 80% 1RM.
+
+SECTION 5: BENCH PRESS BIOMECHANICS
+- Grip width: Wider grip reduces ROM and increases chest involvement but increases shoulder stress. Narrower grip increases ROM and triceps involvement. Optimal width: 1.5-1.8x biacromial width.
+- Arch: A thoracic arch reduces ROM (bar travels less distance), increases stability, and protects the shoulder. Arch should come from thoracic extension, not lumbar hyperextension.
+- Bar path: Should follow a slight J-curve (up and back toward the face). Straight vertical path is mechanically inefficient due to the changing lever arms on the shoulder.
+- Elbow angle: Flared elbows (45-60 degrees from torso) increase chest and front delt loading. Tucked elbows (20-30 degrees) increase triceps and lats involvement, reduce shoulder stress.
+- Shoulder position: Scapulae should be retracted and depressed throughout the lift. Protracted scapulae (rounded shoulders) increase injury risk and reduce force production.
+- Leg drive: Feet planted, driving through the floor, transfers force through the body into the bar. Leg drive can add 10-30 lbs to the bench press.
+
+SECTION 6: OVERHEAD PRESS BIOMECHANICS
+- Standing vs seated: Standing press engages the entire kinetic chain (legs, core, shoulders). Seated press isolates the shoulders more but reduces total force production.
+- Bar path: Bar should travel in a slightly curved path, starting in front of the face and ending directly overhead (stacked over shoulders, hips, and ankles).
+- Grip width: Just outside shoulder width. Too narrow limits ROM and over-stresses the shoulder. Too wide reduces mechanical advantage of the deltoids.
+- Elbow position: Elbows slightly forward of the bar at the start (45 degrees from frontal plane). Flaring elbows increases shoulder impingement risk.
+- Head position: Move head back as bar passes the face (the "face pull-through"), then bring head forward into a neutral position at lockout.
+- Sticking point: Usually at the transition from the pressing start through mid-range (where the deltoid moment arm is longest). Improving front delt strength and triceps lockout strength helps.
+
+SECTION 7: PULL-UP AND ROW BIOMECHANICS
+- Pull-up grip: Pronated (palms away) targets lats more, supinated/chin-up (palms facing) targets biceps more. Neutral grip (palms facing each other) is strongest for most people.
+- Pull-up width: Wide grip increases lat involvement but reduces ROM. Narrow grip increases biceps and lower lat involvement. Optimal for lat development is approximately 1.5x shoulder width.
+- Row variations: Barbell row (bent over) targets mid-back and lats. Pendlay row (from floor each rep) reduces back Momentum and increases strictness. Chest-supported row eliminates lower back stress.
+- Scapular control: Retract scapulae before initiating the pull. Protracted scapulae at the bottom of a pull-up or row reduces lat engagement and increases injury risk.
+- Eccentric focus: Lowering phase in pull-ups and rows should be controlled (2-3 seconds). Eccentric loading is a powerful hypertrophy stimulus for the back muscles.
+
+SECTION 8: GAIT ANALYSIS AND RUNNING BIOMECHANICS
+- Gait cycle: Stance phase (60%, foot on ground: initial contact, loading response, mid-stance, terminal stance, pre-swing) and swing phase (40%, foot in air: initial swing, mid-swing, terminal swing).
+- Foot strike patterns: Heel strike (most common in distance runners, higher braking forces, more knee stress), mid-foot strike (lower braking forces, distributes load), forefoot strike (higher calf/Achilles load, lower knee load).
+- Cadence: Optimal cadence is 170-180 steps per minute. Lower cadence correlates with over-striding (foot landing ahead of COM), higher braking forces, and increased injury risk.
+- Vertical oscillation: Up-and-down movement of COM per stride. Optimal: 6-10 cm. Excessive vertical oscillation wastes energy and increases ground reaction forces.
+- Pelvic stability: In the stance phase, the pelvis should remain level (<5 degrees drop on the swing side). Excessive pelvic drop (Trendelenburg sign) indicates weak glute medius.
+- Arm swing: Arms swing in opposition to legs (right arm forward with left leg). Arm swing should be front-to-back, not across the body (cross-body swing wastes energy).
+
+SECTION 9: FORCE-VELOCITY AND POWER
+- Force-velocity curve: As movement velocity increases, force production decreases (inverse relationship). Max force at zero velocity (isometric), max velocity at zero load.
+- Power: Power = force x velocity. Peak power occurs at approximately 30-60% of 1RM for most lifts. This is the load that maximizes mechanical power output.
+- Strength-speed continuum: Maximal strength (90%+ 1RM, slow) → Strength-speed (70-90%, moderate) → Speed-strength (30-70%, fast) → Maximal speed (0-30%, very fast).
+- Rate of force development (RFD): How quickly force can be produced. RFD is critical for athletic performance (sprinting, jumping, changing direction) and is improved by explosive training.
+- Stretch-shortening cycle (SSC): Pre-stretch of a muscle before concentric contraction increases force and power. The SSC involves three phases: eccentric (stretch), amortization (transition), concentric (shortening). Short amortization phase = more elastic energy return.
+- Plyometrics: Exercises that train the SSC (jumps, throws, bounds). Improve RFD and power output. Should be trained fresh (not fatigued) for best results.
+
+SECTION 10: JOINT-SPECIFIC BIOMECHANICS
+- Hip joint: Ball-and-socket joint with 3 degrees of freedom (flexion/extension, abduction/adduction, internal/external rotation). Femoral neck angle (125-130 degrees) affects squat mechanics.
+- Knee joint: Modified hinge joint (primary flexion/extension, slight rotation when flexed). Patellofemoral joint forces increase with knee flexion angle (up to 3x body weight in deep squat).
+- Shoulder (glenohumeral) joint: Ball-and-socket with greatest ROM of any joint, but inherently unstable. Glenohumeral rhythm: 2 degrees of humeral movement for every 1 degree of scapular movement during arm elevation.
+- Scapulohumeral rhythm: During arm elevation, the scapula upwardly rotates (60 degrees), the humerus elevates (120 degrees) for total 180 degrees of arm elevation.
+- Lumbar spine: The lumbar vertebrae carry the most load of any spinal segment. L3-L4 and L4-L5 experience the highest compressive and shear forces during lifting.
+- Spinal flexion vs extension: Flexed spine under load increases disc pressure by 200-300% vs neutral spine. Maintaining neutral spinal alignment during lifting is protective.
+- Intra-abdominal pressure (IAP): Contracting the core muscles increases IAP, creating a rigid cylinder that stabilizes the spine. A lifting belt increases IAP by 10-20%.

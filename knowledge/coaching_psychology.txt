@@ -1,0 +1,76 @@
+===== COACHING PSYCHOLOGY & BEHAVIOR CHANGE =====
+
+SECTION 1: HABIT FORMATION FOR EXERCISE ADHERENCE
+- The habit loop (Charles Duhigg): Cue (trigger) → Routine (behavior) → Reward (positive feeling). To build a habit, make the cue obvious, the routine easy, and the reward satisfying.
+- Identity-based habits (James Clear): Instead of "I want to work out," adopt the identity "I am an athlete" or "I am someone who trains." Behavior follows identity.
+- Implementation intentions: "I will [BEHAVIOR] at [TIME] in [LOCATION]." Example: "I will train legs at 6 AM in the gym." This format doubles adherence rates.
+- Habit stacking: Attach a new habit to an existing one. "After I brush my teeth, I will put on my workout clothes." Uses existing neural pathways.
+- Minimum viable dose: Remove friction by making the habit so easy it's impossible to say no. Commit to 1 set or 5 minutes. Usually leads to doing more (the gateway effect).
+- Frequency over duration: Training 3x/week for 20 minutes builds habits faster than 1x/week for 60 minutes. Consistency is the foundation of automaticity.
+- Cue removal for bad habits: Make unhealthy behaviors invisible. Keep junk food out of the house, delete food delivery apps. Friction is a powerful behavior modifier.
+
+SECTION 2: MOTIVATION AND THE TRANSTHEORETICAL MODEL
+- Stages of change: Precontemplation (no intention), Contemplation (thinking about it), Preparation (making plans), Action (actively changing), Maintenance (sustaining >6 months), Termination (habit is automatic).
+- Motivational interviewing for precontemplation: Explore discrepancy between current behavior and values. "How would your life be different if you exercised?" Don't push change; raise awareness.
+- Intrinsic vs extrinsic motivation: Intrinsic (enjoyment, challenge, identity) predicts long-term adherence. Extrinsic (appearance, competition, reward) is effective short-term but may not sustain.
+- Self-determination theory: Three basic needs for sustained motivation: Autonomy (choice), Competence (progress), Relatedness (connection with coach, community).
+- Autonomous motivation: Clients who feel their training is their choice (not imposed) have 2-3x higher long-term adherence. Offer options: "Would you prefer squats or leg press today?"
+
+SECTION 3: GOAL SETTING STRATEGIES
+- SMART goals: Specific (bench 225 vs "get stronger"), Measurable (track progress), Achievable (challenging but realistic), Relevant (aligned with values), Time-bound (12-week target).
+- Process vs outcome goals: Outcome goals (lose 20 lbs) depend on factors outside control. Process goals (train 4x/week, hit protein target) are fully controllable. Focus 80% on process goals.
+- Goal laddering: Long-term vision (1-5 years) → Annual goals → Monthly goals → Weekly actions → Daily habits. Each level connects to the one above.
+- WOOP framework: Wish (one specific goal), Outcome (best possible result), Obstacle (internal barrier), Plan (if-then for the obstacle). Example: "If I feel tired after work, then I will do a 5-minute warm-up and decide after."
+- Goal revision: When progress stalls, adjust the process, not the goal. Reduce volume, change exercises, improve recovery. Quitting the goal entirely should be a last resort.
+- Measuring progress: Weekly check-ins (weight, measurements, gym performance, well-being), monthly progress photos (standardized: same lighting, clothing, pose), quarterly reassessment of goals.
+
+SECTION 4: OVERCOMING COMMON BARRIERS
+- Lack of time: Short, effective workouts (30-45 min) are as effective as longer ones for most goals. HIIT (20 min 3x/week) produces comparable results to steady state (45 min 5x/week). Prioritize compound lifts.
+- Lack of energy: Train at the time of day when energy is highest. Morning training works best for most (less decision fatigue, fewer schedule conflicts). If evening training, have a pre-workout snack.
+- Lack of confidence (self-efficacy): Start with achievable goals, celebrate small wins, use social modeling (training with others), verbal persuasion (coach encouragement), interpret physiological states (soreness = progress, not injury).
+- Social support: Training partners increase adherence by 50%+. Group training provides accountability, competition, and community. Online coaching (check-ins, feedback) is effective for remote clients.
+- Environmental design: Lay out gym clothes the night before, keep a packed gym bag in the car, prep meals in advance, set phone reminders. Reduce decisions about training by automating the environment.
+- Plateaus and frustration: Normalize plateaus as part of the process. Change variables (exercises, rep ranges, rest periods). Take a deload week. Review past progress to maintain perspective.
+
+SECTION 5: COGNITIVE BEHAVIORAL TECHNIQUES FOR COACHING
+- Cognitive restructuring: Identify and challenge irrational beliefs about training and nutrition. "I missed one workout so my whole week is ruined" → "Missing one workout is a minor setback. I'll get back on track tomorrow."
+- All-or-nothing thinking: The most common cognitive distortion in fitness. Replace with flexible thinking: "Something is better than nothing. A 15-minute workout is infinitely better than skipping."
+- Self-talk modification: Replace negative self-talk ("I'm weak," "I'll never get there") with process-focused self-talk ("I'm getting stronger every week," "I showed up today, that's a win").
+- Values clarification: Connect training to deeper values. "I train because I want to be healthy enough to play with my kids" is more motivating than "I train because I should lose weight."
+- Behavioral activation: When motivation is low, behavior (action) comes first, motivation follows. "Get dressed and go to the gym. You can always leave after 5 minutes." Usually leads to completing the session.
+- Relapse prevention: Plan for lapses (missed workouts, diet slip-ups) in advance. Lapse ≠ relapse ≠ collapse. A single slip is normal. The key is returning to the plan immediately.
+
+SECTION 6: COACHING COMMUNICATION SKILLS
+- Active listening: Paraphrase what the client said to show understanding. "So what I'm hearing is that you're struggling with evening workouts because you feel drained after work. Is that right?"
+- Open-ended questions: "How did that workout feel?" vs "Was that workout good?" Open questions elicit richer information and promote reflection.
+- Autonomy-supportive language: "You could try increasing your protein or keeping it the same" vs "You need to eat more protein." Offer choices and explain rationale.
+- Praise effort, not outcome: "I'm impressed you hit all your sets even when you were tired" vs "Great job on that bench PR." Effort praise builds a growth mindset and persistence.
+- Sandwich feedback: Positive (what went well) → Improvement (specific change needed) → Positive (confidence and support). "Your squat depth was perfect. Let's work on bracing more at the bottom. Your consistency has been great this month."
+- Motivational quotes: Use sparingly and specifically. Overused quotes feel generic. Personal anecdotes and client-relevant examples are more effective.
+
+SECTION 7: MINDSET AND MENTAL TOUGHNESS
+- Growth mindset (Carol Dweck): Belief that abilities can be developed through effort. Fixed mindset: belief that abilities are innate and unchangeable. Growth mindset clients persist longer and achieve more.
+- Developing growth mindset: Praise effort, strategy, and progress (not talent). Normalize struggle as part of learning. "This is hard because you're getting stronger, not because you're weak."
+- Grit (Angela Duckworth): Passion + perseverance for long-term goals. Grit is a better predictor of success than talent, IQ, or physical ability.
+- Building grit: Find deeper purpose in training, commit to daily practice, embrace discomfort, develop optimistic self-talk, maintain effort despite setbacks.
+- Mental toughness (resilience): The ability to push through discomfort and maintain focus under pressure. Developed through progressive exposure to challenging situations.
+- Training mental toughness: Finish every workout strong (last set hardest), embrace discomfort (cold showers, hard cardio finishers), practice visualization (perfect reps, successful outcomes), use positive self-talk under fatigue.
+- Stress mindset: Believing stress enhances performance (rather than debilitates) improves actual performance under pressure. "My heart is racing because my body is preparing me for this lift."
+
+SECTION 8: BODY IMAGE AND RELATIONSHIP WITH FOOD
+- Body dissatisfaction prevalence: 70-80% of women and 30-40% of men report body dissatisfaction. Coaches must address this sensitively and compassionately.
+- Intuitive eating principles: Reject diet mentality, honor hunger, make peace with food, challenge the food police, feel fullness, discover satisfaction, cope with emotions without food, respect your body, move for enjoyment, honor health.
+- Signs of disordered eating: Preoccupation with food/weight (3+ hours/day), rigid food rules, guilt after eating, secret eating, binge episodes, purging, extreme restriction, excessive exercise, avoiding social eating.
+- Orthorexia: Obsession with "clean" or "pure" eating. Client may avoid entire food groups, experience anxiety around food, have rigid rules. Coach approach: normalize all foods, address food morality language.
+- Body neutrality vs body positivity: Body positivity (love your body) is unrealistic for many. Body neutrality (your body is a vehicle, not an ornament) is more achievable: acceptance without requiring love.
+- Coach language: Avoid weight-focused language (fat, skinny, obese). Use behavior-focused language (muscle gain, performance improvement, strength increase). Never comment on body changes unprompted. Let the client bring up body image.
+- When to refer: If client shows signs of eating disorder, body dysmorphia, or severe body dissatisfaction, refer to a mental health professional specializing in eating disorders and body image.
+
+SECTION 9: ADHERENCE SCIENCE AND LONG-TERM SUCCESS
+- 6-month adherence rate: 50% of people drop out of exercise programs within 6 months. Strategies to improve: accountability (check-ins), variety (program changes every 4-8 weeks), social support (training partners, community), convenience (home/ nearby gym).
+- Schedule integration: Training should fit INTO existing lifestyle, not require lifestyle restructuring. Short commutes to gym, consistent training times, workouts that match available equipment.
+- Tracking motivation: 30-50% of variance in training attendance is explained by conscious motivation. The rest is automatic habit. Build habits first, then optimize training.
+- Autonomy as adherence: Clients given choices in their programming attend 30% more sessions. Offer choices: exercise selection, training time, rep range variations.
+- Social accountability: Public commitment (telling friends, posting progress) increases adherence. Coaching accountability (scheduled check-ins, missed session follow-ups) adds structure.
+- Intrinsic reward development: Help clients find joy in the process of training itself (the feeling of a good pump, the satisfaction of completing a hard set, the community of the gym). These intrinsic rewards sustain long-term adherence more than any external outcome.
+- Relapse rates: 80% of people who start an exercise program will have at least one lapse (2+ weeks off) in the first year. Plan for it: have a re-entry protocol, normalize the break, return without guilt.

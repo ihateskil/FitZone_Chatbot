@@ -1,70 +1,167 @@
 ===== SPORTS PSYCHOLOGY & MINDSET GUIDE =====
 
-SECTION 1: GOAL SETTING
-- SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound.
-- Process goals vs outcome goals: Focus on process goals (e.g., "train 4x/week") not just outcome goals (e.g., "lose 10kg"). Process goals are controllable.
-- Short-term (daily/weekly), medium-term (monthly), long-term (yearly). Each short-term goal should ladder up to the next tier.
-- Implementation intentions: "If [situation], then I will [behavior]." Increases goal adherence by 2-3x.
-- Goal autonomy: Intrinsic motivation (doing it for yourself) beats extrinsic motivation (doing it for others/validation).
+SECTION 1: GOAL SETTING THEORY & PRACTICE
+- SMART goals: Specific, Measurable, Achievable, Relevant, Time-bound. Every fitness goal should pass the SMART test before being adopted.
+- Process goals vs outcome goals: Focus on process goals (e.g., "train 4x/week", "eat protein with every meal") not just outcome goals (e.g., "lose 10kg"). Process goals are fully within your control; outcome goals depend on many variables.
+- Short-term (daily/weekly), medium-term (monthly), long-term (yearly). Each short-term goal should ladder up to the next tier. Break big goals into micro-goals.
+- Implementation intentions: Format of "If [situation], then I will [behavior]." Example: "If it's 6 AM, then I will put on my gym clothes." Increases goal adherence by 2-3x in research studies.
+- Goal autonomy: Intrinsic motivation (doing it for yourself because you value it) beats extrinsic motivation (doing it for others, for validation, or to avoid shame). Autonomous goals have higher persistence.
+- Goal contamination: When conflicting goals compete (e.g., "build muscle" vs "lose weight"). Resolve by prioritizing one primary goal per training block (mesocycle).
+- Approach vs avoidance goals: Approach goals ("gain 5 lbs of muscle") outperform avoidance goals ("don't lose muscle"). Frame goals positively.
+- Stretch goals: Goals that are 10-20% beyond what you think is achievable. They increase effort and creativity without being demoralizing when missed.
+- Goal flexibility: Reassess goals every 4-8 weeks. Adjust based on life circumstances, injury, or changing priorities. Rigidity leads to dropout.
+- Written goals: People who write their goals down are 42% more likely to achieve them. Review written goals daily.
 
-SECTION 2: MOTIVATION
-- Intrinsic vs extrinsic motivation: Intrinsic (enjoyment, challenge, curiosity) is more sustainable. Extrinsic (rewards, praise, avoidance of shame) works short-term.
-- Motivation curve: Motivation is highest at the start and fluctuates. Discipline bridges the gap when motivation is low.
-- The 2-minute rule: Make the first step so easy it's impossible to say no. "Put on workout clothes" not "run 5K."
-- Dopamine and habit loops: Cue → craving → response → reward. Stack rewards by pairing exercise with something enjoyable.
-- Identity-based habits: Instead of "I want to lose weight," think "I am the type of person who values health and trains consistently."
+SECTION 2: MOTIVATION SCIENCE
+- Intrinsic vs extrinsic motivation: Intrinsic (enjoyment, challenge, curiosity, mastery) is more sustainable long-term. Extrinsic (rewards, praise, money, avoidance of shame) works for short-term behavior change.
+- Self-Determination Theory: Three basic psychological needs drive intrinsic motivation: Autonomy (choice), Competence (mastery), Relatedness (connection). Programs that meet all three sustain motivation longer.
+- Motivation curve: Motivation is highest at the start of a program and fluctuates with life stress, progress, and novelty. Discipline bridges the gap when motivation is low.
+- The 2-minute rule: Make the first step so easy it's impossible to say no. "Put on workout clothes" not "run 5K." Starting is the hardest part; momentum carries you forward.
+- Dopamine and habit loops: Cue (trigger) → craving (desire) → response (behavior) → reward (satisfaction). Stack rewards by pairing exercise with something enjoyable (your favorite podcast only during workouts).
+- Identity-based habits from Atomic Habits: Instead of "I want to lose weight," think "I am the type of person who values health and trains consistently." Identity drives behavior more than outcomes.
+- The Goldilocks rule: Humans experience peak motivation when working on tasks at the edge of their current abilities. Not too easy (boring), not too hard (anxiety). Optimal challenge = optimal motivation.
+- Motivation waves: Urges to skip a workout rise, peak, and fall like waves. Surf the wave: acknowledge the urge without acting on it. It will pass within 10-20 minutes.
+- Temptation bundling: Pair a behavior you want to do with one you need to do. "Only listen to my favorite audiobook while at the gym."
+- Motivation rituals: Create a pre-workout ritual (listen to a specific song, do 5 minutes of breathing, put on gym clothes). Rituals bypass the motivation decision.
 
-SECTION 3: MENTAL TOUGHNESS
-- Definition: The ability to persist through discomfort, adversity, and pressure.
-- Components of mental toughness: Commitment (sticking to goals), Control (regulating emotions), Challenge (seeing difficulty as opportunity), Confidence (belief in abilities).
-- Training mental toughness: Progressive exposure to discomfort. Cold showers, finishing reps when fatigued, maintaining form when tired.
-- Self-talk: Replace negative ("I can't do this") with instructional ("Keep your chest up") or motivational ("One more rep"). Third-person self-talk is most effective.
-- Visualization: Mentally rehearse the workout or competition. Imagine the sensations, movements, and success outcome. 5-10 minutes before training.
+SECTION 3: MENTAL TOUGHNESS & RESILIENCE
+- Definition: The ability to persist through discomfort, adversity, pressure, and fatigue. A trainable skill, not a fixed trait.
+- The 4 Cs model of mental toughness: Commitment (sticking to goals despite obstacles), Control (regulating emotions and reactions), Challenge (seeing difficulty as opportunity for growth), Confidence (belief in your abilities and preparation).
+- Training mental toughness: Progressive exposure to discomfort. Cold showers, finishing the last rep when fatigued, maintaining form when tired. Stress inoculation builds resilience.
+- Self-talk strategies: Replace negative ("I can't do this, this is too hard") with instructional ("Keep your chest up, drive through your heels") or motivational ("You've done this before, one more rep"). Third-person self-talk ("You can do this") is more effective than first-person ("I can do this").
+- Visualization and mental rehearsal: Mentally rehearse the workout or competition in vivid detail. Imagine the sensations, the environment, the movements, and the successful outcome. 5-10 minutes before training. Research shows it activates the same neural pathways as physical practice.
+- Grit: Passion + perseverance for long-term goals. Grit predicts success better than talent in many domains. Cultivate it by focusing on long-term purpose.
+- Antifragility: Some systems get stronger from stressors (Nassim Taleb). Strategic exposure to training stress makes you physically AND mentally stronger.
+- Post-traumatic growth: Adversity (injury, setback, competition loss) can lead to greater mental strength, appreciation, and changed priorities.
+- The discomfort zone: Growth occurs at the edge of your comfort zone. Comfort is the enemy of progress. Seek discomfort deliberately.
+- Mental toughness myths: It's not about ignoring pain or emotion. It's about acknowledging them and choosing to act despite them.
 
-SECTION 4: FOCUS & CONCENTRATION
-- Internal focus: Attention on bodily sensations (muscle tension, breathing). Best for technique work.
-- External focus: Attention on the environment or outcome (the bar, the finish line). Generally produces better performance.
-- Associative focus: Focusing on body signals during exercise. Useful for pacing and form.
-- Dissociative focus: Distracting from body signals (music, podcast, counting). Useful for low-to-moderate intensity work.
-- Flow state: Complete absorption in the activity. Time distortion. Occurs when challenge matches skill level.
+SECTION 4: FOCUS, CONCENTRATION & ATTENTION
+- Internal focus: Attention on bodily sensations (muscle tension, joint position, breathing). Most useful for technique work and corrective exercise.
+- External focus: Attention on the environment or outcome (the bar path, the finish line, the target). Generally produces BETTER performance than internal focus. External focus reduces co-contraction and improves movement efficiency.
+- Associative focus: Attending to body signals during exercise. Feeling your heart rate, breathing, muscle burn. Useful for pacing and form during high-intensity work.
+- Dissociative focus: Distracting from body signals (listening to music, counting reps, zoning out). Useful for low-to-moderate intensity steady-state work where the goal is duration.
+- Flow state: Complete absorption in the activity where self-consciousness disappears, time distorts, and performance feels effortless. Occurs when challenge level matches skill level perfectly.
+- Flow triggers: Clear goals, immediate feedback, challenge-skill balance, deep concentration, sense of control, intrinsic reward. Design workouts with these in mind.
+- Mindfulness in training: Non-judgmental awareness of the present moment. Notice thoughts without acting on them. "Oh, there's a thought about quitting. I'll just notice it and return to my breathing."
+- Concentration grids: Simple tool (5x5 grid of random numbers, find them in sequence) used to train focus. 5 minutes daily improves concentration.
+- Pre-performance routines: A consistent sequence of thoughts and actions before a set or competition. Examples: 3 deep breaths, visualize the lift, self-talk cue. Reduces anxiety and improves consistency.
+- Distraction management: Identify common distractions (phone, social media, environment). Remove them from the training space. Handle one thing at a time.
+- Bilateral stimulation: Alternating movements (running, crawling, alternating lunges) coordinate both brain hemispheres and can improve focus and emotional regulation.
 
-SECTION 5: ANXIETY & PERFORMANCE
-- Yerkes-Dodson Law: Moderate anxiety improves performance. Too little or too much impairs it.
-- Pre-competition routine: A consistent 15-30 minute warm-up routine reduces anxiety and improves readiness.
-- Breathing techniques: Box breathing (4-4-4-4), tactical breathing (4-4-4), diaphragmatic breathing.
-- Catastrophizing: Challenge irrational fears. "What's the worst that could happen?" vs "What's most likely to happen?"
-- Acceptance: Acknowledge nervousness without judgment. "I feel anxious and that's normal. I can perform well even while anxious."
+SECTION 5: PERFORMANCE ANXIETY & STRESS MANAGEMENT
+- Yerkes-Dodson Law: Moderate anxiety IMPROVES performance. Too little (apathy) or too much (panic) impairs it. Optimal arousal is individual and task-dependent.
+- Somatic vs cognitive anxiety: Somatic (physical: racing heart, sweaty palms) can be channeled into performance. Cognitive (worry, negative thoughts) is more detrimental. Target cognitive anxiety with reframing.
+- Pre-competition routine: A consistent 15-30 minute warm-up routine reduces anxiety by creating predictability. Familiarity reduces uncertainty, which is a primary driver of anxiety.
+- Breathing techniques for performance:
+  * Box breathing: Inhale 4s, hold 4s, exhale 4s, hold 4s. Activates parasympathetic nervous system.
+  * Tactical breathing: Inhale 4s, hold 4s, exhale 4s (military/first responder). Quick calming.
+  * Physiological sigh: Double inhale through nose, long exhale through mouth. Fastest way to reduce stress (resets diaphragm).
+- Catastrophizing: Irrational worst-case thinking. Challenge it: "What's the worst that could happen?" (usually not that bad) vs "What's most likely to happen?" (much more reasonable).
+- Acceptance-based approach: Acknowledge nervousness without judgment. "I feel anxious and that's completely normal before a big workout/competition. I can perform well even while feeling anxious."
+- Cognitive restructuring: Replace irrational thoughts with more balanced ones. "I MUST hit this PR" → "I'll give my best effort and see what happens."
+- Pre-game superstitions: Provide a sense of control but can become problematic if they create rigidity. Use routines instead (flexible, intentional).
+- Choking under pressure: Caused by either distraction (attention on irrelevant cues) or over-analysis (attention on automated processes). Solution: practice under pressure, use process cues.
+- Pressure training: Intentionally create high-stakes practice situations. Training with consequences (if I miss, I do burpees) builds pressure tolerance.
 
-SECTION 6: HABIT FORMATION
-- The habit loop: Cue (trigger) → Routine (behavior) → Reward (benefit).
-- Atomic Habits framework (James Clear): Make it obvious (cue), attractive (craving), easy (response), satisfying (reward). Invert for breaking bad habits.
-- Habit stacking: "After [current habit], I will [new habit]." E.g., "After I brush my teeth, I will lay out my gym clothes."
-- Streak tracking: Maintaining a visual record of consistency. Never miss twice in a row.
-- 21/66/90 rule: Takes ~66 days on average for a behavior to become automatic (range 18-254 days depending on complexity).
+SECTION 6: CONFIDENCE & SELF-EFFICACY
+- Self-efficacy (Bandura): Belief in your ability to succeed in specific situations. The strongest predictor of performance in sports psychology.
+- Sources of self-efficacy (ranked by potency):
+  1. Mastery experiences: Past success is the strongest confidence builder. Set up small wins.
+  2. Vicarious experiences: Watching similar others succeed. "If they can do it, I can too."
+  3. Verbal persuasion: Coach or peer encouragement. Useful but weaker than mastery.
+  4. Physiological states: Interpreting anxiety as excitement rather than fear.
+- Confidence-performance relationship: Confidence influences effort, persistence, and resilience. More confident athletes push harder and recover faster from setbacks.
+- Overconfidence vs underconfidence: Slight overconfidence is adaptive. Underconfidence leads to holding back, early dropout, and underperformance.
+- Confidence calibration: Confidence should match preparation. False confidence without preparation crumbles under pressure.
+- Confidence rituals: Pre-workout affirmations, reviewing past successes, listening to empowering music, power poses (2 minutes).
+- Competence-confidence loop: You don't need confidence to START. You build confidence by doing. Action precedes motivation, not the other way around.
+- Self-handicapping: Creating excuses in advance to protect ego. "I didn't sleep well" before a test. Recognize and eliminate this pattern.
+- Imposter syndrome: Feeling like a fraud despite evidence of competence. Common in new lifters. Acknowledge it, talk about it, compare only to your past self.
 
-SECTION 7: DEALING WITH SETBACKS
-- The setback is not failure: Missing one workout doesn't ruin progress. The response determines long-term success.
-- Forgiveness: Self-blame after a missed workout reduces motivation. Self-compassion increases it.
-- Bounce-back protocol: Identify the obstacle, adjust the plan, schedule immediately, execute.
-- Injury psychology: Focus on what you CAN do (modified training, rehab exercises) not what you can't.
-- Plateau management: Periodize training, vary stimulus, track different metrics, trust the process.
+SECTION 7: HABIT FORMATION & BEHAVIOR CHANGE
+- The habit loop (Charles Duhigg): Cue (trigger) → Routine (behavior) → Reward (benefit). Every habit follows this cycle.
+- Atomic Habits framework (James Clear): Four laws of behavior change:
+  * Make it OBVIOUS (cue): Put gym clothes by bed, prep meals in advance.
+  * Make it ATTRACTIVE (craving): Temptation bundle, pair with enjoyable activity.
+  * Make it EASY (response): Reduce friction. 2-minute rule. Lay out everything the night before.
+  * Make it SATISFYING (reward): Track streaks, immediate reward after workout.
+- Invert for breaking bad habits: Make it invisible, unattractive, difficult, unsatisfying.
+- Habit stacking: "After [current habit], I will [new habit]." Example: "After I brush my teeth, I will lay out my gym clothes for tomorrow."
+- Implementation intentions: Stronger version of habit stacking. "When X happens, I will do Y." Ties behavior to a specific trigger.
+- Streak tracking: Maintaining a visual record of consistency. Calendar with X's, app with streak counter. Never miss twice in a row (the cardinal rule).
+- The 21/66/90 myth: It doesn't take 21 days to form a habit. Research shows 18-254 days depending on complexity. Average is ~66 days. Be patient.
+- Habit decay: Old habits never truly disappear; they're just inhibited by new ones. Stress and fatigue weaken inhibition, causing old habit relapse. Plan for this.
+- Temptation bundling revisited: Pair high-probability behaviors (watching Netflix) with low-probability ones (treadmill walking). Creates immediate reward.
+- Keystone habits: One habit that triggers positive chain reactions. Exercise is a keystone habit: people who start exercising also eat better, sleep better, smoke less, and manage stress better.
+- Environment design: Shape your environment to make good habits easier and bad habits harder. Your environment is more powerful than your willpower.
 
-SECTION 8: SOCIAL SUPPORT & ACCOUNTABILITY
-- Training partners: Increase adherence by 30-50%. Provide motivation, spotting, and friendly competition.
-- Coaches and personal trainers: Provide expertise, accountability, program design, form feedback.
-- Online communities: Can provide support but watch for comparison trap and misinformation.
-- Public commitment: Announcing goals increases accountability but can lead to premature satisfaction (social reality vs achieved reality).
+SECTION 8: DEALING WITH SETBACKS, PLATEAUS & ADHERENCE DROPS
+- The setback is not failure: Missing one workout, one meal, or even one week doesn't ruin progress. The response to the setback determines long-term success.
+- The "never miss twice" rule: It's fine to miss a workout. Just don't miss two in a row. One slip becomes a pattern when you let guilt keep you away.
+- Forgiveness and self-compassion: Self-blame after a missed workout reduces motivation and increases likelihood of further missed workouts. Self-compassion (acknowledging the miss, forgiving yourself, recommitting) increases adherence.
+- Bounce-back protocol:
+  1. Identify the specific obstacle (what caused the miss?)
+  2. Problem-solve the obstacle (how can I prevent this?)
+  3. Adjust the plan if needed
+  4. Schedule the next session immediately
+  5. Execute without guilt
+- Injury psychology: Focus on what you CAN do (modified training, rehab exercises, upper body if lower body injured) rather than what you can't. Identity as an athlete even when injured.
+- Plateau management:
+  * Change training variables (reps, sets, exercises, rest periods)
+  * Deload for a week
+  * Assess nutrition and sleep
+  * Track different metrics (not just weight)
+  * Trust the process
+- Adherence drops after 3-6 weeks: Common pattern. Initial enthusiasm fades, novelty wears off. Combat it: vary workouts, set new micro-goals, train with a partner, revisit your "why."
+- Relapse prevention planning: Identify high-risk situations (vacation, work stress, holidays) and plan ahead. "If I travel, I will do bodyweight circuits in my hotel room."
+- The abstinence violation effect: After a slip, people think "I've already blown it, might as well give up entirely." Recognize this thought pattern and reject it. One slip is just one slip.
+- Progress isn't linear: Expect 2 steps forward, 1 step back. Trust the long-term trend, not the day-to-day fluctuation.
 
-SECTION 9: BODY IMAGE & SELF-PERCEPTION
-- Body dysmorphia: Distorted perception of one's appearance. Common in bodybuilding and fitness cultures.
-- Performance-based vs appearance-based goals: Performance goals build long-term satisfaction. Appearance-only goals often lead to dissatisfaction.
-- Comparison trap: Compare yourself to your past self, not others. Everyone's genetics, lifestyle, and starting point are different.
-- Progress photos and measurements: Objective data helps counteract subjective self-perception. Take monthly, not daily.
-- Non-scale victories: Better sleep, more energy, improved mood, stronger lifts, better endurance, clothes fitting differently.
+SECTION 9: SOCIAL SUPPORT, ACCOUNTABILITY & COMMUNITY
+- Training partners: Increase adherence by 30-50% in research studies. Provide motivation, spotting, friendly competition, and social obligation (harder to skip when someone is waiting).
+- Coaches and personal trainers: Provide expertise, accountability, program design, form feedback, and objective perspective. Even 1-2 sessions/month significantly improve adherence.
+- Online communities (Reddit, Discord, social media): Can provide support, knowledge sharing, and accountability. Watch out for comparison trap (everyone posts highlight reels) and misinformation.
+- Public commitment: Announcing goals publicly increases accountability BUT can lead to premature satisfaction (people feel they've already achieved the goal just by announcing it). Better to announce process commitments, not outcome goals.
+- Social physique anxiety: Fear of being judged in the gym environment. Common in beginners. Strategies: go with a friend, visit during off-peak hours, use private spaces, exposure therapy (it gets easier).
+- Accountability structures: Scheduled check-ins, workout logs shared with a partner, paid coaching, public posting of training. Choose what works for your personality.
+- Group fitness benefits: Structured classes provide social connection, eliminate decision fatigue (just show up and follow), and often produce better adherence than solo training.
+- The Karen Pryor model: Positive reinforcement (praise, celebration) after workouts increases likelihood of repeating the behavior. Celebrate every workout, not just the "hard" ones.
+- Reciprocal determinism: Your environment, behavior, and personal factors all influence each other. Change the environment to support the behavior, and the personal factors follow.
+- Finding your fitness community: Explore different gym types (commercial, CrossFit, powerlifting, climbing, running groups). The right community makes adherence effortless.
 
-SECTION 10: SLEEP & RECOVERY PSYCHOLOGY
-- Sleep is when the brain processes learning and adaptation. Poor sleep impairs motor skill acquisition.
-- Revenge bedtime procrastination: Staying up late to reclaim personal time. Undermines training recovery.
-- Rest days: Active recovery improves adherence long-term. Schedule rest like you schedule training.
-- Mental fatigue: Cognitive load from work/life impairs physical performance. Warm-up protocols should include mental activation.
-- Periodization of life stressors: During high-stress periods, maintain training but reduce expectations and volume.
+SECTION 10: BODY IMAGE, RELATIONSHIP WITH FOOD & SELF-PERCEPTION
+- Body dysmorphia: Distorted perception of one's own appearance. Seeing yourself as smaller/less muscular than you are (muscle dysmorphia, "bigorexia"). Common in bodybuilding and fitness cultures. Affects both men and women.
+- Performance-based vs appearance-based motivation: Performance goals (lift more, run faster, more endurance) build long-term satisfaction and sustainable motivation. Appearance-only goals often lead to dissatisfaction because the mirror never feels done.
+- The comparison trap: Comparing your body to others (in the gym, on social media, on stage) is a guaranteed path to dissatisfaction. Everyone's genetics, lifestyle, starting point, and journey are different. Compare yourself ONLY to your past self.
+- Social media literacy: Fitness influencers often use lighting, angles, filters, flexing, pumps, and PEDs. What you see is not reality. Curate your feed: follow educational accounts, unfollow triggers.
+- Progress photos and objective measurements: Take monthly photos (same lighting, same pose, same time of day). Track measurements, lifts, and performance. Objective data counteracts subjective self-perception.
+- Non-scale victories (NSVs): Better sleep, more energy, improved mood, stronger lifts, better endurance, clothes fitting differently, more confidence, better health markers. These matter MORE than the scale.
+- Intuitive eating vs structured nutrition: Flexible dieting (IIFYM) with 80/20 principle is more sustainable long-term than rigid restriction. All foods can fit in moderation.
+- Orthorexia: Obsession with "clean" or "perfect" eating that becomes psychologically harmful. Can be as restrictive as an eating disorder but socially masked as "healthy." Watch for: anxiety around food, rigid rules, social isolation due to food.
+- Eating disorder awareness: Higher prevalence in fitness and bodybuilding populations. RED-S (Relative Energy Deficiency in Sport). Signs: amenorrhea (loss of period), low energy availability, frequent injuries, obsessive food thoughts.
+- Body neutrality vs body positivity: Body positivity ("I love my body") can feel unattainable. Body neutrality ("My body is a vehicle for my experiences, not an ornament") is more accessible and research-supported.
+
+SECTION 11: SLEEP, RECOVERY & MENTAL HEALTH
+- Sleep is when the brain processes motor learning, memory consolidation, and emotional regulation. Poor sleep directly impairs skill acquisition and recovery from training.
+- Sleep and performance: Even 1-2 hours of sleep loss reduces strength, endurance, cognitive function, and mood. Chronic sleep deprivation increases injury risk by 1.7x.
+- Revenge bedtime procrastination: Staying up late to reclaim personal time despite knowing it undermines the next day. Common in people with busy schedules. Solution: schedule decompression time earlier.
+- Rest days and mental health: Rest is not laziness. Active recovery (light walking, stretching, foam rolling) improves adherence long-term. Schedule rest the same way you schedule training.
+- Mental fatigue from work/life: Cognitive load impairs physical endurance and performance. Warm-up protocols should include mental activation and transition rituals (5 min of deep breathing between work and gym).
+- Periodization of life: During high-stress periods (work deadlines, exams, family issues), maintain training but reduce expectations and volume. Maintenance > progression during high stress.
+- Exercise as mental health treatment: Exercise is as effective as antidepressants for mild-to-moderate depression (rates of 50-60% improvement). Best results with 3x/week supervised aerobic + resistance training.
+- Anxiety and exercise: Regular exercise reduces trait anxiety (general tendency toward anxiety). HIIT and aerobic exercise both effective. Exercise provides exposure to feared physical sensations (elevated heart rate) in a safe context.
+- ADHD and exercise: Exercise increases dopamine and norepinephrine levels, improving focus and executive function. Especially beneficial before tasks requiring sustained attention.
+- Burnout recognition: Emotional exhaustion, reduced sense of accomplishment, detachment from training. Different from overtraining (which is physiological). Recovery requires psychological disconnection and reconnection with intrinsic motivation.
+
+SECTION 12: COMPETITION PSYCHOLOGY & PEAKING
+- Arousal regulation: Each athlete has an optimal arousal zone. Some need calming (deep breathing, meditation), others need activation (loud music, jumping, self-talk).
+- Pre-competition routines: A consistent sequence 30-60 minutes before competition. Physical (warm-up), mental (visualization, cues), emotional (music, breathing). Routine creates certainty in uncertain situations.
+- In-competition focus strategies: Between-effort routines. After each set/round/event, a brief reset routine (3 breaths, 1 cue word, positive statement).
+- Post-competition processing: Win or lose, evaluate objectively. What went well? What needs work? Don't make decisions about the future immediately after competition.
+- Team vs individual sport psychology: Individual sports require more self-reliance and intrinsic motivation. Team sports add social dynamics, roles, and collective efficacy.
+- Coach-athlete relationship: Trust, communication, and shared goals are the foundation. Athletes perform better when they feel the coach believes in them.
+- Parent-coach-athlete triad (youth sports): Clear roles and communication. Parents provide support (not coaching). Coaches coach. Athletes perform.
+- Peaking: The psychological state of optimal readiness. Combines physical freshness with mental sharpness. Achieved through proper taper, visualization, and confidence.
+- Dealing with failure in competition: The best athletes fail regularly. Michael Jordan missed 9,000+ shots. Failure is data, not identity.
+- Retirement from sport: Identity transition can be psychologically difficult. Athletes who define themselves solely by their sport struggle when it's over. Develop multiple identities.
