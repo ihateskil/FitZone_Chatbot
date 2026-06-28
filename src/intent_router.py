@@ -91,6 +91,7 @@ GREETING_KEYWORDS = frozenset({
     "hey", "hi", "hello", "sup", "yo", "morning", "evening", "afternoon",
     "thanks", "thank", "bye", "goodbye", "cheers", "appreciate", "coach",
     "bro", "dude", "man", "help", "can you", "what is", "how do",
+    "yes", "yeah", "yep", "sure", "ok", "okay", "alright", "kk",
 })
 
 
