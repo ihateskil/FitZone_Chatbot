@@ -25,6 +25,7 @@ from src.config import (
     LLM_TEMPERATURE,
     MAX_CONTEXT_CHARS,
     MAX_HISTORY_TURNS,
+    MAX_MESSAGE_LENGTH,
     OUT_OF_SCOPE_RESPONSE,
     RETRIEVAL_TOP_K,
 )
@@ -501,6 +502,7 @@ class FitnessAgent:
             )
 
         latency = _elapsed_ms(start)
+        text = _truncate_response(text)
         log_event("agent_response", query_len=len(query), latency_ms=latency, in_scope=True, lift_logged=lift_logged)
         return AgentResponse(text=text, latency_ms=latency, lift_logged=lift_logged, progression_hint=progression_hint, science_mode=science_mode)
 
@@ -548,11 +550,20 @@ class FitnessAgent:
             log_event("lift_logged_stream", count=len(parsed_lifts), session_id=session_id)
 
         stream_completed = False
+        acc_len = 0
         try:
             for chunk in self._get_llm().stream(messages):
-                content = chunk.content
-                if content:
-                    yield content
+                content = chunk.content or ""
+                if not content:
+                    continue
+                remaining = MAX_MESSAGE_LENGTH - acc_len
+                if remaining <= 0:
+                    break
+                if len(content) > remaining:
+                    yield content[:remaining]
+                    break
+                yield content
+                acc_len += len(content)
             stream_completed = True
         except Exception as exc:
             log_event("stream_error", error=str(exc))
@@ -560,6 +571,16 @@ class FitnessAgent:
         finally:
             if not stream_completed:
                 log_event("stream_incomplete", query_len=len(query))
+
+
+def _truncate_response(text: str) -> str:
+    if len(text) <= MAX_MESSAGE_LENGTH:
+        return text
+    cut = MAX_MESSAGE_LENGTH - 3
+    truncated = text[:cut].rsplit(". ", 1)[0]
+    if len(truncated) <= cut // 2:
+        truncated = text[:cut]
+    return truncated.strip() + "..."
 
 
 def _elapsed_ms(start: float) -> float:
