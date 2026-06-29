@@ -9,9 +9,9 @@ from collections.abc import Iterator
 from fastapi import Depends, FastAPI, Header, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
-from src.config import APP_NAME, DISCLAIMER, GROQ_API_KEY
+from src.config import APP_NAME, DISCLAIMER, GROQ_API_KEY, MAX_MESSAGE_LENGTH
 from src.auth import _get_ready_app, _verify_api_key
 from src.fitness_agent import ChatTurn, get_agent, run_agent_full, stream_agent, warmup_agent
 from src.lift_parser import LiftParser, is_lift_log as check_lift_log
@@ -30,7 +30,18 @@ setup_logging()
 
 class ChatMessage(BaseModel):
     role: str = Field(pattern="^(user|assistant)$")
-    content: str = Field(min_length=1, max_length=2000)
+    content: str
+
+    @field_validator("content")
+    @classmethod
+    def truncate_content(cls, v: str) -> str:
+        if len(v) <= MAX_MESSAGE_LENGTH:
+            return v
+        cut = MAX_MESSAGE_LENGTH - 3
+        truncated = v[:cut].rsplit(". ", 1)[0]
+        if len(truncated) <= cut // 2:
+            truncated = v[:cut]
+        return truncated.strip() + "..."
 
 
 class ChatRequest(BaseModel):
